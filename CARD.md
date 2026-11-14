@@ -17,7 +17,18 @@ A card closes with a number, or with a sentence that could have come out the oth
 
 ## Live card
 
-None open (2026-11-14). Candidates: R-016 (Dress-1-to-3 in full), R-014, the axis surveys R-005 to R-010 (unblocked by R-012), or an independent re-sort of R-012's abstracts.
+### R-016 · Does a full reading of Dress-1-to-3 add anything to the warm-start entry over an agent?
+
+_Opened 2026-11-14 at the user's request. R-017 (an independent re-sort of R-012's abstracts) runs alongside as a review ticket, not a card._
+
+1. **WHERE WE ARE.** `entries/warm-start-repeated-drapes.md` rests on two sources read at a distance (Catto's slides through a mirror, a continuation-methods book). R-011's agent baseline named 5 of its 6 conditions and added several. R-015 found that Dress-1-to-3 (SIGGRAPH 2025) warm-starts each iteration and states the reason.
+2. **WHAT WE ARE DOING.** Read Dress-1-to-3 in full, take notes against R-016's questions with section references, rewrite the warm-start entry from them, and score the paper's items against the baseline list fixed beforehand (`agents/researcher/findings/r016/baseline-items.md`).
+3. **WHY.** Whether a full reading adds to this entry beyond what an agent already says is unknown. R-013 found it did for garment transfer, as a reframe. This is the second paper read in full.
+4. **WHAT IS AFFECTED.** The warm-start entry (its sources, conditions and `agent_baseline`); T-005 and T-011; the test bed's planned warm start, through `private/`.
+5. **CONCLUSION IF WE DO IT.** Count the paper's items about the reuse (conditions, numbers, techniques) that the baseline named none of. If 3 or more: a full reading adds here too, and R-013's rule holds on a second paper. If 0 or 1: for this entry the agent already had what the paper says, and its value rests on measurements. If 2: inconclusive.
+6. **CONSEQUENCE OF NOT DOING IT.** The warm-start entry stays written from unread sources, and the test bed's warm start would run without the one published statement of its condition.
+
+**Result:** —
 
 ---
 

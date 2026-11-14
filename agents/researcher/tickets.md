@@ -302,7 +302,7 @@ The live card in `CARD.md`, at the user's request (2026-11-14): research graphic
 
 ### R-016 · Read Dress-1-to-3 in full and rewrite the warm-start entry from it
 
-**Status:** open
+**Status:** in-progress
 **Type:** research
 **Priority:** medium
 **Created:** 2026-11-14
@@ -312,6 +312,23 @@ The live card in `CARD.md`, at the user's request (2026-11-14): research graphic
 Read Xuan Li et al., "Dress-1-to-3: Single Image to Simulation-Ready 3D Outfit with Diffusion Prior and Differentiable Physics", ACM TOG / SIGGRAPH 2025 (arXiv 2502.03449), in full, with notes against these questions, each with a section reference: why each iteration's drape may start from the previous one (the static-equilibrium argument) and what breaks it; what removing friction does and doesn't buy, and how slip is prevented (the pinned waist loop); how many iterations and what each costs; how flipped triangles, remeshing and penetration are handled; what the method can't recover (new pattern pieces, loose garments). Save the notes in `agents/researcher/findings/r016/`. Then rewrite `entries/warm-start-repeated-drapes.md` with every condition marked (paper, with section), (measured) or (reasoned), and list what the paper says about friction as a condition of the entry. Before reading, fix the scoring items against the R-011 warm-start baseline answer (`agents/researcher/findings/r011/`), as R-013 did.
 
 **Blockers:** none (open on arXiv)
+
+**Artifacts:** —
+
+**Closed:** —
+
+### R-017 · An independent re-sort of R-012's abstracts
+
+**Status:** in-progress
+**Type:** review
+**Priority:** high
+**Created:** 2026-11-14
+**Updated:** 2026-11-14
+
+**Description:**
+R-012's sorter wrote the axes. A fresh agent, given only the first 60 abstracts in R-012's shuffled order and R-012's sorting rules (procedure.md steps 4–9, with the README's axis table and its cost-or-answer paragraph), sorts all 60 without seeing R-012's verdicts, its result or its decisions made during sorting. It writes `agents/researcher/findings/r017/resort.md`. Compare: (a) agreement on reuse or not, over papers both judged; (b) agreement on axis, over papers both call reuse; (c) the card's statistic on the second sorter's own first 20 reuse papers. Written before the run: if the second sorter's first 20 has at least 16 clean, R-012's keep verdict doesn't depend on who sorted. If fewer, R-012 is re-opened with an RCA and its verdict is stated as sorter-dependent. Either way, the per-axis counts and T-015/T-016 are compared.
+
+**Blockers:** none
 
 **Artifacts:** —
 
