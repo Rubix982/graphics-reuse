@@ -1,6 +1,7 @@
 ---
 technique: warm-starting repeated drapes
 axis: across runs
+reuse_changes: depends. Cost only if the drape has one resting shape; the answer too when it has several, as cloth usually does (T-005).
 fields: [cloth simulation, simulation inside fitting and optimisation loops, rigid-body contact solvers]
 source_docs:
   - Erin Catto. Iterative Dynamics with Temporal Coherence. Game Developers Conference, 2005. (Slides seen through a third-party mirror; the paper itself not yet read.)
@@ -21,7 +22,7 @@ tested_in: []
 
 Catto's talk is about rigid-body contact in games. Contact forces solved in one time step are cached and used to start the next step's solver, matched contact by contact. That is reuse across time; using it across runs is the move this entry makes. Allgower and Georg give the mathematical frame: follow a solution as a parameter changes, using each solution as the starting guess for the next. Neither has been read in full for this entry.
 
-## 2. What repeats
+## 2. What work is wasted
 
 In the test bed, the length fit drapes the garment once at the base cut, once per group of controls to estimate how each landmark responds (each control moved 3–8 cm), then once per step of the solve, at most 3 steps (its fitting code). Every drape starts from the flat pattern: pieces placed around the body, seams closed, cloth fallen (the stages in each drape's log). An A-pose drape takes about 4–7 minutes, and the fitting loop as a whole took 27–35 minutes on the runs with a dupatta (the test bed's run records, 2026-11-10).
 

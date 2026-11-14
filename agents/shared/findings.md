@@ -36,3 +36,15 @@ One entry tested in part, two untested. The tested one, garment transfer by surf
 - The template's "What repeats" section fits coarse-to-fine poorly; carried into R-004.
 
 Confidence: high on the measured transfer numbers (the test bed's record of 2026-11-11); low on the two untested entries' conditions, which are reasoned from the methods.
+
+## [R-004] Finding: the axes fit their own examples, and a second dimension matters more
+
+_Date: 2026-11-14_
+
+Twelve techniques sorted onto the six axes, 12 of 12 cleanly (14 mechanisms: time 6, space 2, runs 0, resolutions 2, shapes 2, many instances 2). The result is weak: all twelve came from the conversation that produced the axes, so the sort could hardly fail. Axes kept provisionally; surveys blocked on a held-out test (R-012). Full table in `CARD.md`.
+
+- "Across runs" got none of the twelve (T-009).
+- The template's "What repeats" fit 10 of 12; renamed "What work is wasted" (repeated, or done in more detail than needed).
+- Whether the reuse changes only the cost or the answer too cuts across every axis: cost only 4, the answer 6, depends 2. Cost-only reuse fails by slowing down; answer-changing reuse fails by giving a wrong answer, which is where validity conditions carry content. Added as `reuse_changes`.
+
+Confidence: high on the sort itself (each technique's mechanism is standard); low on what it says about the axes, because the test set wasn't independent of them; medium on the cost-versus-answer split, which is a property of each technique rather than of the axes, but rests on these twelve.

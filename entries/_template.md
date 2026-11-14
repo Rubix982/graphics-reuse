@@ -1,6 +1,7 @@
 ---
 technique: <named plainly, e.g. "garment transfer by surface binding">
 axis: <across time | across space | across runs | across resolutions | across shapes | across many instances>
+reuse_changes: <cost only | the answer | depends (say on what)>. Cost only: the reused result is exact and only speed is at stake, so failure shows as slowdown. The answer: the reuse approximates, so failure shows as a wrong answer, and section 4 carries the content.
 fields: [<where it is used: cloth simulation, rendering, collision detection, ...>]
 source_docs:
   - <author(s), title, venue, year, link. The primary source; mark anything seen second-hand>
@@ -20,9 +21,9 @@ tested_in: [<project, date, card: where the reuse was measured; or empty>]
 
 <What was read, and which parts (sections, tables). One line on the setting each source was written for (games at 60 fps, offline film, CAD), since its conditions are stated for that setting.>
 
-## 2. What repeats
+## 2. What work is wasted
 
-<The work being redone and where it shows up: which computation, how often, how long. Every number says where it came from.>
+<Work that is repeated, or computed in more detail than the answer needs, and where it shows up: which computation, how often, how long. Every number says where it came from.>
 
 ## 3. The technique
 

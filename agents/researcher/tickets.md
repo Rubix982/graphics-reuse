@@ -60,7 +60,7 @@ Write three entries in the template's shape, one tested in part and two untested
 
 ### R-004 · Test the six axes on twelve known techniques
 
-**Status:** open
+**Status:** closed
 **Type:** research
 **Priority:** high
 **Created:** 2026-11-14
@@ -71,13 +71,19 @@ The live card in `CARD.md`. Sort the twelve techniques listed there onto the six
 
 **Blockers:** none
 
-**Artifacts:** —
+**Artifacts:**
+- CARD.md → closed card R-004, with the full sort
+- agents/shared/findings.md → [R-004]
+- entries/_template.md (section 2 renamed "What work is wasted"; `reuse_changes` field added), the three entries, README.md, METHOD.md step 3
+- threads.md (T-001 updated, T-006 answered, T-008 and T-009 opened)
 
-**Closed:** —
+**Result:** 12 of 12 sorted cleanly, but all twelve came from the conversation that built the axes, so the sort could hardly fail. Axes kept provisionally; the surveys stay blocked on a held-out test, R-012, which departs from the pre-stated branch on purpose.
+
+**Closed:** 2026-11-14
 
 ### Survey tickets R-005 to R-010: shared description
 
-Each survey ticket covers one axis. Following METHOD.md steps 1 to 3, including step 2b, write 5–8 entries for the axis from primary sources, marked untested unless a measurement exists. Start from the techniques the ticket lists, and add others found along the way. For each entry, note in section 1 whether *Real-Time Collision Detection* (Ericson) or *Real-Time Rendering* (Akenine-Möller et al.) already covers it, and what the entry adds. Append a summary to `agents/shared/findings.md` with a confidence level. Done when the entries exist and the summary is written. If R-004 revises the axes, each ticket is re-scoped before it starts.
+Each survey ticket covers one axis. Following METHOD.md steps 1 to 3, including step 2b, write 5–8 entries for the axis from primary sources, marked untested unless a measurement exists. Start from the techniques the ticket lists, and add others found along the way. For each entry, note in section 1 whether *Real-Time Collision Detection* (Ericson) or *Real-Time Rendering* (Akenine-Möller et al.) already covers it, and what the entry adds. Append a summary to `agents/shared/findings.md` with a confidence level. Done when the entries exist and the summary is written. If R-012 revises the axes, each ticket is re-scoped before it starts.
 
 ### R-005 · Survey: across time
 
@@ -90,7 +96,7 @@ Each survey ticket covers one axis. Following METHOD.md steps 1 to 3, including 
 **Description:**
 Per the shared description. Start from: warm starting in contact solvers (Catto 2005); refitting bounding-volume trees; sort and sweep on nearly sorted lists; temporal reprojection and temporal anti-aliasing; kinetic data structures (Basch, Guibas and Hershberger 1997).
 
-**Blockers:** R-004 (the axes may change)
+**Blockers:** R-012 (the axes may change)
 
 **Artifacts:** —
 
@@ -107,7 +113,7 @@ Per the shared description. Start from: warm starting in contact solvers (Catto 
 **Description:**
 Per the shared description. Start from: ReSTIR's spatial reuse (Bitterli et al. 2020); irradiance caching (Ward, Rubinstein and Clear 1988); photon mapping's density estimation; spatial denoising filters.
 
-**Blockers:** R-004 (the axes may change)
+**Blockers:** R-012 (the axes may change)
 
 **Artifacts:** —
 
@@ -124,7 +130,7 @@ Per the shared description. Start from: ReSTIR's spatial reuse (Bitterli et al. 
 **Description:**
 Per the shared description. Start from: warm starting and numerical continuation (Allgower and Georg 1990); adjoint and differentiable simulation, where one backward pass replaces one forward run per parameter; incremental recomputation in node-based procedural tools.
 
-**Blockers:** R-004 (the axes may change)
+**Blockers:** R-012 (the axes may change)
 
 **Artifacts:** —
 
@@ -141,7 +147,7 @@ Per the shared description. Start from: warm starting and numerical continuation
 **Description:**
 Per the shared description. Start from: multigrid for cloth (Tamstorf et al. 2015); learned upsampling (Kavan et al. 2011); adaptive remeshing (Narain et al. 2012); progressive meshes (Hoppe 1996); mipmapping and level of detail.
 
-**Blockers:** R-004 (the axes may change)
+**Blockers:** R-012 (the axes may change)
 
 **Artifacts:** —
 
@@ -158,7 +164,7 @@ Per the shared description. Start from: multigrid for cloth (Tamstorf et al. 201
 **Description:**
 Per the shared description. Start from: deformation transfer (Sumner and Popović 2004); design-preserving garment transfer (Brouet et al. 2012); functional maps for correspondence between shapes (Ovsjanikov et al. 2012); skinning weight transfer; motion retargeting.
 
-**Blockers:** R-004 (the axes may change)
+**Blockers:** R-012 (the axes may change)
 
 **Artifacts:** —
 
@@ -175,7 +181,7 @@ Per the shared description. Start from: deformation transfer (Sumner and Popovi�
 **Description:**
 Per the shared description. Start from: precomputed radiance transfer (Sloan, Kautz and Snyder 2002); baked lighting; precomputed signed distance fields for static colliders; learned cloth simulators.
 
-**Blockers:** R-004 (the axes may change)
+**Blockers:** R-012 (the axes may change)
 
 **Artifacts:** —
 
@@ -183,7 +189,7 @@ Per the shared description. Start from: precomputed radiance transfer (Sloan, Ka
 
 ### R-011 · Agent baseline for the three seed entries
 
-**Status:** open
+**Status:** in-progress
 **Type:** research
 **Priority:** low
 **Created:** 2026-11-14
@@ -191,6 +197,23 @@ Per the shared description. Start from: precomputed radiance transfer (Sloan, Ka
 
 **Description:**
 METHOD.md step 2b, skipped when the seed entries were written. For each of the three seed entries, give one fresh agent (no access to this repository) a description of the repeated work from the entry's section 2, with no mention of the technique, and ask how it would avoid redoing the work and when that would be safe. Save each prompt verbatim in `agents/researcher/findings/r011/` before running. Record in each entry's `agent_baseline` which techniques the agent proposed and which of section 4's conditions it named. Done when all three headers are filled.
+
+**Blockers:** none
+
+**Artifacts:** —
+
+**Closed:** —
+
+### R-012 · Held-out test of the axes
+
+**Status:** open
+**Type:** research
+**Priority:** high
+**Created:** 2026-11-14
+**Updated:** 2026-11-14
+
+**Description:**
+The live card in `CARD.md`. Search DBLP (or Semantic Scholar, if DBLP can't filter by venue) for ACM Transactions on Graphics papers, 2000–2025, with *fast*, *faster*, *efficient*, *accelerat-* or *real-time* in the title. Save the exact query and the full hit list in `agents/researcher/findings/r012/`. Shuffle the list with `random.Random(1114).shuffle` and sort each paper from its abstract (is the speedup reuse; if so, axis per mechanism and `reuse_changes`) until 20 reuse papers are sorted, recording every paper looked at. The branches are written in the card: at least 16 of 20 clean keeps the axes and unblocks R-005 to R-010; 5 or more misfits means revising the axes first.
 
 **Blockers:** none
 

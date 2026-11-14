@@ -1,6 +1,7 @@
 ---
 technique: garment transfer by surface binding
 axis: across shapes
+reuse_changes: the answer, by design. The garment comes out graded to the new body.
 fields: [cloth simulation, garment modelling, character pipelines]
 source_docs:
   - Robert W. Sumner, Jovan Popović. Deformation Transfer for Triangle Meshes. ACM Transactions on Graphics 23(3), SIGGRAPH 2004.
@@ -22,7 +23,7 @@ tested_in: [a private test bed, 2026-11-11, its own notes. The transfer only]
 
 Sumner and Popović give the general method: carry a deformation from one mesh to another through a correspondence between them. Brouet et al. are specific to garments and treat transfer as pattern grading. They turn a pattern-maker's grading rules into geometric requirements (keep the design, keep proportions, keep the fit) and solve for the transferred garment as a constrained optimisation, several layers at once. Neither paper has been read in full for this entry; what is said of them here comes from their abstracts. The measurement is the test bed's own record.
 
-## 2. What repeats
+## 2. What work is wasted
 
 A garment that has already settled on one body is draped again from its flat pattern on another. In the test bed an A-pose drape takes about 4–7 minutes (its run records, 2026-11-09 and 2026-11-10), and one export step drapes every garment again on the standard figure: 11.5 and 14.4 minutes for two designs, with its gate, export and checks (the test bed's own notes).
 

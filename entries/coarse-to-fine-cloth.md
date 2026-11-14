@@ -1,6 +1,7 @@
 ---
 technique: coarse-to-fine cloth
 axis: across resolutions
+reuse_changes: depends on the mechanism. Multigrid, cost only; upsampling, the answer.
 fields: [cloth simulation, film, games]
 source_docs:
   - Rasmus Tamstorf, Toby Jones, Stephen F. McCormick. Smoothed Aggregation Multigrid for Cloth Simulation. ACM Transactions on Graphics 34(6), SIGGRAPH Asia 2015. https://media.disneyanimation.com/uploads/production/publication_asset/131/asset/paper.pdf
@@ -22,9 +23,9 @@ tested_in: []
 
 Tamstorf et al. (film, Disney) build an algebraic multigrid solver for cloth that works on any mesh and handles contact constraints. Kavan et al. (games) learn linear operators from fine simulations that add mid-scale folds to a coarse simulation, on a single CPU core. Narain et al. refine the mesh only where the cloth needs it. All three read from abstracts and project pages so far.
 
-## 2. What repeats
+## 2. What work is wasted
 
-This axis is less about redone work than about work done at more resolution than it needs. Iterative solvers remove small-scale error quickly and large-scale error slowly, so at full resolution the overall shape of the garment is the slowest part to converge. Whether "what repeats" fits this axis at all is part of the open card.
+Here the waste is work done at more resolution than the answer needs, not repeated work. Iterative solvers remove small-scale error quickly and large-scale error slowly, so at full resolution the overall shape of the garment is the slowest part to converge. (This section was "What repeats" until R-004 found it didn't fit this entry or multigrid.)
 
 ## 3. The technique
 
@@ -33,7 +34,7 @@ Two mechanisms, kept apart because their conditions differ:
 1. **Coarse levels inside the solver (multigrid).** The solver works on a hierarchy of coarser versions of the same problem. The coarse levels fix the large-scale error cheaply and the fine level fixes the rest. The answer is the fine mesh's answer, to the solver's tolerance.
 2. **Coarse simulation, detail added after (upsampling).** Simulate a coarse mesh, then add mid-scale folds with a learned operator or a cheap secondary pass. The answer is the coarse silhouette plus plausible detail.
 
-These should probably be two entries. They share one here until the card decides how this axis is cut (T-006).
+R-004 kept both on one axis. What separates them is whether the reuse changes the answer: multigrid doesn't, upsampling does (T-006, answered). They should still become two entries, one mechanism each, as METHOD.md step 3 asks.
 
 ## 4. When reuse stays valid
 

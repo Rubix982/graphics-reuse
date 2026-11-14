@@ -14,3 +14,5 @@ _All agents append. No edits to prior entries._
 - **Refit**: updating a bounding-volume tree's boxes after its contents move, keeping the tree's structure, instead of rebuilding it.
 - **The test bed**: a private Blender garment pipeline whose measurements supply the first tested entry. A separate repository; read from here, never changed from here.
 - **style**: the sibling library of design knowledge for coding agents whose method this one adapts. A separate repository.
+- **reuse_changes**: whether a reuse changes only the cost (the result stays exact; failure shows as slowdown) or the answer too (the result is approximate; failure shows as a wrong answer). Added after R-004.
+- **Held-out test**: a test on cases not used to build the thing being tested, drawn by a fixed procedure so the tester's choice can't steer it.

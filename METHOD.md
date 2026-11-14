@@ -36,6 +36,7 @@ Copy `entries/_template.md` to `entries/<technique>.md`. Before calling it done:
 
 - Every number says where it came from: which source and which table, or which measurement.
 - Every condition in section 4 is marked (paper), (measured) or (reasoned).
+- `reuse_changes` is filled. When the reuse changes the answer, section 4 is where the entry earns its place. When it changes only the cost, section 5 should say how the slowdown shows and when to stop reusing (a refit tree is rebuilt once it gets too loose).
 - The one-sentence statement at the top could be observed to be false. A number beats an adjective.
 - One mechanism per entry. If a paper combines two, write two entries and name the other in `also_teaches`.
 

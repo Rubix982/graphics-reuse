@@ -19,19 +19,21 @@ The same reuse patterns turn up in rendering, simulation, geometry processing an
 | across shapes | a result on another shape or body | deformation transfer, garment transfer |
 | across many instances | work paid once and reused for every case | precomputed radiance transfer, learned models |
 
-These six came from about ten examples and haven't been tested yet. Testing them is the open card ([`CARD.md`](CARD.md)).
+These six came from about ten examples. The first card (R-004) sorted twelve techniques onto them, 12 of 12 cleanly, but all twelve came from the conversation that produced the axes, so that only shows the axes fit their own examples. A held-out test is the open card ([`CARD.md`](CARD.md)).
+
+Across all six axes runs a second question: does the reuse change only the cost, or the answer too? Refitting a tree changes only the cost (queries stay correct, just slower as it loosens). Temporal reprojection changes the answer (ghosting when the history is stale). Validity conditions matter most for the second kind.
 
 ## Reading an entry
 
-Each entry in `entries/` follows [`entries/_template.md`](entries/_template.md). Its header names the axis, the sources, `agent_baseline` (what a fresh agent proposed with no entry, or "not checked") and `tested_in` (where the reuse was measured, or empty). Every condition in section 4 is marked with how it is known: stated in a paper, measured, or reasoned from the method and untested.
+Each entry in `entries/` follows [`entries/_template.md`](entries/_template.md). Its header names the axis, `reuse_changes` (cost only, the answer, or depends), the sources, `agent_baseline` (what a fresh agent proposed with no entry, or "not checked") and `tested_in` (where the reuse was measured, or empty). Every condition in section 4 is marked with how it is known: stated in a paper, measured, or reasoned from the method and untested.
 
 ## Entries so far
 
-| Entry | Axis | tested_in |
-|---|---|---|
-| [Garment transfer by surface binding](entries/garment-transfer-surface-binding.md) | across shapes | a private test bed, 2026-11-11 (the transfer; not the relax) |
-| [Warm-starting repeated drapes](entries/warm-start-repeated-drapes.md) | across runs | — |
-| [Coarse-to-fine cloth](entries/coarse-to-fine-cloth.md) | across resolutions | — |
+| Entry | Axis | Reuse changes | tested_in |
+|---|---|---|---|
+| [Garment transfer by surface binding](entries/garment-transfer-surface-binding.md) | across shapes | the answer, by design | a private test bed, 2026-11-11 (the transfer; not the relax) |
+| [Warm-starting repeated drapes](entries/warm-start-repeated-drapes.md) | across runs | depends | — |
+| [Coarse-to-fine cloth](entries/coarse-to-fine-cloth.md) | across resolutions | depends on the mechanism | — |
 
 ## Layout
 

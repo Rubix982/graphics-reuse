@@ -8,7 +8,7 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Parent:** —
 **Opened:** 2026-11-14
 **Question:** The axes (time, space, runs, resolutions, shapes, many instances) came from about ten examples in one conversation. Does each well-known technique across graphics sort onto exactly one axis per mechanism?
-**Answer:** — (CARD.md, R-004)
+**Answer:** Partly (R-004, 2026-11-14). 12 of 12 sorted cleanly, but all twelve came from the conversation that built the axes, so this only shows the axes fit their own examples. Held-out test: R-012.
 
 ### T-002 · Does the reference beat a model that already knows the techniques?
 
@@ -46,11 +46,11 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 
 ### T-006 · Is multigrid reuse, or a faster solver?
 
-**Status:** open
+**Status:** answered
 **Parent:** T-001
 **Opened:** 2026-11-14
 **Question:** Multigrid reuses a coarse answer as a correction but repeats no earlier work. If it doesn't fit, "across resolutions" may be two different things.
-**Answer:** —
+**Answer:** It fits "across resolutions" by mechanism, and it is reuse that can't change the answer (cost only). What separates it from upsampling on the same axis is whether the reuse changes the answer, which is now the `reuse_changes` field (CARD.md, R-004 result).
 
 ### T-007 · Do kinetic data structures cover more than "across time"?
 
@@ -58,4 +58,20 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Parent:** T-001
 **Opened:** 2026-11-14
 **Question:** Kinetic data structures are the formal frame for keeping a structure correct under motion. Do they say anything about the other axes, or is each axis its own literature?
+**Answer:** —
+
+### T-008 · Does the cost-versus-answer split predict where an entry adds most?
+
+**Status:** open
+**Parent:** T-002
+**Opened:** 2026-11-14
+**Question:** For reuse that changes only the cost, the condition is mostly "until it gets too slow", which an agent is likely to know. For reuse that changes the answer, the conditions are specific to the field. Do agent baselines (METHOD.md step 2b) miss more conditions on answer-changing entries than on cost-only ones?
+**Answer:** —
+
+### T-009 · Is "across runs" just "across time" for an outer loop?
+
+**Status:** open
+**Parent:** T-001
+**Opened:** 2026-11-14
+**Question:** None of R-004's twelve techniques landed on "across runs". Inside a simulation, history is the physics; across runs, each run is meant to be independent of history, so carrying it over is an error to guard against. Is that difference enough to keep a separate axis, or does the literature treat both the same way?
 **Answer:** —

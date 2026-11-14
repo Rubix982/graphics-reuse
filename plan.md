@@ -14,14 +14,14 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 
 | ID | Agent | Title | Status |
 |---|---|---|---|
-| R-004 | Researcher | Test the six axes on twelve known techniques (CARD.md) | open |
-| R-011 | Researcher | Agent baseline (METHOD.md step 2b) for the three seed entries | open |
+| R-012 | Researcher | Held-out test of the axes (CARD.md) | open |
+| R-011 | Researcher | Agent baseline (METHOD.md step 2b) for the three seed entries | in-progress |
 
 ## Blocked
 
 | ID | Blocked By |
 |---|---|
-| R-005 to R-010 (one survey per axis) | R-004 |
+| R-005 to R-010 (one survey per axis) | R-012 |
 
 ## Completed This Session
 
@@ -29,7 +29,8 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 - R-001 · Write up the premise dry-run
 - R-002 · Method and entry template, adapted from `style`
 - R-003 · Three seed entries
+- R-004 · Test the six axes on twelve known techniques (12 of 12, but not an independent test)
 
 ## Next Orchestrator Action
 
-When R-004 closes: if the axes hold, unblock R-005 to R-010 in the order the researcher recommends. If they don't, open a ticket to revise the axes first.
+When R-012 closes: if at least 16 of 20 held-out reuse papers sort cleanly, unblock R-005 to R-010 in the order the researcher recommends. If 5 or more don't, open a ticket to revise the axes first.
