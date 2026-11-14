@@ -17,15 +17,9 @@ A card closes with a number, or with a sentence that could have come out the oth
 
 ## Live card
 
-None open (2026-11-14). Next, the user's choice: R-012 (parked, below), the held-out test of the axes. Also open: R-014 and R-016.
-
----
-
-## Parked cards
-
 ### R-012 · Do the axes hold on techniques they weren't built from?
 
-_Opened 2026-11-14. Parked the same day for R-013: whether an entry adds anything over an agent comes before how entries are filed. Resuming needs nothing; the card is ready to run as written._
+_Opened 2026-11-14. Parked the same day for R-013, unparked the same day at the user's request (after R-015). Run as written, except that DBLP answered with a bot check, so the source is the card's named fallback, Semantic Scholar (`agents/researcher/findings/r012/procedure.md`)._
 
 1. **WHERE WE ARE.** The six axes sorted 12 of 12 techniques cleanly (R-004), but all twelve came from the conversation that produced the axes, so the sort could hardly have failed.
 2. **WHAT WE ARE DOING.** Draw graphics papers about speedups by a fixed procedure, and sort each one: is its speedup reuse at all; if so, which axis per mechanism, and does the reuse change only the cost or the answer too. The procedure: search DBLP (or Semantic Scholar, if DBLP can't filter by venue) for papers in ACM Transactions on Graphics, 2000–2025, whose titles contain *fast*, *faster*, *efficient*, *accelerat-* or *real-time*; save the full hit list and the exact query; shuffle it with Python's `random.Random(1114).shuffle`; go down the shuffled list sorting each paper from its abstract, until 20 papers whose speedup is reuse have been sorted. Record every paper looked at, including the ones that aren't reuse.
@@ -35,6 +29,12 @@ _Opened 2026-11-14. Parked the same day for R-013: whether an entry adds anythin
 6. **CONSEQUENCE OF NOT DOING IT.** The library grows under axes that are only known to fit the examples they were made from, and the surveys stay scoped by them.
 
 **Result:** —
+
+---
+
+## Parked cards
+
+None.
 
 ---
 

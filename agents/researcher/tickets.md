@@ -211,7 +211,7 @@ METHOD.md step 2b, skipped when the seed entries were written. For each of the t
 
 ### R-012 · Held-out test of the axes
 
-**Status:** parked
+**Status:** in-progress
 **Type:** research
 **Priority:** high
 **Created:** 2026-11-14
@@ -222,7 +222,7 @@ The live card in `CARD.md`. Search DBLP (or Semantic Scholar, if DBLP can't filt
 
 **Blockers:** none
 
-**Parked:** 2026-11-14, for R-013. Whether an entry adds anything over an agent comes before how entries are filed. Resuming needs nothing: the card in CARD.md is ready to run as written.
+**Parked:** 2026-11-14, for R-013. **Unparked:** 2026-11-14, at the user's request. DBLP's API answered with a bot check, so the source is Semantic Scholar, the card's fallback; the procedure was fixed in `agents/researcher/findings/r012/procedure.md` before the list was drawn.
 
 **Artifacts:** —
 

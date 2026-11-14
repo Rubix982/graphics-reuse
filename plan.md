@@ -16,7 +16,7 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 |---|---|---|---|
 | R-016 | Researcher | Read Dress-1-to-3 in full; rewrite the warm-start entry | open |
 | R-014 | Researcher | Does the paper add anything when the agent is asked about grading directly | open |
-| R-012 | Researcher | Held-out test of the axes | parked |
+| R-012 | Researcher | Held-out test of the axes (the live card) | in-progress |
 
 ## Blocked
 
@@ -36,4 +36,4 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 
 ## Next Orchestrator Action
 
-No card is open. The user's next choice is R-012 (unpark, run as written). Then R-016 (Dress-1-to-3 in full) or R-014.
+R-012 is the live card. Then R-016 (Dress-1-to-3 in full) or R-014.
