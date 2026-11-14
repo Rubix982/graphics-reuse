@@ -285,6 +285,10 @@ The live card in `CARD.md`, at the user's request (2026-11-14): research graphic
 - agents/researcher/findings/r015/a-learned-cloth.md, b-fast-solvers.md, c-differentiable-fitting.md, d-rendering.md (queries, every candidate, the best few in depth, gaps)
 - agents/shared/findings.md → [R-015]
 - private/r015-map.md (git-ignored: the mapping to the test bed's own write-ups)
+- agents/researcher/findings/r015/agent-reports.md (the four agents' final replies, verbatim)
+- agents/researcher/findings/r015/verification.md (claims re-checked against primary sources; where the downloaded sources went; what was left out)
+- sources/r015/ (git-ignored: 18 papers as PDF and text, and the pages behind specific claims)
+- private/r015-briefs.md (git-ignored: the four briefs, verbatim)
 
 **Result:** The card's first branch: Newton runs here without CUDA (CPU, speed untimed), and friction-off fitting, inexact inner drapes and cached sensitivities can be rebuilt inside Blender. Next full reading: R-016.
 
