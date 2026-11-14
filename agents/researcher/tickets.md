@@ -326,7 +326,7 @@ Read Xuan Li et al., "Dress-1-to-3: Single Image to Simulation-Ready 3D Outfit w
 
 ### R-017 · An independent re-sort of R-012's abstracts
 
-**Status:** in-progress
+**Status:** closed
 **Type:** review
 **Priority:** high
 **Created:** 2026-11-14
@@ -337,6 +337,10 @@ R-012's sorter wrote the axes. A fresh agent, given only the first 60 abstracts 
 
 **Blockers:** none
 
-**Artifacts:** —
+**Artifacts:**
+- agents/researcher/findings/r017/resort.md (the second sorter's verdicts on all 60, with the cases the rules didn't settle)
+- agents/researcher/findings/r017/comparison.md (agreement and components)
 
-**Closed:** —
+**Result:** The second sorter's first 20 had 19 clean, so R-012's keep verdict doesn't depend on the sorter. Same reuse verdict on 47 of 48 jointly judged papers (κ 0.96) under R-012's lenient reading, 45 of 48 (κ 0.87) under the strict one; same axes on 18 of 18. Many instances 13 of 20 for both.
+
+**Closed:** 2026-11-14

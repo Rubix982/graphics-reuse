@@ -17,7 +17,7 @@ A card closes with a number, or with a sentence that could have come out the oth
 
 ## Live card
 
-None open (2026-11-14). R-017 (independent re-sort of R-012) is running as a review ticket. Candidates after it: R-014, an axis survey (R-005 to R-010).
+None open (2026-11-14). Candidates: R-014, or an axis survey (R-005 to R-010); R-010 (many instances) would also answer T-016.
 
 ---
 
@@ -62,6 +62,8 @@ _Opened 2026-11-14. Parked the same day for R-013, unparked and closed the same 
 The source was Semantic Scholar, since DBLP answered with a bot check; 354 TOG papers passed the title filter. Going down the list shuffled with seed 1114: 53 papers looked at, 2 without an abstract and 2 whose abstracts don't say where the speed comes from, so 49 judged, 20 of them reuse (41 %). Every verdict quotes its abstract (`agents/researcher/findings/r012/sorted.md`). The two readings differ on one kind of saving the procedure hadn't anticipated: an identical term computed once and shared within one evaluation (common subexpressions; ranks 1 and 52). The library's premise calls exact repeats reuse, but no axis holds them, so under the strict reading they are misfits. Under the lenient reading they are out of scope, and the sample runs to rank 55 (T-015).
 
 The components say more than the count. "Across many instances" took 12 of the 20 papers (learned models, baking, precomputed tables and bases, reduced models), and "across runs" and "across shapes" took none, so the sort is clean partly because one axis is broad (T-016). "Across runs" got none again, which the card counts as evidence for folding it into "across time" (T-009). R-015's need-chosen sample had five, all inside fitting or editing loops (T-013), so the axis may be rare in speed papers and common in optimisation loops. Weaknesses: the sorter wrote the axes, and an independent sort of the same 55 abstracts would measure agreement (not done); Semantic Scholar's coverage of TOG wasn't checked against DBLP.
+
+**Re-checked by R-017 (2026-11-14):** a fresh sorter given only the abstracts and the rules found 19 of its first 20 reuse papers clean, so the verdict doesn't depend on the sorter. It agreed on reuse or not for 47 of 48 jointly judged papers (κ 0.96) under the lenient reading, and on the axes for 18 of 18. It also made the lenient call on shared sub-terms independently. Both sorters are the same model family (`agents/researcher/findings/r017/comparison.md`).
 
 ### R-015 · Does any recent method serve the test bed's largest measured costs under its constraints?
 

@@ -122,7 +122,7 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Parent:** T-001
 **Opened:** 2026-11-14
 **Question:** R-012 found two speedups from computing an identical term once and sharing it (an edge-based FEM formulation, D*'s common-subexpression elimination). The premise calls exact repeats and memoization reuse, "the easy case", but all six axes describe near-repeats along some dimension. Is this a seventh axis ("within one evaluation"), out of scope by design (the premise says tools already handle exact repeats), or part of "across space"? Either answer should be written into README.md.
-**Answer:** —
+**Answer:** — Evidence: R-017's blind second sorter, deciding on its own, called both cases not reuse ("duplicate work removed within one evaluation"), which favours out of scope.
 
 ### T-016 · Is "across many instances" too broad to file by?
 
@@ -130,4 +130,4 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Parent:** T-001
 **Opened:** 2026-11-14
 **Question:** It took 12 of R-012's 20 papers: learned models, baked neural representations, precomputed tables and bases, reduced models, a precomputed Pareto front. They share "paid once, used many times" but have different validity conditions (a learned model fails off its training distribution, a precomputed transport operator when the scene moves). Would splitting it (precomputed from the problem's own data vs learned from other problems) give conditions that differ more between than within? R-010's survey is the natural place to find out.
-**Answer:** —
+**Answer:** — Evidence: R-017's blind second sorter also put 13 of its 20 on it.

@@ -115,3 +115,15 @@ Dress-1-to-3 (SIGGRAPH 2025), read in full, fits a sewing pattern and the cloth'
 - The baseline had six things the paper lacks, among them sensitivities measured against a warm drape at the unchanged cut, and warm drapes for sensitivities with fresh ones for the residual.
 
 Confidence: high that the paper says what the notes say (section-referenced; the text is in `sources/r016/`); low on what the count means, with one baseline run and a branch that depends on which items count as "about the reuse".
+
+## [R-017] Finding: a second, blind sorter reaches R-012's verdict and nearly the same sort
+
+_Date: 2026-11-14_
+
+A fresh agent given only R-012's first 60 abstracts and its sorting rules (no verdicts, no result) found 19 of its first 20 reuse papers clean, against R-012's bar of 16. Over the 48 papers both sorters judged, the reuse-or-not verdict matched on 47 (Cohen's κ 0.96) under R-012's lenient reading and on 45 (κ 0.87) under the strict one. The axes matched on all 18 papers both called reuse. Its axis counts (many instances 13, space 4, resolutions 3, time 2, runs 1, shapes 0) are R-012's lenient counts plus one paper on "across runs". Record: `agents/researcher/findings/r017/`.
+
+- It called shared sub-terms within one evaluation not reuse, independently (T-015).
+- Its one misfit is fine-tuning an earlier model for new conditions, which sits between "across runs" and "across many instances" (T-009, T-013).
+- The one other disagreement is a structure precomputed per asset that enables a faster method (rank 50): reuse for R-012, not for the second sorter.
+
+Confidence: high that R-012's verdict doesn't depend on which of these two sorters sorted; medium that it doesn't depend on the sorter in general, since both are the same model family working from abstracts.

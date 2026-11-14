@@ -1,0 +1,111 @@
+# R-017 · Independent re-sort of 60 abstracts
+
+Second sorter. Worked only from the input file of 60 abstracts (#1 to #60, shuffled order) and the rules and axis definitions in the brief. No other sorter's verdicts were seen. Every paper was sorted, in order, including the ones after the 20th reuse paper.
+
+## Cases the rules didn't settle — each one, and how you decided it (write this as you go, before the counts)
+
+- **A. Removing redundant work inside one evaluation (#1, #52).** #1 attaches data to edges shared by tetrahedra "to avoid redundant computation"; #52 eliminates common subexpressions. Across space allows "neighbouring ... elements in the same computation", so this could look like reuse. Decided: not reuse. Both compute one identical quantity once instead of twice inside the same evaluation, which is a faster formulation (rule 7). I kept across space for cases where a neighbour's result stands in for a quantity that would otherwise be computed separately, and would come out differently, at this point (irradiance caching, ReSTIR).
+- **B. A structure fitted or precomputed per asset, where the abstract says the speed comes from what the structure makes possible (#2, #14, #50).** #2 fits millions of Gaussians once and credits "closed-form solutions" for the speed. #50 subdivides the uv domain "ahead of time" and credits "fewer primitives are submitted". #14 fits a template to each user and credits "the limited number of primitives". Decided: not reuse. I counted precomputation as across many instances only when the abstract credits the stored results with replacing computation that would otherwise be redone (#5, #8, #33, #53). A structure that is cheaper to query is a faster data structure (rule 7).
+- **C. Learned models (#6, #18, #20, #23, #45, #56, #57, #58).** Decided: across many instances when the abstract credits the speed to a trained model that stands in for a simulation, optimisation or fit that would otherwise run for each input (#6, #18, #20, #56, #58). Not reuse when the abstract credits the speed to something else (#45 credits "GPU-based Gauss-Newton"), or when the learned thing is a cheaper algorithm for the task and replaces no costlier computation (#57). Unclear when the abstract says "efficient" but not why (#23). #6 is counted although its novelty is the resilience metric, because its real-time claim rests entirely on the trained generator the paper presents. #58 is the weakest learned-model call: the link between regression and real-time comes from "a real-time ... system based on 3D shape regression" and the title, not from an explicit causal sentence.
+- **D. Sparse sampling plus interpolation (#5, #7, #26), against rule 7's "doing less work".** Decided: across space, following the library's own irradiance-caching example, when values are computed at some points and then read at other points in the same frame. #26's SH grid counts because it stores computed light transport (scattered radiance) that every shading point reads. Hierarchies that aggregate the inputs (Barnes-Hut and FMM in #17 and #19, the octree in #44) are not reuse: each target still computes its own answer, from a compressed version of the sources.
+- **E. Detail synthesised on top of a coarse solution (#9, #54).** Decided: across resolutions when the method runs its own coarse solve, builds the fine result from it, and credits the speedup against a full-resolution solve (#54: "an order of magnitude faster than full numerical simulation of equivalent resolution"). Not reuse for #9, where the coarse stitch mesh is the given input and the abstract credits the speed to the GPU Gauss-Newton solver and to rendering decompositions.
+- **F. Multigrid (#15, #37, #60).** Rule 7 excludes "better numerics", but rule 6 and the library both name multigrid as across resolutions. Decided: across resolutions, cost only, because the library's own example is explicit.
+- **G. #16, starting from the previous intersection-free state.** Decided: not reuse. Every time step takes the previous state as input. The abstract credits the speed to the two-way algorithm, which avoids "repetitive collision testing", and does not present the previous state as a stored result that replaces recomputation.
+- **H. #22, time-varying LQR.** A time-varying LQR controller is usually built once and then reused for whatever state comes up at runtime, but the abstract does not say this. It credits real-time tractability to "linearizing the system dynamics around the input trajectory", which is an approximation. Decided: not reuse.
+- **I. #30, an empirical model with calibrated parameters.** Decided: not reuse. The cheapness comes from the hybrid approximation (an empirical model near the boundary plus an adaptive far-field solver). The abstract does not say that the calibration distils earlier expensive computation, so this differs from a learned model (case C).
+- **J. Precompute once, then edit interactively (#47, #53, #55).** Each edit is a run with a slightly different input, which fits across runs. The work is also "paid once ahead of time", which fits across many instances. Decided: across many instances, by analogy with the library's own PRT example (precompute once, relight many times, filed under many instances). I kept across runs for reuse of an earlier run's own result, such as a warm-started fit.
+- **K. #40, precomputed correction vectors.** The abstract attaches "very fast" to the tiling and thresholding, and attaches the correction vectors to spectral quality. Decided: reuse, across many instances. Relaxation is the expensive step in making blue noise, and the precomputed vectors move it out of every sampling call. That is the reason the method can be fast and blue-noise at once. This is a generous call.
+- **L. #41, the power budget.** The paper's goal is power, not speed. It is not stated whether "leverage optimal Pareto frontiers at runtime" means frontiers computed ahead of time, or how the runtime selection stays cheap. Decided: unclear.
+- **M. #43, a temporal basis built from the whole sequence.** The axis text says "previous frame or step", and this method also uses future frames. Decided: across time and clean. I read the axis as "other frames of the same sequence". No other axis fits better.
+- **N. #47, where the paper's own novelty is not reuse.** The novel parts are the out-of-core GPU algorithms that make the precomputation fast. Decided: reuse, because the abstract states that the caches exist "for accelerating" the lighting pipeline, and the caches are what the system produces.
+- **O. #48, re-using parts.** A part's reduced model is reused for another copy of the same part. This could look like across shapes. Decided: across many instances (instancing one precomputed result), because the target is a copy of the same shape, not a different shape. Re-using a reduced model built for an identical part is cost only.
+- **P. #55, a paper whose main speedup is not reuse.** The "orders of magnitude" gain comes from the geometric algorithm. The real-time editing claim ("After preprocessing ... 20 milliseconds") comes from reusing the per-image preprocessing for every palette. Decided: a paper is reuse if any stated speed source is reuse. Only the reuse mechanism is recorded.
+- **Q. #56, fine-tuning from an earlier fit: misfit.** "Fine-tune the real-time regression model with a few-shot learning strategy" fits across runs (a fit warm-started from an earlier fit on different inputs). It fits across many instances just as well (a model paid for once and adapted for every later environment). Neither the rules nor case J's tie-break separate the two, because the result is paid for ahead of time and also refitted on new inputs. Recorded as a misfit.
+- **R. reuse_changes for ReSTIR (#46).** Recorded as "the answer" for both mechanisms. With correct weights the estimate is unbiased in expectation, but each frame's result differs (correlated noise, lag when the history is stale), which matches the library's reprojection example.
+- **S. Unclear for lack of a mechanism (#23, #31, #49, #51).** #31 names only "various acceleration strategies". #49 says "near realtime" but gives no source for the speed. #51's stated saving is capture effort ("number of necessary motion samples"), and it does not say how the controller runs in real time. For #23 see case C.
+
+## The list
+
+| # | verdict | if reuse: each mechanism → axis · reuse_changes | clean or misfit | reason, quoting the abstract |
+|---|---|---|---|---|
+| 1 | not reuse | | | "the data is associated with edges and tetrahedron-sharing edge-pairs (TSEPs), as opposed to tetrahedra, to avoid redundant computation": a reformulation that removes duplicate work within one evaluation (case A) |
+| 2 | not reuse | | | "This leads to closed-form solutions to the required BRDF evaluation and sampling queries": the speed comes from a closed-form representation (case B) |
+| 3 | not reuse | | | "decomposing spherical filters into a linear combination of simpler isotropic kernels": a faster decomposition. The abstract notes per-pixel variation is "precluding precomputed solutions" and never says ISD precomputes anything |
+| 4 | not reuse | | | "The high speed is achieved with a fast implementation of augmented QR factorization and by using stochastic regularization" |
+| 5 | reuse | precomputed local reconstruction operator → across many instances · depends (exact for the static scene it was built for, approximate under "large-scale dynamic geometry"); per-frame probe radiance read by nearby receivers → across space · the answer | clean | "use the sampled radiance field as input to our precomputed local reconstruction operator"; "every receiver depends only on a small, constant number of nearby radiance probes" (case D) |
+| 6 | reuse | trained phase generator → across many instances · the answer | clean | "apply this metric to train a real-time neural network-based phase generator" (case C) |
+| 7 | reuse | irradiance gathered at cluster centres, interpolated to all shading points → across space · the answer | clean | "The sampled irradiance values are then interpolated at all shading points"; "exploits the spatial coherence of illumination to reduce sampling cost". The illumination cut (an approximation) and the GPU mapping are not reuse (case D) |
+| 8 | reuse | baking the trained parameterisation into a real-time model → across many instances · cost only (stated "lossless") | clean | "We design a lossless procedure for baking the parameterization used during training into a model that achieves real-time rendering". The sparse grid and 2D planes target memory |
+| 9 | not reuse | | | "solved through a GPU-based Gauss-Newton scheme for real-time performance"; rendering via "several decomposition strategies"; the stitch mesh is input (case E) |
+| 10 | not reuse | | | "a fully GPU-driven pipeline with cache-friendly design and novel algorithms" |
+| 11 | not reuse | | | "coarsen the mesh away from the interface for efficiency": doing less work |
+| 12 | not reuse | | | a new kinetic solver, "highly parallelizable by nature, making it ideally suited for implementation on single- or multi-GPU computing platforms" |
+| 13 | not reuse | | | "solved by an explicit Euler method ... our approach requires no training samples or upfront training time" |
+| 14 | not reuse | | | "the limited number of primitives in the tracking template allows us to retain excellent computational performance" (case B) |
+| 15 | reuse | GPU multigrid solver → across resolutions · cost only | clean | "MiNNIE has a specially tailored GPU multigrid solver including a modified skinning-space interpolation scheme, a novel vertex Vanka smoother" (case F) |
+| 16 | not reuse | | | "launches an optimization from both ends of the intermediate time-integrated state and the previous intersection-free state": a new algorithm that avoids "repetitive collision testing" (case G) |
+| 17 | not reuse | | | "accelerated kernels based on ... direct or fast summation methods (Barnes-Hut or fast multipole methods)" on CPU and GPU (case D) |
+| 18 | reuse | learned motion-dependent deformation and texture model → across many instances · the answer | clean | "dependent on skeletal body motion in an efficient data-driven way, without requiring complex physics simulation" (case C) |
+| 19 | not reuse | | | "a modified Barnes-Hut acceleration approach": a hierarchical approximation within one evaluation (case D) |
+| 20 | reuse | learned clothing model → across many instances · the answer | clean | "learning clothing models that enables the simultaneous animation of thousands of detailed garments in real-time"; "treats training data as a 'black box'" (case C) |
+| 21 | not reuse | | | "a novel continuous formulation of the weighted locally optimal projection (WLOP) operator based on a Gaussian mixture describing the input point density" |
+| 22 | not reuse | | | "made tractable in real-time by linearizing the system dynamics around the input trajectory, and then using a time-varying linear quadratic regulator": the speed is credited to approximation (case H) |
+| 23 | unclear | | | "CharacterGen introduces a streamlined generation pipeline": efficiency is claimed but its source is not stated (cases C, S) |
+| 24 | not reuse | | | "a new mutation strategy ... leading to more efficient exploration of light transport features": better sampling. MLT's chain reuse is inherited, not the contribution |
+| 25 | no abstract | | | (no abstract available) |
+| 26 | reuse | 3D SH grid of scattered radiance filled by light tracing, read by every shading point → across space · the answer | clean | "contributing power to a 3D grid of spherical harmonic coefficients that store the directional distribution of scattered radiance everywhere in the hair volume. Then ... integrating the stored radiance" (case D) |
+| 27 | not reuse | | | "evaluate the radiance field only within the enclosed region, greatly reducing the number of samples required": culling |
+| 28 | not reuse | | | "the separation can be done with just two images": fewer measurements, not reuse of computation |
+| 29 | not reuse | | | "leverages the sparsity and flexibility of point clouds"; "fast conversion of point clouds into SDFs" |
+| 30 | not reuse | | | "hybrid modeling that deftly combines our novel far-field adaptive block-based fluid simulator with parametric empirical models" (case I) |
+| 31 | unclear | | | "Various acceleration strategies allow for a performance/quality tradeoff": the strategies are not named (case S) |
+| 32 | not reuse | | | "a dynamically moving local domain ... improves efficiency by employing a slender domain": doing less work |
+| 33 | reuse | appearances baked into static textures → across many instances · the answer ("comparable quality") | clean | "computes expression-, pose-, and view-dependent appearances that can be baked into static textures for efficient rasterization" |
+| 34 | not reuse | | | "a real-time solution to this optimization problem using off-the-shelf graphics hardware" |
+| 35 | no abstract | | | (no abstract available) |
+| 36 | not reuse | | | "a set of objective functions and constraints that lead to linear time analytical first derivatives" |
+| 37 | reuse | Galerkin multigrid → across resolutions · cost only | clean | "a simple yet efficient multigrid scheme to simulate high-resolution deformable objects" (case F) |
+| 38 | not reuse | | | "an efficient data-parallel algorithm for building large hash tables of millions of elements in real-time" |
+| 39 | not reuse | | | "submap-based, and uncertainty-aware global pose optimization"; "implemented the proposed algorithm on the GPU" |
+| 40 | reuse | correction vectors precomputed by relaxation, used in every sampling call → across many instances · the answer | clean | "Pre-computed correction vectors, obtained using relaxation, are used to improve the spectral characteristics of the sampling pattern" (case K) |
+| 41 | unclear | | | "a two-step algorithm to efficiently explore the vast power-error space and leverage optimal Pareto frontiers at runtime": not said whether the frontiers are computed ahead of time (case L) |
+| 42 | not reuse | | | "partitions the image into 2D blocks, with a small band of additional data buffered along each block perimeter"; "total memory bandwidth is reduced": parallel and GPU memory organisation |
+| 43 | reuse | temporal basis built from all frames' noisy solutions, each frame projected onto it → across time · the answer | clean | "The variation of these noisy solutions over time is then used to create a smooth basis. Finally, the noisy solutions are projected onto the smooth basis" (case M) |
+| 44 | not reuse | | | "a new octree-based neighborhood search method" |
+| 45 | not reuse | | | "To achieve real-time rates, we phrase the model fitting ... based on a highly efficient GPU-based Gauss-Newton optimizer" (case C) |
+| 46 | reuse | spatial reservoir reuse from neighbours → across space · the answer; subpixel-tracking temporal reuse → across time · the answer | clean | "leverage sample reuse from neighbors to efficiently evaluate the path integral"; "We design novel subpixel-tracking temporal reuse" (case R) |
+| 47 | reuse | precomputed sparse directional occlusion caches → across many instances · the answer | clean | "a novel system for precomputing sparse directional occlusion caches. These caches are used for accelerating a fast cinematic lighting pipeline" (cases J, N) |
+| 48 | reuse | precomputed reduced model per domain → across many instances · the answer; re-use of a part's reduced model → across many instances · cost only | clean | "build a reduced deformable model for each domain"; "parts can be re-used and precomputation times shortened" (case O) |
+| 49 | unclear | | | "propagates sparse depth to every pixel in near realtime": the source of the speed is not stated (case S) |
+| 50 | not reuse | | | "subdivide the u, v domain of each face ahead of time, generating a quadtree structure"; the speed is credited to "fewer primitives are submitted" (case B) |
+| 51 | unclear | | | "significantly reducing the number of necessary motion samples": a capture saving. How the controller is real-time is not stated (case S) |
+| 52 | not reuse | | | "symbolically executing the expression graph at compile time to eliminate common subexpressions ... computes a factorization of this derivative graph" (case A) |
+| 53 | reuse | precomputed basis functions, one per manipulator DOF → across many instances · cost only | clean | "real-time response ... by precomputing a set of scalar-valued basis functions that correspond to the degrees of freedom of the manipulator" (case J) |
+| 54 | reuse | coarse solver flow drives synthesised subgrid turbulence → across resolutions · the answer | clean | "From the large-scale flow simulated by the solver, we model the production and behavior of turbulent energy"; "an order of magnitude faster than full numerical simulation of equivalent resolution" (case E) |
+| 55 | reuse | per-image preprocessing reused for every palette edit → across many instances · cost only | clean | "After preprocessing, our algorithm can decompose 6 MP images into layers in 20 milliseconds". The main "orders of magnitude" gain is the geometric algorithm, not reuse (cases J, P) |
+| 56 | reuse | learned regression for inference → across many instances · the answer; few-shot fine-tuning of the earlier regression for a new environment → across runs and across many instances equally · the answer | misfit: fine-tuning fits across runs and across many instances equally well | "we learn a regression for real-time inference from the image space to the 3D shape and texture"; "given a new video, we fine-tune the real-time regression model with a few-shot learning strategy" (case Q) |
+| 57 | not reuse | | | "automatically synthesize efficient, high-quality demosaicking algorithms": cheaper programs found by search (case C) |
+| 58 | reuse (20th reuse paper: stopping point) | user-specific learned regressor → across many instances · the answer | clean | "the 3D positions of facial landmark points are inferred by a regressor from 2D video frames"; "a real-time performance-driven facial animation system based on 3D shape regression" (case C, weakest call) |
+| 59 | not reuse | | | "operating within a reduced dimensional subspace of harmonic maps"; "closed-form expressions"; "The entire pipeline is carried out on the GPU" |
+| 60 | reuse | specialised multigrid Poisson solver → across resolutions · cost only | clean | "To further accelerate the simulation, we introduce a specialized multi-grid algorithm for solving the Poisson equation". The tall cells are doing less work (case F) |
+
+## Counts
+
+**Stopping point: #58.** My count of reuse papers reaches 20 at #58. One more reuse paper (#60) follows, for 21 in all 60.
+
+**Among the first 20 reuse papers (#5 to #58): 19 clean, 1 misfit.** The misfit is #56: few-shot fine-tuning fits across runs and across many instances equally well. No mechanism fit no axis.
+
+**Papers per axis, first 20 reuse papers** (a paper with two mechanisms on different axes counts on both; #48 has two mechanisms on the same axis and counts once):
+
+- across time: 2 (#43, #46)
+- across space: 4 (#5, #7, #26, #46)
+- across runs: 1 (#56, the misfit mechanism)
+- across resolutions: 3 (#15, #37, #54)
+- across shapes: 0
+- across many instances: 13 (#5, #6, #8, #18, #20, #33, #40, #47, #48, #53, #55, #56, #58)
+
+That is 23 paper-axis entries over 20 papers (#5, #46 and #56 each sit on two axes). Over all 21 reuse papers, adding #60 makes across resolutions 4.
+
+**reuse_changes per mechanism, first 20 reuse papers (24 mechanisms):** cost only 6 (#8, #15, #37, #48 part re-use, #53, #55); the answer 17; depends 1 (#5's precomputed operator). Over all 21 reuse papers (25 mechanisms), adding #60: cost only 7, the answer 17, depends 1.
+
+**Papers judged and reuse share.** All 60: 2 no abstract (#25, #35), 5 unclear (#23, #31, #41, #49, #51), 53 judged, 21 reuse and 32 not reuse, so the reuse share is 21/53 = 39.6%. Up to the stopping point (#1 to #58): 51 judged, 20 reuse and 31 not reuse, so the reuse share is 20/51 = 39.2%.
