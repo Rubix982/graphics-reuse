@@ -15,7 +15,6 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 | ID | Agent | Title | Status |
 |---|---|---|---|
 | R-012 | Researcher | Held-out test of the axes (CARD.md) | open |
-| R-011 | Researcher | Agent baseline (METHOD.md step 2b) for the three seed entries | in-progress |
 
 ## Blocked
 
@@ -30,6 +29,7 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 - R-002 · Method and entry template, adapted from `style`
 - R-003 · Three seed entries
 - R-004 · Test the six axes on twelve known techniques (12 of 12, but not an independent test)
+- R-011 · Agent baselines for the three seed entries (11 of 18 conditions named; circular; measurements are what the agent lacked)
 
 ## Next Orchestrator Action
 

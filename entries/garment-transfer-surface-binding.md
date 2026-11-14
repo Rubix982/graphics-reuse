@@ -9,7 +9,7 @@ source_docs:
   - Blender manual, Surface Deform and Mesh Deform modifiers.
 also_teaches: [pattern grading as constrained optimisation (Brouet et al.), cage-based deformation (Mesh Deform)]
 patterns: [transfer-then-relax, bind-to-surface]
-agent_baseline: not checked
+agent_baseline: "R-011, 2026-11-14 (claude-opus-5-5, fresh, no tools): proposed a different technique first (warm start from the settled garment, body morphed inside the simulation, plus caching and reordering) and rejected surface binding for this height gap. Named 3 of 5 conditions, partly 1, disputed 1 (the short relax), and all 4 checks. What only this entry has is the test bed's measurements. Scoring: agents/researcher/findings/r011/score.md"
 tested_in: [a private test bed, 2026-11-11, its own notes. The transfer only]
 ---
 
@@ -46,7 +46,7 @@ Constant here means it follows from how the method works; there is one measureme
 
 - Valid only where the garment lies close to the surface it is bound to. (measured: kameez and trousers carried with 1 and 0 points inside the new body; the dupatta's free end tore)
 - When the two bodies' meshes don't share numbering, the binding has to go through a correspondence (nearest point, or a proper map), not through vertex index. (measured: the two bodies shared their point count, but only 0.4 % of points were within 1 cm by index)
-- The relax afterwards should be short when the binding is close, because the carried shape is already near rest. (reasoned, untested)
+- The relax afterwards should be short when the binding is close, because the carried shape is already near rest. (reasoned, untested; disputed by the R-011 agent baseline, which argues the relax has to pull back the whole grading stretch, 6–7 % at the median here, so it is large motion. Only a timed relax settles it.)
 
 ### Varies
 

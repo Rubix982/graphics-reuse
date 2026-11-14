@@ -48,3 +48,17 @@ Twelve techniques sorted onto the six axes, 12 of 12 cleanly (14 mechanisms: tim
 - Whether the reuse changes only the cost or the answer too cuts across every axis: cost only 4, the answer 6, depends 2. Cost-only reuse fails by slowing down; answer-changing reuse fails by giving a wrong answer, which is where validity conditions carry content. Added as `reuse_changes`.
 
 Confidence: high on the sort itself (each technique's mechanism is standard); low on what it says about the axes, because the test set wasn't independent of them; medium on the cost-versus-answer split, which is a property of each technique rather than of the axes, but rests on these twelve.
+
+## [R-011] Finding: an agent already knows what the seed entries say; the measurements are what it lacks
+
+_Date: 2026-11-14_
+
+Three fresh agents, given each seed entry's wasted work with no hint of the technique, named 11 of the entries' 18 conditions, partly named 3, disputed 1 and missed 3, and named every check. The misses were all about mechanisms the agent didn't propose (multigrid, learned upsampling). Each answer also had conditions the entry lacked. Scoring and the verbatim answers: `agents/researcher/findings/r011/`.
+
+- Circular: the entries were written by the same model from abstracts and memory, so the agent was always going to know most of them. METHOD.md step 2b now says so.
+- What only an entry carried was the test bed's measurements. The agent guessed 9 % stretch where the test bed measured 6–7 % at the median and 22–30 % at the 95th percentile.
+- One reasoned condition is disputed: the entry says the relax after surface binding is short, the agent says it has to undo the grading stretch. Only a timed relax settles it.
+- Two agents independently named the cloth's rest shape as the main thing to get right when restarting from a settled drape.
+- The coarse-to-fine baseline named a condition that matters for flared garments: their outline depends on their folds, so a coarse mesh changes the silhouette.
+
+Confidence: high that the counts are as scored (answers saved verbatim); low on what they say about entries in general, given the circularity and one run per entry; medium that entries add over an agent mainly through measurements and full reading, which is what the result points to but hasn't shown on an entry written that way.

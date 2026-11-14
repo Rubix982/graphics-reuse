@@ -30,6 +30,8 @@ An entry should carry what the agent doesn't already know. `style`'s C-007 found
 
 The baseline goes stale when the model changes. Re-check it before relying on an old one.
 
+Step 2b is circular when the entry was written by the same model from its own knowledge: the agent will name what the entry says because the entry came from the same place. R-011 found this on the three seed entries, which were written from abstracts and memory. What the step can show is the part of an entry that came from outside the model: a measurement, or a detail read in a source in full. Read the sources in full before writing (step 2), and expect the entry's value to sit in those parts.
+
 ## 3. Write the entry
 
 Copy `entries/_template.md` to `entries/<technique>.md`. Before calling it done:
@@ -60,5 +62,5 @@ For the agent purpose (`threads.md`, T-002): give a fresh agent the repeated wor
 - One test bed at a time. A reuse that holds in the test bed's cloth may not hold in another solver. `tested_in` names where it was measured, and nothing more is claimed.
 - Timings are noisy. A 2026 replay of software-optimisation benchmarks found only 39 of GSO's 102 tasks gave stable results across hardware (arXiv 2607.01211). Time each arm more than once on one machine and report the spread.
 - The seed-to-seed spread is only as good as the number of seeds behind it.
-- Step 2b uses one agent run, and agents vary between runs.
+- Step 2b uses one agent run, and agents vary between runs. It is also scored by a model of the same family as the agent.
 - Entries from reading alone carry the sources' own conditions, which are stated for the paper's test scenes, not for yours.

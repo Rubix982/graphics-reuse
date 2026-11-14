@@ -9,7 +9,7 @@ source_docs:
   - Rahul Narain, Armin Samii, James F. O'Brien. Adaptive Anisotropic Remeshing for Cloth Simulation. ACM Transactions on Graphics 31(6), SIGGRAPH Asia 2012. (From memory; not yet re-checked.)
 also_teaches: [adaptive remeshing (Narain et al.): refine the mesh only where the cloth bends]
 patterns: [coarse-to-fine, multigrid, upsampling]
-agent_baseline: not checked
+agent_baseline: "R-011, 2026-11-14 (claude-opus-5-5, fresh, no tools): proposed a coarse drape followed by a short full-resolution settle, not multigrid or learned upsampling. Named 3 of 7 conditions, partly 1, missed the 3 about the mechanisms it didn't propose. Added conditions this entry lacks, chiefly that a flared garment's outline depends on its folds, and that mass and stiffness don't carry across resolution in Blender. Scoring: agents/researcher/findings/r011/score.md"
 tested_in: []
 ---
 

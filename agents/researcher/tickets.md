@@ -189,7 +189,7 @@ Per the shared description. Start from: precomputed radiance transfer (Sloan, Ka
 
 ### R-011 · Agent baseline for the three seed entries
 
-**Status:** in-progress
+**Status:** closed
 **Type:** research
 **Priority:** low
 **Created:** 2026-11-14
@@ -200,9 +200,14 @@ METHOD.md step 2b, skipped when the seed entries were written. For each of the t
 
 **Blockers:** none
 
-**Artifacts:** —
+**Artifacts:**
+- agents/researcher/findings/r011/ (three prompts, three verbatim answers, score.md)
+- the three entries' `agent_baseline` headers; the disputed relax condition in entries/garment-transfer-surface-binding.md
+- METHOD.md step 2b (the circularity note, read sources in full)
 
-**Closed:** —
+**Result:** The baseline named 11 of 18 conditions, partly 3, disputed 1 and missed 3 (all about mechanisms it didn't propose), named every check, and added conditions the entries lacked. Circular, because the entries came from the same model's knowledge. What only the entries carried was the test bed's measurements.
+
+**Closed:** 2026-11-14
 
 ### R-012 · Held-out test of the axes
 

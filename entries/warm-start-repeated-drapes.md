@@ -8,7 +8,7 @@ source_docs:
   - Eugene L. Allgower, Kurt Georg. Numerical Continuation Methods: An Introduction. Springer, 1990.
 also_teaches: [warm starting across time steps (Catto), which belongs under "across time"]
 patterns: [warm-start, continuation]
-agent_baseline: not checked
+agent_baseline: "R-011, 2026-11-14 (claude-opus-5-5, fresh, no tools): proposed this technique unprompted. Named 5 of 6 conditions and partly the sixth, and added several this entry lacks (the rest-shape plumbing, lengthening versus shortening, warm starts for sensitivities with fresh drapes for the residual, four cheap tests). As agent context this entry adds nothing yet. Scoring: agents/researcher/findings/r011/score.md"
 tested_in: []
 ---
 

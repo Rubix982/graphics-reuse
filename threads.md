@@ -17,7 +17,7 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Opened:** 2026-11-14
 **Question:** As context for an AI tool, do entries with validity conditions raise the share of reuse proposals that pass a test bed's checks, compared with a model given no entries? `style`'s C-007 (an agent already followed 5 of an entry's 6 rules) is early evidence the answer could be no.
 **Resume needs:** several tested entries in one test bed; the test bed has the checks (crossings, silhouette, lengths). METHOD.md step 4b.
-**Answer:** —
+**Answer:** — Evidence so far (R-011, 2026-11-14): on the three seed entries, a fresh agent named 11 of 18 conditions and every check, and added conditions the entries lacked. Circular, since the entries came from the same model's knowledge, but it says entries add over an agent only where they carry something from outside the model, such as the test bed's measurements.
 
 ### T-003 · Can the recognition habit be measured?
 
@@ -66,7 +66,7 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Parent:** T-002
 **Opened:** 2026-11-14
 **Question:** For reuse that changes only the cost, the condition is mostly "until it gets too slow", which an agent is likely to know. For reuse that changes the answer, the conditions are specific to the field. Do agent baselines (METHOD.md step 2b) miss more conditions on answer-changing entries than on cost-only ones?
-**Answer:** —
+**Answer:** — Not testable yet: R-011's three entries all change the answer (or depend), with no cost-only entry to compare, and the entries came from the same model's knowledge.
 
 ### T-009 · Is "across runs" just "across time" for an outer loop?
 
