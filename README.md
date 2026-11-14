@@ -4,7 +4,7 @@ A reference of reuse techniques in graphics, drawn from the literature. Each ent
 
 Started 2026-11-14. Phase 1 is literature only: reading papers and writing entries. No tooling yet.
 
-The method is adapted from `style`, a sibling repository that collects design knowledge for coding agents. The two make entries the same way (problem first, primary sources, the conditions written down, checked against what an agent already does) and test them differently: `style` uses a blind pick by a judge, this library a measurement against a fresh full computation. See [`METHOD.md`](METHOD.md).
+The method is adapted from [patternbook](https://github.com/Rubix982/patternbook), a sibling repository that collects design knowledge for coding agents. The project's notes call it `style`, its local name. The two make entries the same way (problem first, primary sources, the conditions written down, checked against what an agent already does) and test them differently: `style` uses a blind pick by a judge, this library a measurement against a fresh full computation. See [`METHOD.md`](METHOD.md).
 
 ## Organised by what gets reused
 
