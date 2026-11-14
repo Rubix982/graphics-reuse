@@ -62,3 +62,16 @@ Three fresh agents, given each seed entry's wasted work with no hint of the tech
 - The coarse-to-fine baseline named a condition that matters for flared garments: their outline depends on their folds, so a coarse mesh changes the silhouette.
 
 Confidence: high that the counts are as scored (answers saved verbatim); low on what they say about entries in general, given the circularity and one run per entry; medium that entries add over an agent mainly through measurements and full reading, which is what the result points to but hasn't shown on an entry written that way.
+
+## [R-013] Finding: a full reading added a reframe, not more conditions inside the agents' frame
+
+_Date: 2026-11-14_
+
+Brouet et al. 2012 read in full; 16 items from it, fixed before two of three baseline runs were read, scored against three runs of the garment-transfer prompt. 2 named, 3 partly, 11 by none, 6 of them general. That clears the card's branch, so reading in full is the rule. All six general items belong to grading (adjust the garment and pattern to the new body, keeping the design), a goal the prompt didn't pose and no run raised. Inside the agents' frame (match a fresh drape of the same pattern) the paper added nothing they missed outright. Full scoring: `agents/researcher/findings/r013/score.md`.
+
+- New entry: `entries/design-preserving-garment-transfer.md`, the first written from a full reading.
+- The test bed's own review accepted its Surface Deform result as grading for the kameez and trousers, so the reframed question is the one the test bed has for those garments.
+- The relax dispute was two rest shapes: toward the original pattern the relax undoes the stretch (6–7 % at the median), toward a re-extracted graded pattern it starts almost at rest (L²-stretch 1.0002–1.003).
+- The agents covered ground the paper doesn't (it is purely geometric): Blender's rest shape key, morphing the body inside the simulation, stopping at convergence, caching, measuring the fresh drapes' own spread.
+
+Confidence: high that the paper says what the notes say (page-referenced, checkable by the user); medium on the counts, since the scorer is the same model family and the item grain is the scorer's; low that the result holds beyond one paper and one entry.

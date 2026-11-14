@@ -32,6 +32,7 @@ Each entry in `entries/` follows [`entries/_template.md`](entries/_template.md).
 | Entry | Axis | Reuse changes | tested_in |
 |---|---|---|---|
 | [Garment transfer by surface binding](entries/garment-transfer-surface-binding.md) | across shapes | the answer, by design | a private test bed, 2026-11-11 (the transfer; not the relax) |
+| [Design-preserving garment transfer](entries/design-preserving-garment-transfer.md) (from a full reading of Brouet et al. 2012) | across shapes | the answer, by design | — |
 | [Warm-starting repeated drapes](entries/warm-start-repeated-drapes.md) | across runs | depends | — |
 | [Coarse-to-fine cloth](entries/coarse-to-fine-cloth.md) | across resolutions | depends on the mechanism | — |
 

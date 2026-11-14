@@ -15,18 +15,9 @@ A card closes with a number, or with a sentence that could have come out the oth
 
 ---
 
-## Live card · R-013 · Does an entry written from a full reading add anything over an agent?
+## Live card
 
-_Opened 2026-11-14._
-
-1. **WHERE WE ARE.** A fresh agent named 11 of the seed entries' 18 conditions (R-011); the entries were written from abstracts by the same model, and what only they carried was the test bed's measurements.
-2. **WHAT WE ARE DOING.** Read Brouet et al. 2012 in full, rewrite `entries/garment-transfer-surface-binding.md` from that reading with every condition marked and page-referenced, and compare it against three runs of R-011's garment-transfer baseline prompt, unchanged: the saved answer and two new runs.
-3. **WHY.** Whether an entry built from a full reading carries anything an agent doesn't is unknown, and the library's value as agent context depends on it.
-4. **WHAT IS AFFECTED.** The garment-transfer entry; METHOD.md step 2b; T-002; whether Phase 1's literature entries are worth writing as agent context or only as a map for their reader.
-5. **CONCLUSION IF WE DO IT.** Count the entry's conditions and numbers taken from the paper that none of the three baseline runs named. If 3 or more: full reading adds over an agent, and reading in full becomes the rule for every entry. If 0 or 1: even a fully read entry adds little as agent context, its value as agent context rests on measurements, and the README says the literature entries are mainly a map for their reader. If 2: inconclusive; repeat with a second paper.
-6. **CONSEQUENCE OF NOT DOING IT.** The library's claim to help an agent stays untested, and R-012 would test how to file entries whose value is unknown.
-
-**Result:** —
+None open (2026-11-14). Candidates: R-014, which asks an agent about grading directly to see whether the paper adds anything inside its own frame, and R-012 (parked, below).
 
 ---
 
@@ -48,6 +39,25 @@ _Opened 2026-11-14. Parked the same day for R-013: whether an entry adds anythin
 ---
 
 ## Closed cards
+
+### R-013 · Does an entry written from a full reading add anything over an agent?
+
+_Opened and closed 2026-11-14._
+
+1. **WHERE WE ARE.** A fresh agent named 11 of the seed entries' 18 conditions (R-011); the entries were written from abstracts by the same model, and what only they carried was the test bed's measurements.
+2. **WHAT WE ARE DOING.** Read Brouet et al. 2012 in full, rewrite `entries/garment-transfer-surface-binding.md` from that reading with every condition marked and page-referenced, and compare it against three runs of R-011's garment-transfer baseline prompt, unchanged: the saved answer and two new runs.
+3. **WHY.** Whether an entry built from a full reading carries anything an agent doesn't is unknown, and the library's value as agent context depends on it.
+4. **WHAT IS AFFECTED.** The garment-transfer entry; METHOD.md step 2b; T-002; whether Phase 1's literature entries are worth writing as agent context or only as a map for their reader.
+5. **CONCLUSION IF WE DO IT.** Count the entry's conditions and numbers taken from the paper that none of the three baseline runs named. If 3 or more: full reading adds over an agent, and reading in full becomes the rule for every entry. If 0 or 1: even a fully read entry adds little as agent context, its value as agent context rests on measurements, and the README says the literature entries are mainly a map for their reader. If 2: inconclusive; repeat with a second paper.
+6. **CONSEQUENCE OF NOT DOING IT.** The library's claim to help an agent stays untested, and R-012 would test how to file entries whose value is unknown.
+
+**Result (2026-11-14): 11 of 16 paper items were named by none of the three runs, 6 of them general. Branch taken: reading in full is the rule. The addition came as a reframe.**
+
+The paper describes a different mechanism from surface binding, so the reading produced a new entry, `entries/design-preserving-garment-transfer.md`, and added the paper's conditions to the surface-binding entry (one mechanism per entry, METHOD.md step 3). The 16 items were fixed in `agents/researcher/findings/r013/brouet2012-notes.md` before runs 2 and 3 were read. Against the runs: 2 named, 3 partly, 11 by none. Leaving out the five items that only matter inside the paper's own method, 6 general items were named by none. Every count clears the branch's 3. Full table: `agents/researcher/findings/r013/score.md`.
+
+Reading the components changes what the number means. All six general items belong to grading, an adjusted garment and pattern that keep the design on the new body. The prompt asked about matching a fresh drape of the same pattern, and none of the three runs asked whether the garment should be graded instead. Inside that same-garment frame the paper added nothing the agents missed outright. So the full reading added a different question, with its criteria and numbers; it didn't add conditions inside the agents' frame. The test bed's own verdict on Surface Deform, "accepted as grading" for the kameez and trousers, says the reframed question is the one the test bed has. The same reframe settles the disputed relax: toward the original pattern it undoes the stretch, toward a re-extracted graded pattern it starts almost at rest (L²-stretch 1.0002–1.003).
+
+Not settled: whether an agent asked about grading directly would name the six items. That's R-014.
 
 ### R-004 · Do the six axes hold?
 

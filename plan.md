@@ -14,7 +14,7 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 
 | ID | Agent | Title | Status |
 |---|---|---|---|
-| R-013 | Researcher | Rewrite the garment-transfer entry from a full reading of Brouet et al. 2012 (CARD.md) | blocked: the PDF |
+| R-014 | Researcher | Does the paper add anything when the agent is asked about grading directly | open |
 | R-012 | Researcher | Held-out test of the axes | parked |
 
 ## Blocked
@@ -22,8 +22,6 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 | ID | Blocked By |
 |---|---|
 | R-005 to R-010 (one survey per axis) | R-012 (parked) |
-| R-013 | the PDF, saved by hand to sources/ |
-
 ## Completed This Session
 
 - O-001 · Initialize project structure
@@ -32,7 +30,8 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 - R-003 · Three seed entries
 - R-004 · Test the six axes on twelve known techniques (12 of 12, but not an independent test)
 - R-011 · Agent baselines for the three seed entries (11 of 18 conditions named; circular; measurements are what the agent lacked)
+- R-013 · Brouet et al. 2012 read in full (11 of 16 paper items named by no agent run; the addition was a reframe toward grading)
 
 ## Next Orchestrator Action
 
-When the PDF is in `sources/`, unblock R-013. When R-013 closes, follow its card's branch (full reading as the rule, or the README says literature entries are mainly a map for their reader), then resume R-012.
+No card is open. The user picks the next one: R-014 (grading asked directly), R-012 (held-out test of the axes), or the next paper to read in full.

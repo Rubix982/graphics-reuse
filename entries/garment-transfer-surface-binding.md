@@ -21,7 +21,7 @@ tested_in: [a private test bed, 2026-11-11, its own notes. The transfer only]
 
 ## 1. Sources
 
-Sumner and Popović give the general method: carry a deformation from one mesh to another through a correspondence between them. Brouet et al. are specific to garments and treat transfer as pattern grading. They turn a pattern-maker's grading rules into geometric requirements (keep the design, keep proportions, keep the fit) and solve for the transferred garment as a constrained optimisation, several layers at once. Neither paper has been read in full for this entry; what is said of them here comes from their abstracts. The measurement is the test bed's own record.
+Sumner and Popović give the general method: carry a deformation from one mesh to another through a correspondence between them. Brouet et al. are specific to garments and treat transfer as pattern grading. They turn a pattern-maker's grading rules into geometric requirements (keep the design, keep proportions, keep the fit) and solve for the transferred garment as a constrained optimisation, several layers at once. Brouet et al. was read in full on 2026-11-14 (notes in `agents/researcher/findings/r013/brouet2012-notes.md`) and now has its own entry, `design-preserving-garment-transfer.md`. Sumner and Popović is known here from its abstract and from Brouet et al.'s account of it. The measurement is the test bed's own record.
 
 ## 2. What work is wasted
 
@@ -31,7 +31,7 @@ A garment that has already settled on one body is draped again from its flat pat
 
 Bind each point of the draped garment to the nearby surface of the body it was draped on, then move the binding to the new body; the garment follows in one step. In Blender this is the Surface Deform modifier. Mesh Deform is the version with a cage, a coarse closed mesh around the body. The full technique as intended is transfer, then a short relax under the cloth solver, so the garment settles under gravity on the new body.
 
-Brouet et al. is the better-founded version of the same move: it grades the garment on purpose, under a pattern-maker's rules, where surface binding grades it as a side effect of following the body.
+Brouet et al. is the better-founded version of the same move: it grades the garment on purpose, under a pattern-maker's rules, where surface binding grades it as a side effect of following the body. When grading is the goal, see `design-preserving-garment-transfer.md`.
 
 ## 4. When reuse stays valid
 
@@ -46,7 +46,8 @@ Constant here means it follows from how the method works; there is one measureme
 
 - Valid only where the garment lies close to the surface it is bound to. (measured: kameez and trousers carried with 1 and 0 points inside the new body; the dupatta's free end tore)
 - When the two bodies' meshes don't share numbering, the binding has to go through a correspondence (nearest point, or a proper map), not through vertex index. (measured: the two bodies shared their point count, but only 0.4 % of points were within 1 cm by index)
-- The relax afterwards should be short when the binding is close, because the carried shape is already near rest. (reasoned, untested; disputed by the R-011 agent baseline, which argues the relax has to pull back the whole grading stretch, 6–7 % at the median here, so it is large motion. Only a timed relax settles it.)
+- Nearest-point binding lets the garment slide along the new body. Brouet et al. take each reference in a direction orthogonal to the local bone instead, which keeps garment points at the same height along a limb. (paper: Brouet et al., Section 4.1, Fig. 6) The test bed's test used nearest-point binding.
+- How long the relax afterwards takes depends on the rest shape. Relaxing toward the **original** pattern has to undo the grading stretch, 6–7 % at the median here, which is large motion; R-011's agent baseline argued this. Relaxing toward a pattern re-extracted from the transferred garment would start almost at rest: Brouet et al.'s re-extracted patterns have L²-stretch 1.0002–1.003 (Section 5.5). Surface binding's output isn't built to flatten cleanly, so for this technique the second route is untested. (reasoned from the paper's number and the test bed's measurement; R-013)
 
 ### Varies
 
@@ -54,6 +55,7 @@ Constant here means it follows from how the method works; there is one measureme
 
 ## 5. When it doesn't apply
 
+- In loose regions surface binding carries the garment with whichever body surface it's bound to. Brouet et al. weight loose regions toward keeping their shape instead (relative-location weight 0.5 there against 1000 at borders and tight regions; Section 5.2).
 - Free-hanging cloth bound to distant parts of the body tears. In the test bed the dupatta's free end stretched to 4.9× its edge length at the 95th percentile, with 96 points inside the new body; it needs its own drape. Whether this holds for any surface binding or only for Blender's is T-004.
 - A garment of fixed size (a dupatta of a set length) comes out resized with the body.
 - When the same garment, unchanged, has to hang on the new body, the transfer gives the wrong answer by design. Only the relax afterwards could recover it, and that is untested.

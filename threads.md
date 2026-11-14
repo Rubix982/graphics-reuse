@@ -34,6 +34,14 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Parent:** — (raised by entries/garment-transfer-surface-binding.md)
 **Opened:** 2026-11-14
 **Question:** Does any surface binding tear free-hanging cloth bound to distant parts of the body, or is it particular to Blender's nearest-point binding? If it is structural, the condition belongs to the whole class of techniques.
+**Answer:** — Brouet et al. 2012 (R-013) has no free-hanging example; its reference points and its collision test both assume each garment vertex relates to a nearby bone, which is least likely to hold for a dupatta's free end. It does say nearest-point binding makes garments slide (Section 4.1), so part of the tear may be the binding Blender uses.
+
+### T-010 · Should a garment moved to another body be the same garment or a graded one?
+
+**Status:** open
+**Parent:** T-002
+**Opened:** 2026-11-14
+**Question:** Three agent runs all assumed the same garment re-draped; Brouet et al. assume a graded garment that keeps the design. The two goals have different validity conditions and different rest shapes for any relax afterwards. The test bed's own review accepted Surface Deform as grading for the kameez and trousers, and a dupatta of a set length is plainly the same-garment case. Which does each step of the test bed actually want?
 **Answer:** —
 
 ### T-005 · Does a warm-started drape settle into the same folds as a fresh one?

@@ -230,7 +230,7 @@ The live card in `CARD.md`. Search DBLP (or Semantic Scholar, if DBLP can't filt
 
 ### R-013 · Rewrite the garment-transfer entry from a full reading of Brouet et al. 2012
 
-**Status:** blocked
+**Status:** closed
 **Type:** research
 **Priority:** high
 **Created:** 2026-11-14
@@ -239,7 +239,30 @@ The live card in `CARD.md`. Search DBLP (or Semantic Scholar, if DBLP can't filt
 **Description:**
 The live card in `CARD.md`. Read Rémi Brouet, Alla Sheffer, Laurence Boissieux, Marie-Paule Cani, "Design Preserving Garment Transfer", ACM Transactions on Graphics 31(4), 2012 (DOI 10.1145/2185520.2185532), in full. Write notes against the six questions (the grading requirements and which are hard constraints; how points are matched between bodies; whether and how long they simulate after transfer; layers; loose, free-hanging cloth; results and limitations) with page or section references, in `agents/researcher/findings/r013/brouet2012-notes.md`. Rewrite `entries/garment-transfer-surface-binding.md` from the notes, every condition marked (paper, with page), (measured) or (reasoned). Run the R-011 garment-transfer prompt (`agents/researcher/findings/r011/prompt-garment-transfer.md`), unchanged, twice more as fresh agents with no tools, saving the answers verbatim. Score per the card's branches: count the entry's paper-sourced conditions and numbers that none of the three runs named.
 
-**Blockers:** the paper's PDF. HAL, the ACM Digital Library and the SIGGRAPH archive all refuse automated downloads (checked 2026-11-14). It has to be saved by hand as `sources/brouet2012.pdf` (git-ignored, as in `style`).
+**Blockers:** the paper's PDF. HAL, the ACM Digital Library and the SIGGRAPH archive all refuse automated downloads (checked 2026-11-14). It has to be saved by hand as `sources/brouet2012.pdf` (git-ignored, as in `style`). Resolved 2026-11-14: saved by hand, 12 pages.
+
+**Artifacts:**
+- agents/researcher/findings/r013/brouet2012-notes.md (notes against the six questions; the 16 scoring items, fixed before runs 2 and 3 were read)
+- agents/researcher/findings/r013/answer-garment-transfer-run2.md, -run3.md (verbatim), score.md
+- entries/design-preserving-garment-transfer.md (new: the paper describes a different mechanism)
+- entries/garment-transfer-surface-binding.md (the paper's conditions; the relax dispute settled as a question of rest shape)
+
+**Result:** 11 of 16 paper items named by none of the three runs, 6 of them general; the branch is taken (reading in full is the rule). All six general items belong to grading, a goal the prompt didn't pose and no run raised, so the addition was a reframe. R-014 tests whether the paper also adds inside its own frame.
+
+**Closed:** 2026-11-14
+
+### R-014 · Does the paper add anything inside its own frame?
+
+**Status:** open
+**Type:** research
+**Priority:** medium
+**Created:** 2026-11-14
+**Updated:** 2026-11-14
+
+**Description:**
+R-013 found that what Brouet et al. 2012 added over three agent runs was a reframe: grading the garment instead of re-draping the same one. Test whether it adds anything when the agent is asked about grading directly. Write a prompt that keeps R-011's garment-transfer setting (Blender, kameez, trousers, dupatta, 1.609 and 1.753 m figures) but asks how to produce a version of the garment graded to the second body, one that keeps the design, and how to check it, without naming any technique or criterion. Save it verbatim in `agents/researcher/findings/r014/` before running, then run it as three fresh agents with no tools and save each answer verbatim. Score against the six general items R-013's runs missed (items 2, 3, 5, 6, 8 and 9 in `agents/researcher/findings/r013/brouet2012-notes.md`), with the branches written in CARD.md before the runs. If the runs name most of the six, the paper's addition was the reframe alone; if they name few, it adds inside its frame too.
+
+**Blockers:** none
 
 **Artifacts:** —
 
