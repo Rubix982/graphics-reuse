@@ -17,7 +17,7 @@ A card closes with a number, or with a sentence that could have come out the oth
 
 ## Live card
 
-None open (2026-11-14). Candidates: R-014, which asks an agent about grading directly to see whether the paper adds anything inside its own frame, and R-012 (parked, below).
+None open (2026-11-14). Next, the user's choice: R-012 (parked, below), the held-out test of the axes. Also open: R-014 and R-016.
 
 ---
 
@@ -39,6 +39,21 @@ _Opened 2026-11-14. Parked the same day for R-013: whether an entry adds anythin
 ---
 
 ## Closed cards
+
+### R-015 · Does any recent method serve the test bed's largest measured costs under its constraints?
+
+_Opened and closed 2026-11-14, at the user's request._
+
+1. **WHERE WE ARE.** The library's four entries rest on papers from 2005 to 2015. The test bed's own profile puts nearly all of a fitting run's time in drapes, much of it in drapes that never settle, and it runs on a 16 GB Apple Silicon machine with no CUDA, using open code only.
+2. **WHAT WE ARE DOING.** Search four areas of 2023–2026 graphics literature (learned cloth; fast and GPU cloth solvers; differentiable cloth and inverse garment fitting; differentiable and neural rendering for garments) by saved queries, and record for every candidate what it reuses, its code and licence, whether it runs without CUDA, and its reported numbers with their hardware. Details in R-015's ticket.
+3. **WHY.** Whether any recent method addresses the test bed's largest measured costs (drape time, drapes that never settle, the drapes spent measuring a fit's sensitivities) and can run under its constraints is unknown. The library has nothing after 2015.
+4. **WHAT IS AFFECTED.** The next full readings (new R- tickets), `threads.md`, and `private/`'s mapping to the test bed. No entry changes until a paper is read in full (R-013's rule). The test bed itself isn't touched.
+5. **CONCLUSION IF WE DO IT.** If at least one method addresses one of the three costs, has open code, and runs without CUDA (or its technique can be rebuilt inside Blender), it becomes the next paper read in full and a spike candidate for the test bed. If none does, the test bed's speed work stays on its own path (fail-fast, warm starts), the survey stands as a map, and the reason each method fails the constraints is recorded.
+6. **CONSEQUENCE OF NOT DOING IT.** The library stays pre-2016, and the test bed may rebuild what recent papers already solved.
+
+**Result (2026-11-14): yes, the first branch, but by strategies more than by solvers.** One open codebase runs here without CUDA and addresses drape time: Newton (Apache-2.0; VBD, Offset Geometric Contact, a Style3D solver that takes 2D pattern panels as rest shapes), on macOS CPU only, with Warp's CPU kernels serial, so whether it beats Blender's solver on a 5,000-vertex piece is unknown until timed (T-012). The rest of what addresses the three costs is technique that can be rebuilt inside Blender without code: friction off while fitting, with the waistband pinned (Wang 2018; Dress-1-to-3 2025), aimed at drapes that depend on more than the cut (T-011); short inner drapes with a full one every 32 steps and backtracking (Wang 2018); earlier drapes and sensitivities blended by moving least squares (Sensitive Couture 2011). Neural simulators don't fit the constraints or the loop: none takes a flat pattern as its rest shape, and their speedups are GPU numbers.
+
+Next paper read in full: Dress-1-to-3 (R-016). It is recent, on arXiv, and a published instance of `entries/warm-start-repeated-drapes.md` that states the entry's validity condition. Per-area notes: `agents/researcher/findings/r015/`; summary: `agents/shared/findings.md` [R-015]. The mapping to the test bed stays in `private/`.
 
 ### R-013 · Does an entry written from a full reading add anything over an agent?
 

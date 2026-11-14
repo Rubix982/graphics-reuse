@@ -14,6 +14,7 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 
 | ID | Agent | Title | Status |
 |---|---|---|---|
+| R-016 | Researcher | Read Dress-1-to-3 in full; rewrite the warm-start entry | open |
 | R-014 | Researcher | Does the paper add anything when the agent is asked about grading directly | open |
 | R-012 | Researcher | Held-out test of the axes | parked |
 
@@ -31,7 +32,8 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 - R-004 · Test the six axes on twelve known techniques (12 of 12, but not an independent test)
 - R-011 · Agent baselines for the three seed entries (11 of 18 conditions named; circular; measurements are what the agent lacked)
 - R-013 · Brouet et al. 2012 read in full (11 of 16 paper items named by no agent run; the addition was a reframe toward grading)
+- R-015 · Recent literature, four areas (yes branch: Newton runs without CUDA, untimed; friction-off fitting, inexact drapes and cached sensitivities rebuildable in Blender)
 
 ## Next Orchestrator Action
 
-No card is open. The user picks the next one: R-014 (grading asked directly), R-012 (held-out test of the axes), or the next paper to read in full.
+No card is open. The user's next choice is R-012 (unpark, run as written). Then R-016 (Dress-1-to-3 in full) or R-014.

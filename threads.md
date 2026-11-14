@@ -83,3 +83,35 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Opened:** 2026-11-14
 **Question:** None of R-004's twelve techniques landed on "across runs". Inside a simulation, history is the physics; across runs, each run is meant to be independent of history, so carrying it over is an error to guard against. Is that difference enough to keep a separate axis, or does the literature treat both the same way?
 **Answer:** —
+
+### T-011 · Does switching friction off make a fit's width sensitivities keep their sign?
+
+**Status:** open
+**Parent:** T-005
+**Opened:** 2026-11-14
+**Question:** Wang 2018 and Dress-1-to-3 2025 both drop friction while fitting so the drape depends only on the cut. The test bed's width sensitivities don't keep their sign across runs. Do they, with cloth-body and self-collision friction at zero and the waistband pinned, measured over the same seeds? (A test-bed spike, the user's call; R-015.)
+**Answer:** —
+
+### T-012 · Is Newton's VBD or Style3D solver on one CPU core faster than Blender's cloth for a 5,000-vertex piece?
+
+**Status:** open
+**Parent:** T-005
+**Opened:** 2026-11-14
+**Question:** Newton runs on macOS CPU only, and Warp runs CPU kernels serially. One timed drape of one piece, exported from Blender and read back, decides whether it is worth more. (R-015.)
+**Answer:** —
+
+### T-013 · Do reuse-across-runs techniques cluster around optimisation loops?
+
+**Status:** open
+**Parent:** T-009
+**Opened:** 2026-11-14
+**Question:** R-004's twelve had no "across runs"; R-015's need-chosen sample had five (Wang 2018, Dress-1-to-3, Sensitive Couture, Parameter-space ReSTIR, residual path integrals), all inside fitting or editing loops. Is "across runs" the axis of outer loops, and does R-012's procedure-drawn sample find any?
+**Answer:** —
+
+### T-014 · Can Cycles' Light Groups fit a photo's light by least squares without re-rendering?
+
+**Status:** open
+**Parent:** T-001
+**Opened:** 2026-11-14
+**Question:** Light Groups recombine linearly in strength and colour, so a few group passes rendered once could be weighted to match a photo. Exact only for scaling, not for moving lights or changing albedo, and denoising breaks linearity. (R-015, area D; reasoned, untested.)
+**Answer:** —

@@ -267,3 +267,42 @@ R-013 found that what Brouet et al. 2012 added over three agent runs was a refra
 **Artifacts:** —
 
 **Closed:** —
+
+### R-015 · Recent graphics literature for the test bed's measured problems
+
+**Status:** closed
+**Type:** research
+**Priority:** high
+**Created:** 2026-11-14
+**Updated:** 2026-11-14
+
+**Description:**
+The live card in `CARD.md`, at the user's request (2026-11-14): research graphics literature from recent years on AI, optimisation, GPU and model rendering, aimed at where the private test bed wants to use it. Four areas, each searched separately for 2023–2026 papers (2022 only where everything later builds on it, marked): (A) learned and neural cloth: draping, dynamics, detail added after simulation; (B) fast cloth solvers and GPU simulation, with or without contact guarantees; (C) differentiable cloth simulation and inverse garment fitting: gradients of a drape with respect to pattern parameters, image to sewing pattern; (D) model rendering: differentiable and neural rendering, inverse rendering of fabric and light, texture from photos. Each area saves its exact queries and every candidate looked at in `agents/researcher/findings/r015/<area>.md`, with venue and year, the work reused or avoided (axis and `reuse_changes`), code and licence, whether it runs without CUDA on a 16 GB Apple Silicon machine, the numbers it reports with their hardware, and whether the source was read past its abstract. The selection is by need, so the axis sort here is a record, not a test of the axes (R-012 stays parked). The mapping to the test bed's own write-ups stays in `private/` (git-ignored), since the test bed is private.
+
+**Blockers:** none
+
+**Artifacts:**
+- agents/researcher/findings/r015/a-learned-cloth.md, b-fast-solvers.md, c-differentiable-fitting.md, d-rendering.md (queries, every candidate, the best few in depth, gaps)
+- agents/shared/findings.md → [R-015]
+- private/r015-map.md (git-ignored: the mapping to the test bed's own write-ups)
+
+**Result:** The card's first branch: Newton runs here without CUDA (CPU, speed untimed), and friction-off fitting, inexact inner drapes and cached sensitivities can be rebuilt inside Blender. Next full reading: R-016.
+
+**Closed:** 2026-11-14
+
+### R-016 · Read Dress-1-to-3 in full and rewrite the warm-start entry from it
+
+**Status:** open
+**Type:** research
+**Priority:** medium
+**Created:** 2026-11-14
+**Updated:** 2026-11-14
+
+**Description:**
+Read Xuan Li et al., "Dress-1-to-3: Single Image to Simulation-Ready 3D Outfit with Diffusion Prior and Differentiable Physics", ACM TOG / SIGGRAPH 2025 (arXiv 2502.03449), in full, with notes against these questions, each with a section reference: why each iteration's drape may start from the previous one (the static-equilibrium argument) and what breaks it; what removing friction does and doesn't buy, and how slip is prevented (the pinned waist loop); how many iterations and what each costs; how flipped triangles, remeshing and penetration are handled; what the method can't recover (new pattern pieces, loose garments). Save the notes in `agents/researcher/findings/r016/`. Then rewrite `entries/warm-start-repeated-drapes.md` with every condition marked (paper, with section), (measured) or (reasoned), and list what the paper says about friction as a condition of the entry. Before reading, fix the scoring items against the R-011 warm-start baseline answer (`agents/researcher/findings/r011/`), as R-013 did.
+
+**Blockers:** none (open on arXiv)
+
+**Artifacts:** —
+
+**Closed:** —

@@ -11,3 +11,4 @@
 - [R-012] Opened: held-out test of the axes, the live card — CARD.md
 - [R-013] Brouet et al. 2012 read in full: 11 of 16 paper items named by no agent run, all six general ones about grading, so the addition was a reframe — agents/researcher/findings/r013/, entries/design-preserving-garment-transfer.md
 - [R-014] Opened: does the paper add anything when the agent is asked about grading directly
+- [R-015] Recent graphics literature in four areas for the test bed's measured problems: yes branch, by strategies more than solvers; R-016 opened for Dress-1-to-3 — agents/researcher/findings/r015/, agents/shared/findings.md
