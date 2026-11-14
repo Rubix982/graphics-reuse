@@ -1,3 +1,6 @@
 .DS_Store
 sources/
 private/
+# R-012: full publisher abstracts; regenerate with draw.py and abstracts.py
+agents/researcher/findings/r012/raw.json
+agents/researcher/findings/r012/abstracts.jsonl

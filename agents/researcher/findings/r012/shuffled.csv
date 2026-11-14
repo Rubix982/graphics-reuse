@@ -1,0 +1,355 @@
+rank,paperId,year,doi,has_abstract,title
+1,50846ce53851a970e9e61f799fbe75b9c9bbd13e,2009,10.1145/1477926.1477934,no,An edge-based computationally efficient formulation of Saint Venant-Kirchhoff tetrahedral finite elements
+2,c5dbec57321ebbd7de37c82fc6b5086d6b9abc3f,2016,10.1145/2897824.2925915,no,Position-normal distributions for efficient rendering of specular microstructure
+3,f96f5f560b607f4cbdfba38ecc467a2b25bcc968,2015,10.1145/2797136,yes,Efficient and Accurate Spherical Kernel Integrals Using Isotropic Decomposition
+4,aaf937b76abcd5f4238c1abf226ed58c9b798a5f,2019,10.1145/3269978,yes,Blockwise Multi-Order Feature Regression for Real-Time Path-Tracing Reconstruction
+5,04eac59f7f15e36ad2fae0a4cb1d93f83c3eda3d,2017,10.1145/3130800.3130852,no,Real-time global illumination by precomputed local reconstruction from sparse radiance probes
+6,c21f9ffe82a1e6d18d51c7998b23075821856d9b,2025,10.1145/3763361,yes,Artifact-Resilient Real-Time Holography
+7,1e286b672508f308fd578ff7cd3d05a77dbead76,2009,10.1145/1576246.1531397,no,An efficient GPU-based approach for interactive global illumination
+8,06ee56a1e7030fa85b3e39897a2f4ef698b2faaf,2023,10.1145/3592426,yes,MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes
+9,a33c0e77cf5dddf9c49b22fb1b017fe00f6f3261,2025,10.1145/3731184,no,Real-Time Knit Deformation and Rendering
+10,b09ea9a327683f63be4a9832311dc233b609c3ae,2025,10.1145/3763317,yes,WATER: Watertight Tessellation for Real-Time Pixel-Accurate Rendering of Large-Scale Surfaces
+11,c7e554034bd4350c465cfdd0e6eb82b069917efb,2006,10.1145/1179352.1141959,no,Efficient simulation of large bodies of water by coupling two and three dimensional techniques
+12,a288fe2792b7f82b3cd818aa949d352010bf52f7,2020,10.1145/3386569.3392400,yes,Fast and scalable turbulent flow simulation with two-way coupling
+13,9bd6bca4dfacfc5737f6daa7e2a4dd52288f48fb,2025,10.1145/3765902,yes,"A Fast, Efficient, and Robust Feature Protected Denoising Method"
+14,0fa3b7ac90a2a5af1cdd30f77abed47924549821,2016,10.1145/2980179.2980226,no,Sphere-meshes for real-time hand modeling and tracking
+15,d1640245bd98ebe4c3c260e6ef5427eb1ef7b0eb,2024,10.1145/3687758,yes,MiNNIE: a Mixed Multigrid Method for Real-time Simulation of Nonlinear Near-Incompressible Elastics
+16,4791bef917ef0ee30ce8580c477446c526af7955,2022,10.1145/3604551,yes,Fast GPU-based Two-way Continuous Collision Handling
+17,50978bba01e55247a24d97b1e032ff03040c224b,2021,10.1145/3476576.3476669,yes,Fast linking numbers for topology verification of loopy structures
+18,b57969ee9a83054ffd00b9a62fc834ac53f95fb3,2021,10.1145/3476576.3476653,yes,Real-time deep dynamic characters
+19,05e5e0220f1d803ffe594a3af06b5cdfaf631a61,2021,10.1145/3528223.3530093,yes,Fast evaluation of smooth distance constraints on co-dimensional geometry
+20,e4db5553f96d687729649b937686d5d52c0a62f9,2010,10.1145/1833349.1778843,no,Stable spaces for real-time clothing
+21,ce48294743d35d0b655794d3cad14666e2a7d14e,2014,10.1145/2601097.2601172,no,Continuous projection for fast L1 reconstruction
+22,4c3eaa09c20b948d538825555e4b25397aff35e6,2008,10.1145/1457515.1409116,yes,Real-time control of physically based simulations using gentle forces
+23,92841726c2ba56f9cec07ab29cdb755fafaa92d8,2024,10.1145/3658217,yes,CharacterGen: Efficient 3D Character Generation from Single Images with Multi-View Pose Canonicalization
+24,e88bd5d2f2e6e6e54f3b44c8c68f71545186d8dd,2014,10.1145/2601097.2601108,no,The natural-constraint representation of the path space for efficient light transport simulation
+25,ce2ba96558f3c1d6fdda5bf6b863011a8803a72f,2006,10.1145/1179352.1141939,no,Real-time GPU rendering of piecewise algebraic surfaces
+26,1ffadc89cf6d0836bac3ca6dbd2d8c5a0e750d41,2008,10.1145/1399504.1360630,no,Efficient multiple scattering in hair using spherical harmonics
+27,1ce8fdf47d2792d1bbec8a32c07f7ab8c4175b21,2023,10.1145/3618390,yes,Adaptive Shells for Efficient Neural Radiance Field Rendering
+28,cce1335b6aadf91800f91ac99da2963e40dd052e,2006,10.1145/3596711.3596765,no,Fast Separation of Direct and Global Components of a Scene Using High Frequency Illumination
+29,0151329171b812b253e1dd2762a955f979b42ffe,2025,10.1145/3731210,no,IMLS-Splatting: Efficient Mesh Reconstruction from Multi-view Images via Point Representation
+30,07a38cb5e800b664d74c30f8f3478334ce4d4eca,2025,10.1145/3763283,yes,A Highly-Efficient Hybrid Simulation System for Flight Controller Design and Evaluation of Unmanned Aerial Vehicles
+31,5c2966b0c3b039e8d3bd48e80b411af92b6c1f30,2011,10.1145/1964921.1965003,no,Physically-based real-time lens flare rendering
+32,0a94a78f84b1751fc3c594ad50bcf0f85b19dee9,2025,10.1145/3730848,no,Creating Fluid-Interactive Virtual Agents by an Efficient Simulator with Local-domain Control
+33,d79665c73d84e0855bddb27a7933e550610a716f,2023,10.1145/3618399,yes,BakedAvatar: Baking Neural Fields for Real-Time Head Avatar Synthesis
+34,830462f25cda9e3b486fcf631c0ae992a2e6c05f,2015,10.1145/2816795.2818111,no,Real-time pixel luminance optimization for dynamic multi-projection mapping
+35,166aa6a7bed04d7c5f8f30792713919dd0bcb1a0,2009,10.1145/1576246.1531369,no,Real-time hand-tracking with a color glove
+36,26456fbb7451a7431a5a024da41a65ea1c2e6626,2003,10.1145/1201775.882286,no,Efficient synthesis of physically valid human motion
+37,54b32b99b82111b20f6f0aa9383a5dfaf2da59b3,2019,10.1145/3355089.3356486,yes,A scalable galerkin multigrid method for real-time simulation of deformable objects
+38,1a9ea9ce36c0130d3f1d2d82fabf6799b156a623,2009,10.1145/1661412.1618500,yes,Real-time parallel hashing on the GPU
+39,4002146bbc8dd3ada7cc70deea964a052b7ba991,2018,10.1145/3182157,yes,Real-time High-accuracy Three-Dimensional Reconstruction with Consumer RGB-D Cameras
+40,3f4cec4aa576493313b849dd49231281a739f6ec,2004,10.1145/1186562.1015750,no,Fast hierarchical importance sampling with blue noise properties
+41,d6610cc913437841d563a3d543c39ea159a5eb45,2016,10.1145/2897824.2925889,no,Real-time rendering on a power budget
+42,9fe7d597bf7f1f934bb5755fb81744b91659258c,2011,10.1145/2024156.2024210,no,GPU-efficient recursive filtering and summed-area tables
+43,72e809132962d9ab19e63f4341029c88ebfe8005,2006,10.1145/1179352.1141996,no,Statistical acceleration for animated global illumination
+44,b9b25b2e61b7a54b40f9cde391d40e70346d34f6,2022,10.1145/3550454.3555523,yes,Fast Octree Neighborhood Search for SPH Simulations
+45,9006a1173485053cb9bf80f9248386da85024cc6,2019,10.1145/3306346.3322958,yes,Real-time pose and shape reconstruction of two interacting hands with a single depth camera
+46,a25ea55a8d9a12202dd1d07e209c5b04779a6911,2024,10.1145/3658210,yes,Area ReSTIR: Resampling for Real-Time Defocus and Antialiasing
+47,d1d09fc11a380ac5f9c8a0240d3a5725fa9c88eb,2010,10.1145/1833349.1778774,no,PantaRay: fast ray-traced occlusion caching of massive scenes
+48,7ba1a245267fd7ba4973923e6d9d1849e968de02,2011,10.1145/1964921.1964986,no,Real-time large-deformation substructuring
+49,77d3fda8ba034effc7158766564cbf1a833e92ae,2018,10.1145/3272127.3275083,yes,Fast depth densification for occlusion-aware augmented reality
+50,48dd8b39cf0861d54e639166e2be82a4718ff97e,2016,10.1145/2897824.2925874,no,Efficient GPU rendering of subdivision surfaces using adaptive quadtrees
+51,3cafd0f53d52062e92e8e4efe3474bbda17b7379,2007,10.1145/1275808.1276384,no,Active learning for real-time motion controllers
+52,ed34637f6a576ecfaa79263eef3a9e7b48e3f69c,2007,10.1145/1275808.1276512,no,Efficient symbolic differentiation for graphics applications
+53,3ac946a4815f569dd1d4ea587e6259c0f53658ce,2004,10.1145/1186562.1015772,no,An intuitive framework for real-time freeform modeling
+54,9254ab72951e0efe3a6ac0111c79dc254a0b5bcf,2008,10.1145/1457515.1409119,no,Fast animation of turbulence using energy transport and procedural synthesis
+55,b29155de977e6efb2bf5ac3f1b54a50f9ef6f272,2018,10.1145/3272127.3275054,yes,Efficient palette-based decomposition and recoloring of images via RGBXY-space geometry
+56,158d82e365091fe960ae8af47a3457a644326c2c,2021,10.1145/3476576.3476645,yes,Real-time 3D neural facial animation from binocular video
+57,861247b94b4d6e782da24cf48064ce383d862a4c,2022,10.1145/3508461,yes,Searching for Fast Demosaicking Algorithms
+58,9515674638d0c1aa8ac6944efb5b6d23e93b725f,2013,10.1145/2461912.2462012,no,3D shape regression for real-time facial animation
+59,d405fd57e5fb8b69811b4a206187da32da857e96,2017,10.1145/3130800.3130843,no,GPU-accelerated locally injective shape deformation
+60,aca5ae23026f736747b78361828be9186a09b936,2011,10.1145/1964921.1964977,no,Real-time Eulerian water simulation using a restricted tall cell grid
+61,35eab324fddb05b86f68731b68c76599a75aeb36,2005,10.1145/1186822.1073290,no,Geopostors: a real-time geometry/impostor crowd rendering system
+62,3204b027928165c70915b6331275fd88707ad5a9,2019,10.1145/3374753,yes,Real-time Global Illumination Decomposition of Videos
+63,372bc17a7140087e7bb6707f33a1e372cfee0da1,2018,10.1145/3197517.3201290,yes,Anderson acceleration for geometry optimization and physics simulation
+64,964bb0a429620e33ebdec1a029849b24b12dddbe,2005,10.1145/1186822.1073228,yes,Fast exact and approximate geodesics on meshes
+65,c53110f0071472991136a958fa99a8a7cb71d257,2021,10.1145/3476576.3476623,yes,Fast median filters using separable sorting networks
+66,fb8275d282d39f785307401f381eafa0090908ff,2006,10.1145/1179352.1141982,no,Real-time soft shadows in dynamic scenes using spherical harmonic exponentiation
+67,cbafaa7be756677f54dd1aa67423f8211560705b,2021,10.1145/3478513.3480494,yes,Intuitive and efficient roof modeling for reconstruction and synthesis
+68,15cc6fc7ceba1be7c99174bced9e4d3e37495fb3,2015,10.1145/2768821,yes,Online Structure Analysis for Real-Time Indoor Scene Reconstruction
+69,c5fdcda22e002a16d07f966286ead2f1e8d695ba,2013,10.1145/2461912.2461992,no,Efficient preconditioning of laplacian matrices for computer graphics
+70,452772e10b928c5f6c02d378cfd9e5fcbd58452a,2011,10.1145/2024156.2024185,no,A shading reuse method for efficient micropolygon ray tracing
+71,9c22dd54aa7284b1ae32822f8b9d18fbf58f258a,2014,10.1145/2601097.2601165,no,Real-time non-rigid reconstruction using an RGB-D camera
+72,6bbb1770b666f18483e9dbd98bbcab1ed8d28881,2006,10.1145/1179352.1142018,no,Real-time video abstraction
+73,a3814905dca232d9e409a68163bda0b1539f8acb,2023,10.1145/3618359,yes,Locally-Adaptive Level-of-Detail for Hardware-Accelerated Ray Tracing
+74,30c3f471263764e2978e1cb5e4de2b375882ab38,2000,10.1145/380666.380679,no,Texture-based visibility for efficient lighting simulation
+75,14d56474a098db7df215958ff0517e6ec03911ad,2010,10.1145/1833349.1778845,no,A deformation transformer for real-time cloth animation
+76,d0e4d24d2d5022b53ff06c84b9c91b614d978286,2005,10.1145/1186822.1073319,no,Fast and detailed approximate global illumination by irradiance decomposition
+77,3a1868999948049b428af9116369dc89e3b4eb66,2020,10.1145/3388887,yes,Real-time Image Smoothing via Iterative Least Squares
+78,f1a2b6c84be90dbdc8d4c85f0fdfccfe9af32b56,2015,10.1145/2766897,no,Homogeneous codes for energy-efficient illumination and imaging
+79,989aa9fff5897601e24716257c6733fd862808d8,2021,10.1145/3476576.3476627,yes,Fast quasi-harmonic weights for geometric data interpolation
+80,05b6b7547677f5d80cd5a5459802b99913f0cb89,2021,10.1145/3476576.3476713,yes,Fast diffraction pathfinding for dynamic sound propagation
+81,31761299ccbb41c37621e04800155f7774102356,2004,10.1145/1186562.1015795,no,"Perceptual illumination components: a new approach to efficient, high quality global illumination rendering"
+82,802de2110230e009ed81b312bb85337c99e1604f,2025,10.1145/3731180,yes,Leapfrog Flow Maps for Real-Time Fluid Simulation
+83,216b486f5b0360857a651a28c18734225324ea9f,2008,10.1145/1457515.1409096,no,Real-time Reyes-style adaptive surface subdivision
+84,bd91665d4862b2191cbae0275d86a41d8ce3151c,2024,10.1145/3687991,yes,ELMO: Enhanced Real-time LiDAR Motion Capture through Upsampling
+85,1830f1b538711fba81adb76b704981b2c167ed9c,2024,10.1145/3658176,yes,Real-time Physically Guided Hair Interpolation
+86,89753046c0b590f50dc2bd49adac722ad4a9e667,2014,10.1145/2661229.2661237,yes,Fast and Exact Continuous Collision Detection with Bernstein Sign Classification
+87,5e6296a78beadb67d0025d17fe872f091055a97e,2020,10.1145/3481804,yes,PCEDNet: A Lightweight Neural Network for Fast and Interactive Edge Detection in 3D Point Clouds
+88,96c3405fb41853ebdd7f3b366f314ce66fb5b93a,2013,10.1145/2461912.2461940,no,Scalable real-time volumetric surface reconstruction
+89,a5cb93c7620e56f9cb8a62864ba86dbb8aedd022,2025,10.1145/3730925,yes,When Gaussian Meets Surfel: Ultra-fast High-fidelity Radiance Field Rendering
+90,42caa89134e2286ed36f6ce561708999959abfec,2024,10.1145/3687961,yes,Accelerate Neural Subspace-Based Reduced-Order Solver of Deformable Simulation by Lipschitz Optimization
+91,490379b09f71cc3e1378ea5bcb3160a086b9a069,2024,10.1145/3687953,yes,"Quark: Real-time, High-resolution, and General Neural View Synthesis"
+92,3ac2d68b80b015502736d185e95e8c3e75d29c9f,2016,10.1145/2897824.2925920,no,Accelerated quadratic proxy for geometric optimization
+93,0d9ff8227539b4091ed1a676ac32096255eb3975,2023,10.1145/3618353,yes,"SLANG.D: Fast, Modular and Differentiable Shader Programming"
+94,2b286ed9f36240e1d11b585d65133db84b52122c,2017,10.1145/3130800.3130837,no,Real-time 3D eyelids tracking from semantic edges
+95,2e37cf80329bab1b1e1b65acaa745f8fa59396fd,2025,10.1145/3763305,yes,Differentiable Light Transport with Gaussian Surfels via Adapted Radiosity for Efficient Relighting and Geometry Reconstruction
+96,019b6f242f4bcadc9541220e59315883803e6681,2019,10.1145/3386569.3392385,yes,Fast tetrahedral meshing in the wild
+97,98bf67bb2ff8f5f71ed181e4016eb0f2b1ba982b,2025,10.1145/3763339,yes,MILo: Mesh-In-the-Loop Gaussian Splatting for Detailed and Efficient Surface Reconstruction
+98,35df2a7d78a8b7057d40d73bbb9a61f4643f92c4,2023,10.1145/3592133,yes,Encoder-based Domain Tuning for Fast Personalization of Text-to-Image Models
+99,3f404194266070569cfcb1e511731f3a870ff210,2025,10.1145/3763348,yes,"Lightweight, Edge-Aware, and Temporally Consistent Supersampling for Mobile Real-Time Rendering"
+100,cc2faf2667441ccd6132d7c8d5cf60bd132da5aa,2022,10.1145/3528223.3530080,yes,Efficient estimation of boundary integrals for path-space differentiable rendering
+101,ea3226dfb4688c788394ba2b4059180e31ec2f13,2021,10.1145/3478513.3480491,yes,Aerial path planning for online real-time exploration and offline high-quality reconstruction of large-scale urban scenes
+102,abdd5c23e0e9335b2157d8b452fb5169153d01ce,2023,10.1145/3624011,yes,Real-Time Reconstruction of Fluid Flow under Unknown Disturbance
+103,1b3ca9a9dbb5ec118cfd9211958302313e8d987c,2015,10.1145/2816795.2818061,no,Fast computation of seamless video loops
+104,c053ffe7f4d043b9a1839c4f793d3f6be8f377bd,2023,10.1145/3592404,yes,Fast Complementary Dynamics via Skinning Eigenmodes
+105,96bf5ac5a335b1da9e581db9a29bb9466d94a2ff,2005,10.1145/1186822.1073226,no,Efficiently combining positions and normals for precise 3D geometry
+106,7f2f315e82b9f4f191e74ccea7fa47d468c1fca0,2024,10.1145/3687895,yes,Fast and Globally Consistent Normal Orientation based on the Winding Number Normal Consistency
+107,831c369144865a906c586f5fd984a600052e8029,2011,10.1145/1964921.1964973,no,Bounded biharmonic weights for real-time deformation
+108,89eaf7c98e8bfba337ad6fee86341c73ff892492,2010,10.1145/1866158.1866165,no,Optical computing for fast light transport analysis
+109,832654564cf57c729ed8ccff1e8d29073b00f7e6,2005,10.1145/1186822.1073252,no,Real-time rendering of plant leaves
+110,97d99b17c1191e9d6f0931ab35f5da216df6b05d,2014,10.1145/2661229.2661232,no,Real-time shading-based refinement for consumer depth cameras
+111,dd656e5f21003a33b10eb3574a093774a7081d46,2017,10.1145/3072959.3073592,yes,Deep bilateral learning for real-time image enhancement
+112,5aeb051667cd47681656b4b470da81b0bc7fa827,2011,10.1145/1964921.1964922,no,ShadowDraw: real-time user guidance for freehand drawing
+113,468026cbf1844b6a2e73b129ecbbcc8331440984,2006,10.1145/1179352.1141979,no,Real-time BRDF editing in complex lighting
+114,0d24fa9474a5e2f38d7d3e20836f85e71119a142,2010,10.1145/1833349.1778805,no,Precomputed wave simulation for real-time sound propagation of dynamic sources in complex scenes
+115,2b8b09a7f22b5cc3bc98f97db8eed41c4fe00089,2024,10.1145/3687937,yes,Gaussian Opacity Fields: Efficient Adaptive Surface Reconstruction in Unbounded Scenes
+116,c039d850764a5c305edad34c74b27321e16d063c,2013,10.1145/2508363.2508385,no,Efficient penetration depth approximation using active learning
+117,5900197ee3c049c9410ea085d113a87da71855f6,2007,10.1145/1275808.1276448,no,Isosurface stuffing: fast tetrahedral meshes with good dihedral angles
+118,6557d5226eb661ee50b2b2d0d3f8426bacc157ba,2024,10.1145/3687915,yes,Stripe Embedding: Efficient Maps with Exact Numeric Computation
+119,89273c3c5f87acad161263ec1ca877ad049732fc,2023,10.1145/3618337,yes,Efficient Visualization of Light Pollution for the Night Sky
+120,dfaa629d83f5c47ee2136585a502c99048ba7245,2015,10.1145/2816795.2818127,no,Transform recipes for efficient cloud photo enhancement
+121,e0781ce041ee57da83dc400fbabb1209f24e65a8,2009,10.1145/1661412.1618491,no,Fast motion deblurring
+122,ae1489b912f8d2eb68234b34fcbdb21f73fbd8df,2023,10.1145/3592101,yes,AvatarReX: Real-time Expressive Full-body Avatars
+123,0f3a9a600b43083c58418dd251251b4eb6394969,2011,10.1145/1964921.1965001,no,Clipless dual-space bounds for faster stochastic rasterization
+124,5d140bd7b1796b4bbe9782f74d273f2a754cf5c9,2014,10.1145/2601097.2601187,no,Fast multipole representation of diffusion curves and points
+125,9ebd836a59e9b1341c26a1680d16e74f9bf05511,2006,10.1145/1179352.1141916,yes,Recursive Wang tiles for real-time blue noise
+126,6f722e7b3474c91c1b6bfa10248b4aa2cb59bb3f,2020,10.1145/3144567,yes,Fast Construction of Discrete Geodesic Graphs
+127,6fb415fa5262b986b28bc45e9c85a2e3e30206a5,2022,10.1145/3528223.3530132,yes,Efficient kinetic simulation of two-phase flows
+128,10b8188479c6b29dbc6900984e045de07e64a31b,2014,10.1145/2661229.2661277,yes,Fast burst images denoising
+129,697e87f47672d5b6bfe792cb562aa7b9e140052b,2018,10.1145/3272127.3275062,yes,The need 4 speed in real-time dense visual tracking
+130,394d19f29b12feef29fe862b58c4423c208b3258,2015,10.1145/2735627,no,Using Nesterov's Method to Accelerate Multibody Dynamics with Friction and Contact
+131,101699c0131ff09717323756ef758ce4293c17d3,2024,10.1145/3658194,yes,Spin-It Faster: Quadrics Solve All Topology Optimization Problems That Depend Only On Mass Moments
+132,0cd561abfa220a9ebf6169f8b24612637864f889,2020,10.1145/3414685.3417875,yes,Real-time rendering of decorative sound textures for soundscapes
+133,2056f0cf6f474bae7631cf0684a98b6a8b31ce84,2009,10.1145/1477926.1477937,no,Data-driven curvature for real-time line drawing of dynamic scenes
+134,59a10ba2a35b639d8feaa417b34f3585fd6e5825,2012,10.1145/2366145.2366191,no,GPU-accelerated path rendering
+135,c96e8e5782a581a661f2cb2adcfdf2a4113754ba,2021,10.1145/3478513.3480493,yes,Fast and versatile fluid-solid coupling for turbulent flow simulation
+136,6fae9f895093e5b69af5c0706c81a6df602a6b05,2024,10.1145/3658187,yes,StopThePop: Sorted Gaussian Splatting for View-Consistent Real-time Rendering
+137,e8c8cf2528d274182e040c48f05c1d0b5d58dd5d,2013,10.1145/2461912.2462025,no,A hardware unit for fast SAH-optimised BVH construction
+138,cec39b66285dbaae6f5f954900e8fb7785df1b10,2025,10.1145/3731196,yes,Lightning-fast Boundary Element Method
+139,77af191e6cb35edd1d84a96435fe8adedfd376d2,2014,10.1145/2601097.2601152,no,Unified particle physics for real-time applications
+140,4ec15e17977b1b93e8a87de3b31d6024028727a4,2009,10.1145/1661412.1618518,no,Real-time prosody-driven synthesis of body language
+141,594c09ee5c45c4aeb731118ad70b9bd686cd688f,2022,10.1145/3528223.3530070,yes,Joint neural phase retrieval and compression for energy- and computation-efficient holography on the edge
+142,5c708359940834980a56cb3cd3335c27eca99482,2018,10.1145/3197517.3201289,yes,Efficient rendering of layered materials using an atomic decomposition with statistical operators
+143,43b77c7e55a206c7de3449ec7e898bc6f4986734,2021,10.1145/3476576.3476608,yes,Mixture of volumetric primitives for efficient neural rendering
+144,ca76d9b32f15496d68cc1aba3b1fbe9c7a454a2b,2021,10.1145/3476576.3476628,yes,Real-time locally injective volumetric deformation
+145,5ba1b4025d5e97c9f7ec3132ded5b8aac9212ecb,2025,10.1145/3730899,yes,Moment Bounds are Differentiable: Efficiently Approximating Measures in Inverse Rendering
+146,c6b30e662a086ced3db9225caceba9f76a938195,2016,10.1145/2897824.2925873,no,Real-time facial animation with image-based dynamic avatars
+147,08bad57e30bd81542ea560242141ee8c0fb7349a,2016,10.1145/2879177,no,Efficient Fluid Simulation on the Surface of a Sphere
+148,f53801aa01187fdbad9b3750193126040a7401ae,2025,10.1145/3763357,yes,One String to Pull Them All: Fast Assembly of Curved Structures from Flat Auxetic Linkages
+149,ddedb466ceb24cbbaa7256a4819fbe6462816c57,2005,10.1145/1186822.1073334,no,Precomputed local radiance transfer for real-time lighting design
+150,11f0d367b926a0c380ad46784003519f48c33b24,2019,10.1145/3355089.3356492,yes,Learning efficient illumination multiplexing for joint capture of reflectance and shape
+151,c0658f8e645eec57dbb7a54fa4daadec7fe52ca8,2016,10.1145/2980179.2982429,no,Efficient rendering of heterogeneous polydisperse granular media
+152,da40e92fc04ef8bd5895b4ea8e829d85273c08b0,2024,10.1145/3658160,yes,A Hierarchical 3D Gaussian Representation for Real-Time Rendering of Very Large Datasets
+153,a840887c5884a2e9f86f1e2a01277929871f6ce3,2005,10.1145/1186822.1073309,no,A practical analytic single scattering model for real time rendering
+154,8386a069bc450e4c81fc4e94bbce32cb9f719d2a,2007,10.1145/1275808.1276451,no,Eikonal rendering: efficient light transport in refractive objects
+155,ba791fc6f34fed7a2cf8b7f174a19ee87fb05012,2006,10.1145/1179352.1141918,no,Fast median and bilateral filtering
+156,a8be2596cbc0a857b33c90a9ae34214833cc76cc,2014,10.1145/2600860,no,Errata for GPU-Efficient Recursive Filtering and Summed-Area Tables
+157,cae4c077e1d9ee7e0d9f6cfa4388a8331b075627,2018,10.1145/3272127.3275086,yes,Real-time viscous thin films
+158,ac5ae6e8a197678ccef7fc79677e24badd7508dd,2016,10.1145/2897824.2925905,no,Efficient dynamic skinning with low-rank helper bone controllers
+159,0b6bfea172bfc47e6fb1a1899564792493ab7d9a,2023,10.1145/3618407,yes,Efficient Cone Singularity Construction for Conformal Parameterizations
+160,eae90eb205fc9ad9f1719cbe8686344d7a4eaa9f,2005,10.1145/1186822.1073247,yes,Efficient content-based retrieval of motion capture data
+161,fdada4e2e659a72fd855f578150c1837e1a377d2,2003,10.1145/1201775.882308,no,"Building efficient, accurate character skins from examples"
+162,ae333db5f29238144222bfb57774fbbd9b9513a2,2005,10.1145/1186822.1073300,no,Real-Time subspace integration for St. Venant-Kirchhoff deformable models
+163,2afcaa7fa2d2b19b5287b4ee8ea2b4e34b1a936d,2024,10.48550/arXiv.2407.07090,yes,3D Gaussian Ray Tracing: Fast Tracing of Particle Scenes
+164,fdfc44b8bc63d94d905b05a6a54bf34c7448d4b7,2018,10.1145/3197517.3201300,yes,Fast and deep deformation approximations
+165,6afb8792a123b169618a9143bb3a85910ed6ce16,2008,10.1145/1399504.1360692,no,Real-time gradient-domain painting
+166,84506623f512b4cb85efec6e3cf2b5967caf906c,2025,10.1145/3731186,yes,UltraMeshRenderer: Efficient Structure and Management of GPU Out-of-core Memory for Real-time Rendering of Gigantic 3D Meshes
+167,639158dadfccf7a92ad1530e570ceba3af368cb9,2022,10.1145/3528223.3530090,yes,Real-time controllable motion transition for characters
+168,1662eae9784b83ba7beaf4f1695040517df57577,2024,10.1145/3687994,yes,"HFH-Font: Few-shot Chinese Font Synthesis with Higher Quality, Faster Speed, and Higher Resolution"
+169,36f253befcb68a55b28ed71bd6a3fbf135c751e6,2010,10.1145/1866158.1866191,no,Accelerating spatially varying Gaussian filters
+170,78c8cabb5c69bb1ff404135772cdee3dab8385a4,2013,10.1145/2461912.2462017,no,An efficient computation of handle and tunnel loops via Reeb graphs
+171,8e0ddf37960fb6ff01fc9181251236e2251ecd4f,2004,10.1145/1186562.1015751,no,Efficient BRDF importance sampling using a factored representation
+172,072baf0cd9930afda2838dfa6e75d9513bfc88a0,2016,10.1145/2980179.2982434,no,Efficient GPU path rendering using scanline rasterization
+173,e108cad74b6787c1b9495d23c0ce9ea8874733d2,2024,10.1145/3687756,yes,Real-time Large-scale Deformation of Gaussian Splatting
+174,bcf5d0f316d8e93a716975add8a8a06e2ec3e500,2025,10.1145/3811278,yes,Efficient B-Spline Finite Elements for Cloth Simulation
+175,955c414ebd0dfde9b9b8d2bf3691c667a9291bb7,2014,10.1145/2601097.2601136,no,Sensitivity-optimized rigging for example-based real-time clothing synthesis
+176,b03a3b69b441443770c8d3033c0bd2d7c955f172,2004,10.1145/1186562.1015805,yes,"3D TV: a scalable system for real-time acquisition, transmission, and autostereoscopic display of dynamic scenes"
+177,75ed53365aace52cae1128aacc84b51536fe10ca,2014,10.1145/2601097.2601204,no,Displaced dynamic expression regression for real-time facial tracking and animation
+178,c6df2a906e06493d76c983dfd17574e9e42483fc,2024,10.1145/3687943,yes,Efficient Image-Space Shape Splatting for Monte Carlo Rendering
+179,c3bb2c8f59ae78f3c0d151408e4678bc58b3f13e,2016,10.1145/2980179.2982433,no,Fast and reliable example-based mesh IK for stylized deformations
+180,cf419971f28d97472eca33048a3822bfeb353b65,2006,10.1145/1179352.1141962,no,Model reduction for real-time fluids
+181,14bd67debbc163c96558fab9841d260e98b72bee,2008,10.1145/1399504.1360626,no,Real-time motion retargeting to highly varied user-created morphologies
+182,169308a0f79bd15f7f33b8223c371695c72002bd,2015,10.1145/2816795.2818082,no,Generalizing wave gestures from sparse examples for real-time character control
+183,b28b13a37896a3666b8a2212d21eec12000e4aab,2022,10.1145/3503926,yes,TextureMe: High-Quality Textured Scene Reconstruction in Real Time
+184,43f4823ed3f923775c503308fd511069663834fc,2015,10.1145/2816795.2818076,no,Efficient construction and simplification of Delaunay meshes
+185,97dcda3ee3086632373d862cdf298b406348fe21,2009,10.1145/1661412.1618488,no,Automatic bounding of programmable shaders for efficient global illumination
+186,d1ecff7f3b5a02481582f35bfe2beda45df2db21,2008,10.1145/1399504.1360635,no,Real-time smoke rendering using compensated ray marching
+187,a867cb7c0fb10af94038cc35aba5bfe174310b66,2017,10.1145/3130800.3130802,no,A BSSRDF model for efficient rendering of fur with global illumination
+188,19b70d6c2fba3539d45fa0f2e15ec5a0ba3ba248,2015,10.1145/2766954,no,Real-time hyperlapse creation via optimal frame selection
+189,1aa96ff984aa43a6e92727106d2f7bdcc002b7b2,2019,10.1145/3355089.3356491,yes,Accelerating ADMM for efficient simulation and optimization
+190,4edba9865e9364973dd030a6d9df906324115313,2019,10.1145/3209887,yes,Efficient and Accurate Collision Response for Elastically Deformable Models
+191,8441bd394084768d8b0cdf37ad66425a8ca74a09,2021,10.1145/3446790,yes,Temporally Adaptive Shading Reuse for Real-Time Rendering and Virtual Reality
+192,72404b4b9d9ad5873e69b51e504721829899682c,2008,10.1145/1457515.1409118,yes,Optimizing Cubature for Efficient Integration of Subspace Deformations
+193,16810abec821660eab4740accd418d9fa77732b2,2019,10.1145/3355089.3356496,yes,The reduced immersed method for real-time fluid-elastic solid interaction and contact simulation
+194,1041ca5912355dc7b8f459ec2883c95e80a9a0ca,2015,10.1145/2816795.2818063,no,A chebyshev semi-iterative approach for accelerating projective and position-based dynamics
+195,9afe9ca9ecd2c40eb48caaf9e58897ad40dcea3f,2025,10.1145/3731207,yes,MiSo: A DSL for Robust and Efficient Solve and MInimize Problems
+196,890f137efc064f82450c776e6a4141eb9f08fabc,2015,10.1145/2816795.2818056,no,Real-time expression transfer for facial reenactment
+197,6d044defab27748db81bf0c03f7e7f41c42ba8bc,2018,10.1145/3368314,yes,Non-line-of-sight Reconstruction Using Efficient Transient Rendering
+198,6c3d10157acabfc0fcad3a8b2e82d670a459f96c,2015,10.1145/2766991,no,Fast grid-free surface tracking
+199,9621acc7ff0d94d2ce4148e0d49050bed2df4bb2,2002,10.1145/566570.566600,no,Real-time 3D model acquisition
+200,fc05776db9d0eeb390c335714b9a48d5badfd6d3,2009,10.1145/1661412.1618464,no,Efficient affinity-based edit propagation using K-D tree
+201,1917d833acf7024c53fa5de8ed222ece5d33618d,2023,10.1145/3625264,yes,SparsePoser: Real-time Full-body Motion Reconstruction from Sparse Data
+202,718bdca8be8b3c484ff1e22bcb15b0fbb7725fa4,2024,10.1145/3658199,yes,Lightning-fast Method of Fundamental Solutions
+203,b4787cb29539cb1096a08d5277a29dbda7acac28,2014,10.1145/2629645,no,Fast Local Laplacian Filters
+204,4c24a7aea58bd27cc17b77b5fdc73ef0824638e1,2017,10.1145/3072959.3073712,yes,Real-time planning for automated multi-view drone cinematography
+205,004c98a0341c86579511ab594b3b83e73f01f99b,2006,10.1145/1179352.1141915,no,A spatial data structure for fast Poisson-disk sample generation
+206,eaba0ca8dbd6ee38ba60796846b7868fcf782b75,2018,10.1145/3197517.3201379,yes,Laplacian kernel splatting for efficient depth-of-field and motion blur synthesis or reconstruction
+207,fc6a0e623aa30145629e74cc5ce9c0503c2eef93,2017,10.1145/3072959.3016963,no,Efficient Solver for Spacetime Control of Smoke
+208,c0f82a94366c0859141e529ee6888117fb250711,2017,10.1145/3130800.3130846,no,Fast gaze-contingent optimal decompositions for multifocal displays
+209,66292d7e0ae8762edd9407a4f80f654d3158cdf1,2018,10.1145/3272127.3275093,yes,Stabilized real-time face tracking via a learned dynamic rigidity prior
+210,55c1b5dedf767ef5386d422261c2758c87cbec79,2024,10.48550/arXiv.2407.14053,yes,DirectL: Efficient Radiance Fields Rendering for 3D Light Field Displays
+211,711573d2d23c1f5509dd3115fb744df531c0b908,2019,10.1145/3306346.3322945,yes,Efficient and conservative fluids using bidirectional mapping
+212,af0078586ef861be0bb7c6aa9b8f546c3a3d9aaa,2015,10.1145/2729972,no,Real-Time Nonlinear Shape Interpolation
+213,d077c942ed72f37d609f02850cce2300da58442f,2015,10.1145/2816795.2818103,no,Solving trigonometric moment problems for fast transient imaging
+214,9206cfd222e291b57b6beda227772399d550a72a,2018,10.1145/3153420,no,Stabilizing Integrators for Real-Time Physics
+215,d6ae7941dcec920d5726d50d1b1cdfe4dde34d35,2017,10.1145/3130800.31310887,no,Avatar digitization from a single image for real-time rendering
+216,58d4eeb98cb10be6c1077ce415132c6b46eaaa6a,2007,10.1145/1275808.1276468,yes,Real-time enveloping with rotational regression
+217,4fdb4c238c30e3cf463960c88b89635415435711,2018,10.1145/3197517.3201370,yes,Real-time data-driven interactive rough sketch inking
+218,3f9b8a2052d3bfc84167e62e729e83223a461b06,2012,10.1145/2185520.2185599,no,Precomputed acceleration noise for improved rigid-body sound
+219,a1fccc6bf1d25fa82b58d2b9ed41fbcee501e662,2023,10.1145/3658193,yes,SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration
+220,a7406fc1b69d05b2405e48596049cbab37227f39,2020,10.1145/3386569.3392432,yes,Fast and flexible multilegged locomotion using learned centroidal dynamics
+221,3e9f149fa8bf318f5e45676d5b98054f1c8fb6f0,2024,10.1145/3658135,yes,A Neural Network Model for Efficient Musculoskeletal-Driven Skin Deformation
+222,fa4147bf49206496b97b9505fc74a2e54ad96a79,2021,10.1145/3478513.3480563,yes,Fast and accurate spherical harmonics products
+223,682b65d31fe3eda2dd5e092f06702d36f903128b,2016,10.1145/2897824.2925913,no,Point registration via efficient convex relaxation
+224,c9d554b21072dd6306af6a4a3399c19257bf0d23,2017,10.1145/3072959.3083722,no,"Real-Time Geometry, Albedo, and Motion Reconstruction Using a Single RGB-D Camera"
+225,dad8852fec4b4eaba8bf3c2652b13c34a0a04742,2023,10.1145/3592460,yes,Real-Time Radiance Fields for Single-Image Portrait View Synthesis
+226,f4b9c480f794909195605c1c7960b98489cba2e8,2008,10.1145/1457515.1409106,no,Fast image/video upsampling
+227,8c5f919b723fecb0366902ef3f89a8416ce471fd,2024,10.1145/3687925,yes,Exact and Efficient Intersection Resolution for Mesh Arrangements
+228,56dccae1e5f32c72b1b98c39436fa79dff241beb,2024,10.1145/3687914,yes,3D Reconstruction with Fast Dipole Sums
+229,e3c569984cebd4d131fbd1a54674f72e3f9ef6f9,2021,10.1145/3447807,yes,GPU Accelerated Path Tracing of Massive Scenes
+230,a8d9fd44d75807494230e494b1d9925315be70ce,2021,10.1145/3478513.3480544,yes,Generalized fluid carving with fast lattice-guided seam computation
+231,e4d153e493a5e810463a95c615742718185464a5,2022,10.1145/3519595,yes,"An Efficient B-Spline Lagrangian/Eulerian Method for Compressible Flow, Shock Waves, and Fracturing Solids"
+232,e1ddc1fa49ac3e63604895d0a31e327696fb3388,2007,10.1145/1275808.1276469,no,Key Point Subspace Acceleration and soft caching
+233,57ec2e1f110fb217c5861cec03b2b47485f92880,2015,10.1145/2816814,no,Fast 4D Sheared Filtering for Interactive Rendering of Distribution Effects
+234,b0df9e89ec7dc00d4625026e0bf9143bbcbad595,2023,10.1145/3617682,yes,Light Codes for Fast Two-Way Human-Centric Visual Communication
+235,6f88e4a3617f34731784eeb500f7e1a2436df7c4,2020,10.1145/3386569.3392397,yes,Fast and deep facial deformations
+236,f9f50355be53ea1a8f371938f4ed20afe811e784,2007,10.1145/1275808.1276438,no,Efficient simulation of inextensible cloth
+237,eee20a79cbfdbf69f0c6ea69ef8cc813ff989716,2018,10.1145/3197517.3201279,yes,Efficient reflectance capture using an autoencoder
+238,6c33d461a6ef5fb82e79f9469fcdd8b5005390c3,2020,10.1145/3430025,yes,A Safe and Fast Repulsion Method for GPU-based Cloth Self Collisions
+239,f01055ed70703d154ec0c6e6984eab1e61587c35,2018,10.1145/3272127.3275096,yes,Real-time compression and streaming of 4D performances
+240,007509d3e621b7d381027a1d77bff0690b41527b,2024,10.1145/3658203,yes,Real-Time Path Guiding Using Bounding Voxel Sampling
+241,56e2d748e04aceb3e6398ed211777f94a0b7fce1,2023,10.1145/3618362,yes,Efficient Hybrid Zoom Using Camera Fusion on Mobile Phones
+242,fa71a57af6e2e552584c931e365f19e603bd6108,2017,10.1145/3130800.3130829,no,Fast rendering of fabric micro-appearance models under directional and spherical gaussian lights
+243,e87cbeeb08e1a89073903d73aa0ce8b25536d4d6,2025,10.1145/3730826,yes,Fast Subspace Fluid Simulation with a Temporally-Aware Basis
+244,0f1ea2db43b9943a3460a21cde29b0f936cac9d7,2010,10.1145/1833349.1778802,no,Real-time lens blur effects and focus control
+245,af39808d55574996a0291c595fb75dce288a8895,2012,10.1145/2185520.2185573,no,Fast automatic skinning transformations
+246,abdf16f22c29744f1b3696b673459bbc4eba1927,2024,10.1145/3687907,yes,"EgoHDM: A Real-time Egocentric-Inertial Human Motion Capture, Localization, and Dense Mapping System"
+247,068b2946c6c3b1c8cd6bc79af9cf94f32cdf2f8f,2019,10.1145/3325136,yes,Coding Scheme Optimization for Fast Fluorescence Lifetime Imaging
+248,0cd2bd01920cad38b43cbf8864984e9e01dc4e85,2020,10.1145/3386569.3392426,yes,Exact and efficient polyhedral envelope containment check
+249,0fc9be3b638f08411aeb43f805ab8e4a1941c9f3,2024,10.1145/3687760,yes,Efficient GPU Cloth Simulation with Non-distance Barriers and Subspace Reuse
+250,9be086dc4aaf2ddc99876d2695506688b9d657c9,2016,10.1145/2908736,yes,Efficient and Flexible Deformation Representation for Data-Driven Surface Modeling
+251,b8d9e2bb5b517f5b307045efd0cc3a9bf4967419,2016,10.1145/2876504,no,Efficient 3D Object Segmentation from Densely Sampled Light Fields with Applications to 3D Reconstruction
+252,a2847067e8fdcb0d7f8bdca5581341a5c667c2d6,2018,10.1145/3272127.3275059,yes,An adaptive parameterization for efficient material acquisition and rendering
+253,5a7198cb14cd7615ef752cd99063e463e59fbff3,2025,10.1145/3811035,yes,Robust and Efficient Penetration-Free Elastodynamics without Barriers
+254,b87de783bafd33c5231a2b79d9e0fa6eca3a3fee,2008,10.1145/1399504.1360631,no,Dual scattering approximation for fast multiple scattering in hair
+255,ab5e65dd1094b5efe923935bd1ca2df3d81f24c8,2020,10.1145/3386569.3392481,yes,Spatiotemporal reservoir resampling for real-time ray tracing with dynamic direct lighting
+256,d9a1c68e94373959651af8752c10eb7cb0dbad8b,2022,10.1145/3550454.3555500,yes,Efficient Differentiation of Pixel Reconstruction Filters for Path-Space Differentiable Rendering
+257,95f40e2c6b24d7b8ed3d5e59401f12699c5a2651,2020,10.1145/3386569.3392435,yes,Efficient bijective parameterizations
+258,1ffcc6e24cbe5d1d8d798790bef61facda6bfd66,2025,10.1145/3730892,yes,TransparentGS: Fast Inverse Rendering of Transparent Objects with Gaussians
+259,fee03a6178b49b0ad7a83490526bc7b317b592c3,2003,10.1145/1201775.882339,no,Real-time rendering of aerodynamic sound using sound textures based on computational fluid dynamics
+260,d8f0a7a5592ffed3b95231d8e0fb162fb391315f,2025,10.1145/3727142,yes,Patch-Grid: An Efficient and Feature-Preserving Neural Implicit Surface Representation
+261,4eb6ae69587401a8e3438c2631b97a53c01295d1,2013,10.1145/2508363.2508406,no,Fast simulation of mass-spring systems
+262,e00b2b27c3c50acfce08ff51b1a1ef2d4e978c53,2010,10.1145/1833349.1778842,no,Efficient yarn-based cloth with adaptive contact linearization
+263,b8c2529ea866124edff45f961a4fa7587eb31641,2011,10.1145/2024156.2024187,no,An efficient alias-free shadow algorithm for opaque and transparent objects using per-triangle shadow volumes
+264,bffc02e9fc9b160d5b7a3faaf7df2c65932f157c,2001,10.1145/383745.383748,no,Spatiotemporal sensitivity and visual attention for efficient rendering of dynamic environments
+265,112550a048cbdee9accd520ff676945cc0c7fac5,2015,10.1145/2816795.2818117,no,Fast multiple-fluid simulation using Helmholtz free energy
+266,14e2c192fddff1f5a4002c9b0428c2f9b2513300,2021,10.1145/3451341,yes,Single Depth View Based Real-Time Reconstruction of Hand-Object Interactions
+267,f534a13065e96f0fd1988fa99177f8f9651a220c,2007,10.1145/1275808.1276480,no,FastLSM: fast lattice shape matching for robust real-time deformation
+268,2ea91cca9d3744109f59354369640a1cef638ce1,2024,10.1145/3687923,yes,GFFE: G-buffer Free Frame Extrapolation for Low-latency Real-time Rendering
+269,bd671b6dc3394682048a7053bed20eff9691414c,2015,10.1145/2766943,no,Real-time high-fidelity facial performance capture
+270,90e105f38ef4194382b3183f8db94ad7c0c005db,2014,10.1145/2601097.2601107,no,Fast tile-based adaptive sampling with user-specified Fourier spectra
+271,0f1c0884e5767236f70f75c58242c2feb52f42b6,2012,10.1145/2185520.2185529,no,Adaptive manifolds for real-time high-dimensional filtering
+272,6e727171ee9379ab1e3579e3972f53168fe6df24,2015,10.1145/2816795.2818092,no,Real-time noise-aware tone mapping
+273,ebfb3664c30b384b9ac29f1fb55b588597b6a9c0,2021,10.1145/3478513.3480499,yes,Fast volume rendering with spatiotemporal reservoir resampling
+274,6f7bc7b63841a321ff74494a533d5c8bef6eddf4,2008,10.1145/1399504.1360623,no,Fast modal sounds with scalable frequency-domain synthesis
+275,dbe2b86f931c9247595342a8d0e4d4fd9902bc29,2020,10.1145/3414685.3417818,yes,Fast and robust mesh arrangements using floating-point arithmetic
+276,de59b2bb843b74165ce644d3ea972935adffed85,2015,10.1145/2766952,no,Linear subspace design for real-time shape deformation
+277,2c4a0773455107ca372bd1f7c7b6289e9ff3cda2,2021,10.1145/3470005,yes,SGN: Sparse Gauss-Newton for Accelerated Sensitivity Analysis
+278,9dcab57799fde68b334a620eb17d31a266692ea0,2010,10.1145/1866158.1866201,no,Fast parallel surface and solid voxelization on GPUs
+279,890986a042ba174ff9a4e8f7f2065308828dde90,2023,10.1145/3643028,yes,GIPC: Fast and Stable Gauss-Newton Optimization of IPC Barrier Energy
+280,2aaeb8d48e1c944527f4a3e41bcb81f126cd202c,2024,10.1145/3687985,yes,Multi-Resolution Real-Time Deep Pose-Space Deformation
+281,ae639e4bdd2e6a11bc44ff7f1ae53cd25462042b,2014,10.1145/2629500,no,Real-Time Continuous Pose Recovery of Human Hands Using Convolutional Networks
+282,7a68619499479275980b14e8fd79dcf40d37fddf,2017,10.1145/3072959.3073598,no,Sequential line search for efficient visual design optimization by crowds
+283,8925051ccff2f07877bfcaf8b836bc4ff2307c72,2020,10.1145/3386569.3392373,yes,Analytic spherical harmonic gradients for real-time rendering with many polygonal area lights
+284,31b86177eb0787286ac216bbeba743acbb88a27a,2019,10.1145/3306346.3322937,yes,Wave-based non-line-of-sight imaging using fast f-k migration
+285,eb6de017952db28fd8d18e2f2e3e1e833ed477e8,2023,10.1145/3592445,yes,Efficient Embeddings in Exact Arithmetic
+286,5f881bad9890599d59cd5d5c01063c6ea06058fd,2011,10.1145/2024156.2024214,yes,Practical filtering for efficient ray-traced directional occlusion
+287,53e24120dec66956ff106e3e8a59f2ab295997f3,2004,10.1145/1186562.1015791,no,The CAT for efficient 2D and 3D interaction as an alternative to mouse adaptations
+288,b8ebe6d1953dd30a40426a339e8a7362734f612b,2023,10.1145/3592419,yes,ETER: Elastic Tessellation for Real-Time Pixel-Accurate Rendering of Large-Scale NURBS Models
+289,5dd65955980dfcfe855b4f59624f403826cda7a4,2016,10.1145/2897824.2925902,yes,Fast approximations for boundary element based brittle fracture simulation
+290,90eadc862cb3443e6c11045c5bbf51152cc959eb,2013,10.1145/2508363.2508423,no,A general and efficient method for finding cycles in 3D curve networks
+291,85a4f6612bc4a768eb69ef0f72a7a507aaa6860d,2023,10.1145/3659577,yes,Real-time Neural Appearance Models
+292,b16b401ba4817bb42ef1ed5720da1709c56519ad,2017,10.1145/3072959.3073703,yes,Real-time user-guided image colorization with learned deep priors
+293,8d2c65680bce8a8b2419e955b5632c393fadc7f2,2013,10.1145/2508363.2508392,no,An efficient construction of reduced deformable objects
+294,8afc242ab69c7d85c9f3ffa2694606237c0ef2b1,2012,10.1145/2185520.2185592,no,Efficient geometrically exact continuous collision detection
+295,29705e35980dad294334c04d8f70f4c411e6f7e3,2019,10.1145/3360510,yes,A System for Efficient 3D Printed Stop-motion Face Animation
+296,591201e1ce2f185c7461c8e15da8ced0c551bf34,2017,10.1145/3130800.3130853,no,Articulated distance fields for ultra-fast tracking of hands interacting
+297,3c3a487a9334caf06b36ab8deb2c8f3267505fb2,2023,10.1145/3697140,yes,TriHuman: A Real-time and Controllable Tri-plane Representation for Detailed Human Geometry and Appearance Synthesis
+298,e484bdbc78a74ecf5dceca82795480d42b52fb74,2008,10.1145/1399504.1360646,no,Fast viscoelastic behavior with thin features
+299,7eae776c34350f15c492c0525c6f72fa8453a063,2023,10.1145/3618401,yes,FLARE: Fast Learning of Animatable and Relightable Mesh Avatars
+300,1115d5d022c3c15246463a0bc684bb789bfc82dd,2021,10.1145/3476576.3476579,yes,Real-time neural radiance caching for path tracing
+301,00a463a082b0ae51095e9ce2c941fc2672aae2c9,2010,10.1145/1833349.1778817,no,Star-contours for efficient hierarchical self-collision detection
+302,071f000cb464739f1b1281d532a5460136bb0741,2025,10.1145/3730834,yes,Fast But Accurate: A Real-Time Hyperelastic Simulator with Robust Frictional Contact
+303,213f94c282788922451322101ca358a503dde5ef,2025,10.1145/3763327,yes,Fast Galerkin Multigrid Method for Unstructured Meshes
+304,15f274dc66850461d8c8f3b4b873712f6d1ec16f,2025,10.1145/3777909,yes,Resolution Where It Counts: Hash-based GPU-Accelerated 3D Reconstruction via Variance-Adaptive Voxel Grids
+305,4ef0a1200a1d9e69a291184d5c4c7cffc562135f,2007,10.1145/1275808.1276506,yes,Real-time edge-aware image processing with the bilateral grid
+306,9f8429fec74e9acb0d611dcdb44ee52511d95d34,2011,10.1145/1964921.1964944,no,Efficient maximal poisson-disk sampling
+307,9884afeca71ae78364fcf7c0915a349b9ce6a5da,2023,10.1145/3592099,yes,"EgoLocate: Real-time Motion Capture, Localization, and Mapping with Sparse Body-mounted Sensors"
+308,c141a3f59c0d7bd75f65821e5822dc3197a032e8,2013,10.1145/2461912.2461934,no,Real time dynamic fracture with volumetric approximate convex decompositions
+309,12c1a87bd12d2f3fd55eb0dfa5b8ed065c696daa,2018,10.1145/3197517.3201337,yes,Fast winding numbers for soups and clouds
+310,aca1258b35e98540fcd9eade5e8a162fb76a7f1c,2006,10.1145/1179352.1142001,no,A fast multigrid algorithm for mesh deformation
+311,ef74467d2b50daaefa092812436e0a0bc1de0dd5,2022,10.1145/3528223.3530109,yes,A fast unsmoothed aggregation algebraic multigrid framework for the large-scale simulation of incompressible flow
+312,e0a7f110e160ffdecfb2b66e09563bb64f77b33f,2008,10.1145/1399504.1360633,no,"Real-time, all-frequency shadows in dynamic scenes"
+313,52299c479046ab17f9c9861b920a63432f22e357,2005,10.1145/1186822.1073328,no,Wavelet importance sampling: efficiently evaluating products of complex functions
+314,fdd544f240cf26e68aaae05459e384e371baa0a5,2015,10.1145/2766968,no,Accelerating vector graphics rendering using the graphics hardware pipeline
+315,56e24363a2b786811aeb8e03710a481954c1fb2c,2016,10.1145/2897824.2925895,no,Real-time polygonal-light shading with linearly transformed cosines
+316,6637ec449976278675777c36d560012369933383,2007,10.1145/1275808.1276495,no,Efficient gradient-domain compositing using quadtrees
+317,6d6865168bd454a9fb59b4bf32b6aae6328c9c8c,2025,10.1145/3731165,yes,Interspatial Attention for Efficient 4D Human Video Generation
+318,f2b612ec0ddba0c0121cb618a7b1acc0308347fe,2020,10.1145/3386569.3392376,yes,Neural supersampling for real-time rendering
+319,ed872e5d15d92044a949872afade7567fc24e2d5,2021,10.1145/3452097,yes,"Vectorization for Fast, Analytic, and Differentiable Visibility"
+320,272a8ff438d6bc5dbaca2ac68499f00c6088cf1a,2009,10.1145/1576246.1531327,no,Gaussian KD-trees for fast high-dimensional filtering
+321,2cc1d857e86d5152ba7fe6a8355c2a0150cc280a,2023,10.1145/3592433,yes,3D Gaussian Splatting for Real-Time Radiance Field Rendering
+322,98f2b66558e6492481cf618b0ed759b18be5c131,2010,10.1145/1866158.1866180,no,Real-time collision culling of a million bodies on graphics processing units
+323,efa775a35670f53bfeb023576973b53570b125bb,2016,10.1145/2897824.2925959,no,Real-time skeletal skinning with optimized centers of rotation
+324,997557e070c2ba127f57a23aa0d0af2b942cfb09,2017,10.1145/3130800.3130854,yes,Conformation constraints for efficient viscoelastic fluid simulation
+325,e656deb595c384026d901f3c23b4e9dcafb02182,2015,10.1145/2816795.2818122,no,Video-audio driven real-time facial animation
+326,30633941905e32034fe4e0a99906d531952239db,2006,10.1145/1179352.1142006,no,Fast proximity computation among deformable models using discrete Voronoi diagrams
+327,b64cf0ff488e6b770ae40b62d5df1c76d7fb8ed5,2016,10.1145/2897824.2925965,no,"Efficient and precise interactive hand tracking through joint, continuous optimization of pose and correspondences"
+328,91dcf30db16ff22117c3ab71fd058cba2a32626e,2023,10.1145/3618374,yes,An Adaptive Fast-Multipole-Accelerated Hybrid Boundary Integral Equation Method for Accurate Diffusion Curves
+329,08e2d18e2399dc71b8d849a7feb2f1731c8ac303,2025,10.1145/3734518,yes,Reliable Iterative Dynamics: A Versatile Method for Fast and Robust Simulation
+330,aa17869eb91e3bb89b432759171a9f46fd2c481a,2014,10.1145/2661229.2661261,no,A PPPM fast summation method for fluids and beyond
+331,b3857b64c4db46f8ee215794b16bc9a82e18fde1,2024,10.1145/3759247,yes,PatchEX: High-Quality Real-Time Temporal Supersampling through Patch-based Parallel Extrapolation
+332,a642f81bbb2a2b5d0e1b16e2d418eef279fb62d5,2020,10.1145/3388540,yes,Complete Classification and Efficient Determination of Arrangements Formed by Two Ellipsoids
+333,6acb999fb2d3b4f7f93646ad12d252496675bd7e,2007,10.1145/1275808.1276489,no,Fast triangle reordering for vertex locality and reduced overdraw
+334,6f2c7d1ff27344c74435c46c22e448c07baae556,2022,10.1145/3550454.3555517,yes,Efficient Neural Style Transfer for Volumetric Simulations
+335,3e81c65f823b3b88431a76f72f8ece38bb493c96,2023,10.1145/3592439,yes,P2M: A Fast Solver for Querying Distance from Point to Mesh Surface
+336,fb995b3697e1e8d552ab10ee2599bc4da49ac9c0,2019,10.1145/3306346.3322939,yes,An adaptive variational finite difference framework for efficient symmetric octree viscosity
+337,f8a9e030e55a1c6b3694da8a91076bfc0c9dcf27,2022,10.1145/3550454.3555452,yes,Efficient Light Probes for Real-Time Global Illumination
+338,63d5032d9f0e2bd642a303abaef9e325912b04b0,2015,10.1145/2766965,yes,Intuitive and efficient camera control with the toric space
+339,85a017a4dfd4240f5ad14663b75d7195fa9ea6f8,2004,10.1145/1186562.1015802,yes,Adaptive tetrapuzzles: efficient out-of-core construction and visualization of gigantic multiresolution polygonal models
+340,8be0cd9ae8b9e6e43d572521f6d35b4c50afb23e,2011,10.1145/1964921.1964932,no,Efficient elasticity for character skinning with contact and collisions
+341,a4a7ee8f6df8f367e79846c0b1c6c0b25bbeb958,2016,10.1145/2897824.2925930,no,Fast and exact discrete geodesic computation based on triangle-oriented wavefront propagation
+342,9cc71af1b93c0b4f6b9f3ea45314a080d8c7dbb4,2017,10.1145/3072959.3073600,no,An efficient and practical near and far field fur reflectance model
+343,e754a923ea3b64d4c7c5fee6a7904030b6995570,2018,10.1145/3272127.3275101,yes,Deep incremental learning for efficient high-fidelity face tracking
+344,5c3e35e39465dcc2a5fc77192eea50f077f4c452,2019,10.1145/3355089.3356493,yes,Accelerated complex-step finite difference for expedient deformable simulation
+345,071add42f03d8e526924ba591f9fe5abfde48091,2005,10.1145/1186822.1073295,no,Fast frictional dynamics for rigid bodies
+346,a5498ad2b3e4506386dd6af84eb37160780e5825,2008,10.1145/1399504.1360690,no,Real-time data driven deformation using kernel canonical correlation analysis
+347,bc10bb0b5cd246050ac8607f288921cd37958fd5,2004,10.1145/1186562.1015708,no,Graphics gems revisited: fast and physically-based rendering of gemstones
+348,db9687c703bb51f6a788b877781fdd47f70f2aa9,2025,10.1145/3727620,yes,Fast Determination and Computation of Self-intersections for NURBS Surfaces
+349,ee2ad0772249649d8fab020b49e112d560c3bac7,2021,10.1145/3478513.3480557,yes,Efficient and robust discrete conformal equivalence with boundary
+350,dd060b3cba59bd857807d010269f485011fefe48,2024,10.1145/3658213,yes,Efficient Debris-flow Simulation for Steep Terrain Erosion
+351,a8e3eafcad48163f0ea13849468d740cc67a3e9b,2008,10.1145/1399504.1360628,no,Example-based dynamic skinning in real time
+352,aa6fc4e4e4405200f4027d1da62b86fd0b90f387,2020,10.1145/3414685.3417791,yes,Offsite aerial path planning for efficient urban scene reconstruction
+353,6318714027d58d7b402314c3c42b466d1307c33e,2011,10.1145/2024156.2024194,no,T&I engine: traversal and intersection engine for hardware accelerated ray tracing
+354,c2adb138674a7f75ade139d0e56d7a8e83f0803e,2013,10.1145/2508363.2508374,no,Real-time 3D reconstruction at scale using voxel hashing

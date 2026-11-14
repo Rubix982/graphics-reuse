@@ -43,3 +43,7 @@ _Written 2026-11-14, before the full hit list was fetched or shuffled. Only an 8
 ## Known weakness
 
 The sorter is the orchestrator, the same model family that wrote the axes. Each decision carries the abstract's own words as its reason, so it can be checked. An independent second sort would measure agreement; it isn't part of the card.
+
+## Files
+
+`draw.py` writes `raw.json` (every API result), `hits.csv` and `shuffled.csv`; `abstracts.py` writes `abstracts.jsonl`. `raw.json` and `abstracts.jsonl` hold publishers' abstracts in full, so they are git-ignored; running the two scripts regenerates them. Semantic Scholar's index may change, so a later run can differ, and `hits.csv` is the record of what this run drew.

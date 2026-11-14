@@ -12,3 +12,4 @@
 - [R-013] Brouet et al. 2012 read in full: 11 of 16 paper items named by no agent run, all six general ones about grading, so the addition was a reframe — agents/researcher/findings/r013/, entries/design-preserving-garment-transfer.md
 - [R-014] Opened: does the paper add anything when the agent is asked about grading directly
 - [R-015] Recent graphics literature in four areas for the test bed's measured problems: yes branch, by strategies more than solvers; R-016 opened for Dress-1-to-3 — agents/researcher/findings/r015/, agents/shared/findings.md
+- [R-012] Held-out test of the axes: 18 of 20 clean (strict) or 20 of 20 (lenient), keep; R-005 to R-010 unblocked; many instances 12, runs and shapes 0; T-015 and T-016 opened — agents/researcher/findings/r012/

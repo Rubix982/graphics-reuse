@@ -82,7 +82,7 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Parent:** T-001
 **Opened:** 2026-11-14
 **Question:** None of R-004's twelve techniques landed on "across runs". Inside a simulation, history is the physics; across runs, each run is meant to be independent of history, so carrying it over is an error to guard against. Is that difference enough to keep a separate axis, or does the literature treat both the same way?
-**Answer:** —
+**Answer:** — Evidence so far, not a decision: R-012's procedure-drawn sample (20 reuse papers from TOG speed papers) had none on "across runs", which its card counts as evidence for folding; R-015's need-chosen sample had five, all inside fitting or editing loops (T-013).
 
 ### T-011 · Does switching friction off make a fit's width sensitivities keep their sign?
 
@@ -114,4 +114,20 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Parent:** T-001
 **Opened:** 2026-11-14
 **Question:** Light Groups recombine linearly in strength and colour, so a few group passes rendered once could be weighted to match a photo. Exact only for scaling, not for moving lights or changing albedo, and denoising breaks linearity. (R-015, area D; reasoned, untested.)
+**Answer:** —
+
+### T-015 · Where do exact repeats within one evaluation go?
+
+**Status:** open
+**Parent:** T-001
+**Opened:** 2026-11-14
+**Question:** R-012 found two speedups from computing an identical term once and sharing it (an edge-based FEM formulation, D*'s common-subexpression elimination). The premise calls exact repeats and memoization reuse, "the easy case", but all six axes describe near-repeats along some dimension. Is this a seventh axis ("within one evaluation"), out of scope by design (the premise says tools already handle exact repeats), or part of "across space"? Either answer should be written into README.md.
+**Answer:** —
+
+### T-016 · Is "across many instances" too broad to file by?
+
+**Status:** open
+**Parent:** T-001
+**Opened:** 2026-11-14
+**Question:** It took 12 of R-012's 20 papers: learned models, baked neural representations, precomputed tables and bases, reduced models, a precomputed Pareto front. They share "paid once, used many times" but have different validity conditions (a learned model fails off its training distribution, a precomputed transport operator when the scene moves). Would splitting it (precomputed from the problem's own data vs learned from other problems) give conditions that differ more between than within? R-010's survey is the natural place to find out.
 **Answer:** —

@@ -90,3 +90,16 @@ Four areas of 2023–2026 graphics literature were searched by saved queries: le
 - Checked against primary sources by the orchestrator: GarmentCodeData's rule (arXiv HTML), Dress-1-to-3's friction sentence and its 2 h on an RTX 3090 (arXiv HTML), HOOD's MIT licence, Newton's "macOS (CPU only)" (README), Warp's "kernels launched on CPU devices will be executed in serial" (runtime guide). Other numbers came through the agents' reads, many via WebFetch extracts, and must be re-checked before they go into an entry.
 
 Confidence: high that the headline speedups don't transfer to the constraints (each paper states its hardware); medium on the per-candidate code verdicts (read from repos, nothing run); low on any speed on this machine (nothing was timed).
+
+## [R-012] Finding: the axes sort papers they weren't built from, but one axis does most of the work
+
+_Date: 2026-11-14_
+
+354 ACM TOG papers from 2000–2025 with fast, faster, efficient, accelerat- or real-time in the title (Semantic Scholar, since DBLP answered with a bot check) were shuffled with seed 1114 and sorted from their abstracts until 20 reuse papers were found. 18 of 20 sorted cleanly under the strict reading and 20 of 20 under the lenient one, against the card's bar of 16, so the axes are kept and the per-axis surveys unblock. 41 % of judged speedup papers were reuse (20 of 49). Full record, with each abstract's words: `agents/researcher/findings/r012/sorted.md`.
+
+- The two strict misfits are one kind: an identical term computed once and shared within one evaluation (common subexpressions: an edge-based FEM formulation, D*'s symbolic derivatives). The library's premise calls exact repeats reuse, but no axis has a place for them (T-015).
+- By axis: across many instances 12, space 4, resolutions 2, time 2, shapes 0, runs 0. "Many instances" holds learned models, baked representations, precomputed tables and bases, and reduced models; it may be too broad to file by (T-016).
+- "Across runs" got none, as in R-004: by the card's rule, evidence for folding it into "across time" (T-009). R-015's need-chosen sample had five, all in fitting or editing loops (T-013).
+- By mechanism (strict): reuse changes the answer in 12 of 22 mechanisms, only the cost in 7, depends in 3.
+
+Confidence: medium on the verdict that the axes hold. The bar was set in advance and both readings clear it, but the sorter is the model family that wrote the axes, there was no second sorter, and Semantic Scholar's coverage of TOG wasn't checked. High that the sample was drawn as pre-registered (`draw.py` reproduces it). Medium on the per-axis counts, which rest on judgement calls recorded in `sorted.md`.

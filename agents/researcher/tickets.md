@@ -87,7 +87,7 @@ Each survey ticket covers one axis. Following METHOD.md steps 1 to 3, including 
 
 ### R-005 · Survey: across time
 
-**Status:** blocked
+**Status:** open
 **Type:** research
 **Priority:** medium
 **Created:** 2026-11-14
@@ -96,7 +96,7 @@ Each survey ticket covers one axis. Following METHOD.md steps 1 to 3, including 
 **Description:**
 Per the shared description. Start from: warm starting in contact solvers (Catto 2005); refitting bounding-volume trees; sort and sweep on nearly sorted lists; temporal reprojection and temporal anti-aliasing; kinetic data structures (Basch, Guibas and Hershberger 1997).
 
-**Blockers:** R-012 (the axes may change)
+**Blockers:** none (R-012 closed 2026-11-14: the axes hold, 18 or 20 of 20 clean)
 
 **Artifacts:** —
 
@@ -104,7 +104,7 @@ Per the shared description. Start from: warm starting in contact solvers (Catto 
 
 ### R-006 · Survey: across space
 
-**Status:** blocked
+**Status:** open
 **Type:** research
 **Priority:** medium
 **Created:** 2026-11-14
@@ -113,7 +113,7 @@ Per the shared description. Start from: warm starting in contact solvers (Catto 
 **Description:**
 Per the shared description. Start from: ReSTIR's spatial reuse (Bitterli et al. 2020); irradiance caching (Ward, Rubinstein and Clear 1988); photon mapping's density estimation; spatial denoising filters.
 
-**Blockers:** R-012 (the axes may change)
+**Blockers:** none (R-012 closed 2026-11-14: the axes hold, 18 or 20 of 20 clean)
 
 **Artifacts:** —
 
@@ -121,7 +121,7 @@ Per the shared description. Start from: ReSTIR's spatial reuse (Bitterli et al. 
 
 ### R-007 · Survey: across runs
 
-**Status:** blocked
+**Status:** open
 **Type:** research
 **Priority:** medium
 **Created:** 2026-11-14
@@ -130,7 +130,7 @@ Per the shared description. Start from: ReSTIR's spatial reuse (Bitterli et al. 
 **Description:**
 Per the shared description. Start from: warm starting and numerical continuation (Allgower and Georg 1990); adjoint and differentiable simulation, where one backward pass replaces one forward run per parameter; incremental recomputation in node-based procedural tools.
 
-**Blockers:** R-012 (the axes may change)
+**Blockers:** none (R-012 closed 2026-11-14: the axes hold, 18 or 20 of 20 clean)
 
 **Artifacts:** —
 
@@ -138,7 +138,7 @@ Per the shared description. Start from: warm starting and numerical continuation
 
 ### R-008 · Survey: across resolutions
 
-**Status:** blocked
+**Status:** open
 **Type:** research
 **Priority:** medium
 **Created:** 2026-11-14
@@ -147,7 +147,7 @@ Per the shared description. Start from: warm starting and numerical continuation
 **Description:**
 Per the shared description. Start from: multigrid for cloth (Tamstorf et al. 2015); learned upsampling (Kavan et al. 2011); adaptive remeshing (Narain et al. 2012); progressive meshes (Hoppe 1996); mipmapping and level of detail.
 
-**Blockers:** R-012 (the axes may change)
+**Blockers:** none (R-012 closed 2026-11-14: the axes hold, 18 or 20 of 20 clean)
 
 **Artifacts:** —
 
@@ -155,7 +155,7 @@ Per the shared description. Start from: multigrid for cloth (Tamstorf et al. 201
 
 ### R-009 · Survey: across shapes
 
-**Status:** blocked
+**Status:** open
 **Type:** research
 **Priority:** medium
 **Created:** 2026-11-14
@@ -164,7 +164,7 @@ Per the shared description. Start from: multigrid for cloth (Tamstorf et al. 201
 **Description:**
 Per the shared description. Start from: deformation transfer (Sumner and Popović 2004); design-preserving garment transfer (Brouet et al. 2012); functional maps for correspondence between shapes (Ovsjanikov et al. 2012); skinning weight transfer; motion retargeting.
 
-**Blockers:** R-012 (the axes may change)
+**Blockers:** none (R-012 closed 2026-11-14: the axes hold, 18 or 20 of 20 clean)
 
 **Artifacts:** —
 
@@ -172,7 +172,7 @@ Per the shared description. Start from: deformation transfer (Sumner and Popovi�
 
 ### R-010 · Survey: across many instances
 
-**Status:** blocked
+**Status:** open
 **Type:** research
 **Priority:** medium
 **Created:** 2026-11-14
@@ -181,7 +181,7 @@ Per the shared description. Start from: deformation transfer (Sumner and Popovi�
 **Description:**
 Per the shared description. Start from: precomputed radiance transfer (Sloan, Kautz and Snyder 2002); baked lighting; precomputed signed distance fields for static colliders; learned cloth simulators.
 
-**Blockers:** R-012 (the axes may change)
+**Blockers:** none (R-012 closed 2026-11-14: the axes hold, 18 or 20 of 20 clean)
 
 **Artifacts:** —
 
@@ -211,7 +211,7 @@ METHOD.md step 2b, skipped when the seed entries were written. For each of the t
 
 ### R-012 · Held-out test of the axes
 
-**Status:** in-progress
+**Status:** closed
 **Type:** research
 **Priority:** high
 **Created:** 2026-11-14
@@ -224,9 +224,15 @@ The live card in `CARD.md`. Search DBLP (or Semantic Scholar, if DBLP can't filt
 
 **Parked:** 2026-11-14, for R-013. **Unparked:** 2026-11-14, at the user's request. DBLP's API answered with a bot check, so the source is Semantic Scholar, the card's fallback; the procedure was fixed in `agents/researcher/findings/r012/procedure.md` before the list was drawn.
 
-**Artifacts:** —
+**Artifacts:**
+- agents/researcher/findings/r012/procedure.md (fixed before the list was drawn)
+- agents/researcher/findings/r012/draw.py, raw.json, hits.csv, shuffled.csv (the sample: 354 papers)
+- agents/researcher/findings/r012/abstracts.py, abstracts.jsonl (abstracts for the first 100 in shuffled order)
+- agents/researcher/findings/r012/sorted.md (every paper looked at, with its verdict and the abstract's words)
 
-**Closed:** —
+**Result:** 18 of 20 clean (strict) or 20 of 20 (lenient): the keep branch either way, so R-005 to R-010 unblock. "Across many instances" took 12 of 20, "across runs" and "across shapes" none. See CARD.md.
+
+**Closed:** 2026-11-14
 
 ### R-013 · Rewrite the garment-transfer entry from a full reading of Brouet et al. 2012
 

@@ -17,18 +17,7 @@ A card closes with a number, or with a sentence that could have come out the oth
 
 ## Live card
 
-### R-012 · Do the axes hold on techniques they weren't built from?
-
-_Opened 2026-11-14. Parked the same day for R-013, unparked the same day at the user's request (after R-015). Run as written, except that DBLP answered with a bot check, so the source is the card's named fallback, Semantic Scholar (`agents/researcher/findings/r012/procedure.md`)._
-
-1. **WHERE WE ARE.** The six axes sorted 12 of 12 techniques cleanly (R-004), but all twelve came from the conversation that produced the axes, so the sort could hardly have failed.
-2. **WHAT WE ARE DOING.** Draw graphics papers about speedups by a fixed procedure, and sort each one: is its speedup reuse at all; if so, which axis per mechanism, and does the reuse change only the cost or the answer too. The procedure: search DBLP (or Semantic Scholar, if DBLP can't filter by venue) for papers in ACM Transactions on Graphics, 2000–2025, whose titles contain *fast*, *faster*, *efficient*, *accelerat-* or *real-time*; save the full hit list and the exact query; shuffle it with Python's `random.Random(1114).shuffle`; go down the shuffled list sorting each paper from its abstract, until 20 papers whose speedup is reuse have been sorted. Record every paper looked at, including the ones that aren't reuse.
-3. **WHY.** Whether the axes fit reuse techniques nobody chose with the axes in mind is unknown. The title words describe speed, not any kind of reuse, so they don't steer the sample toward an axis. The share of speedup papers that are reuse at all comes out as a side number.
-4. **WHAT IS AFFECTED.** The axis table in `README.md`, the `axis` field in `entries/_template.md` and in the entries, and the survey tickets R-005 to R-010 (one per axis, blocked on this card).
-5. **CONCLUSION IF WE DO IT.** If at least 16 of the 20 reuse papers sort cleanly (each mechanism onto exactly one axis), the axes hold beyond their own examples, and the surveys unblock. If 5 or more don't, revise the axes before writing more entries, recording which papers broke them and how. Either way, if "across runs" again gets none, that is evidence for folding it into "across time" (T-009).
-6. **CONSEQUENCE OF NOT DOING IT.** The library grows under axes that are only known to fit the examples they were made from, and the surveys stay scoped by them.
-
-**Result:** —
+None open (2026-11-14). Candidates: R-016 (Dress-1-to-3 in full), R-014, the axis surveys R-005 to R-010 (unblocked by R-012), or an independent re-sort of R-012's abstracts.
 
 ---
 
@@ -39,6 +28,23 @@ None.
 ---
 
 ## Closed cards
+
+### R-012 · Do the axes hold on techniques they weren't built from?
+
+_Opened 2026-11-14. Parked the same day for R-013, unparked and closed the same day at the user's request (after R-015). Run as written, except that DBLP answered with a bot check, so the source is the card's named fallback, Semantic Scholar (`agents/researcher/findings/r012/procedure.md`)._
+
+1. **WHERE WE ARE.** The six axes sorted 12 of 12 techniques cleanly (R-004), but all twelve came from the conversation that produced the axes, so the sort could hardly have failed.
+2. **WHAT WE ARE DOING.** Draw graphics papers about speedups by a fixed procedure, and sort each one: is its speedup reuse at all; if so, which axis per mechanism, and does the reuse change only the cost or the answer too. The procedure: search DBLP (or Semantic Scholar, if DBLP can't filter by venue) for papers in ACM Transactions on Graphics, 2000–2025, whose titles contain *fast*, *faster*, *efficient*, *accelerat-* or *real-time*; save the full hit list and the exact query; shuffle it with Python's `random.Random(1114).shuffle`; go down the shuffled list sorting each paper from its abstract, until 20 papers whose speedup is reuse have been sorted. Record every paper looked at, including the ones that aren't reuse.
+3. **WHY.** Whether the axes fit reuse techniques nobody chose with the axes in mind is unknown. The title words describe speed, not any kind of reuse, so they don't steer the sample toward an axis. The share of speedup papers that are reuse at all comes out as a side number.
+4. **WHAT IS AFFECTED.** The axis table in `README.md`, the `axis` field in `entries/_template.md` and in the entries, and the survey tickets R-005 to R-010 (one per axis, blocked on this card).
+5. **CONCLUSION IF WE DO IT.** If at least 16 of the 20 reuse papers sort cleanly (each mechanism onto exactly one axis), the axes hold beyond their own examples, and the surveys unblock. If 5 or more don't, revise the axes before writing more entries, recording which papers broke them and how. Either way, if "across runs" again gets none, that is evidence for folding it into "across time" (T-009).
+6. **CONSEQUENCE OF NOT DOING IT.** The library grows under axes that are only known to fit the examples they were made from, and the surveys stay scoped by them.
+
+**Result (2026-11-14): 18 of 20 clean under the strict reading, 20 of 20 under the lenient one, so the keep branch either way. The axes hold beyond their own examples, and R-005 to R-010 unblock.**
+
+The source was Semantic Scholar, since DBLP answered with a bot check; 354 TOG papers passed the title filter. Going down the list shuffled with seed 1114: 53 papers looked at, 2 without an abstract and 2 whose abstracts don't say where the speed comes from, so 49 judged, 20 of them reuse (41 %). Every verdict quotes its abstract (`agents/researcher/findings/r012/sorted.md`). The two readings differ on one kind of saving the procedure hadn't anticipated: an identical term computed once and shared within one evaluation (common subexpressions; ranks 1 and 52). The library's premise calls exact repeats reuse, but no axis holds them, so under the strict reading they are misfits. Under the lenient reading they are out of scope, and the sample runs to rank 55 (T-015).
+
+The components say more than the count. "Across many instances" took 12 of the 20 papers (learned models, baking, precomputed tables and bases, reduced models), and "across runs" and "across shapes" took none, so the sort is clean partly because one axis is broad (T-016). "Across runs" got none again, which the card counts as evidence for folding it into "across time" (T-009). R-015's need-chosen sample had five, all inside fitting or editing loops (T-013), so the axis may be rare in speed papers and common in optimisation loops. Weaknesses: the sorter wrote the axes, and an independent sort of the same 55 abstracts would measure agreement (not done); Semantic Scholar's coverage of TOG wasn't checked against DBLP.
 
 ### R-015 · Does any recent method serve the test bed's largest measured costs under its constraints?
 

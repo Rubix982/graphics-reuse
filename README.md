@@ -19,7 +19,7 @@ The same reuse patterns turn up in rendering, simulation, geometry processing an
 | across shapes | a result on another shape or body | deformation transfer, garment transfer |
 | across many instances | work paid once and reused for every case | precomputed radiance transfer, learned models |
 
-These six came from about ten examples. The first card (R-004) sorted twelve techniques onto them, 12 of 12 cleanly, but all twelve came from the conversation that produced the axes, so that only shows the axes fit their own examples. A held-out test is the open card ([`CARD.md`](CARD.md)).
+These six came from about ten examples. The first card (R-004) sorted twelve techniques onto them, 12 of 12 cleanly, but all twelve came from the conversation that produced the axes. A held-out test (R-012) then drew TOG papers about speedups by a fixed procedure: of the first 20 whose speedup is reuse, 18 or 20 sorted cleanly, depending on whether shared identical sub-terms count as reuse (T-015). Most of them (12) landed on "across many instances", none on "across runs" or "across shapes" ([`CARD.md`](CARD.md)).
 
 Across all six axes runs a second question: does the reuse change only the cost, or the answer too? Refitting a tree changes only the cost (queries stay correct, just slower as it loosens). Temporal reprojection changes the answer (ghosting when the history is stale). Validity conditions matter most for the second kind.
 
