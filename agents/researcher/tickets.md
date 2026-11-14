@@ -302,7 +302,7 @@ The live card in `CARD.md`, at the user's request (2026-11-14): research graphic
 
 ### R-016 · Read Dress-1-to-3 in full and rewrite the warm-start entry from it
 
-**Status:** in-progress
+**Status:** closed
 **Type:** research
 **Priority:** medium
 **Created:** 2026-11-14
@@ -313,9 +313,16 @@ Read Xuan Li et al., "Dress-1-to-3: Single Image to Simulation-Ready 3D Outfit w
 
 **Blockers:** none (open on arXiv)
 
-**Artifacts:** —
+**Artifacts:**
+- agents/researcher/findings/r016/baseline-items.md (the R-011 baseline's 20 items, fixed before reading)
+- agents/researcher/findings/r016/dress-1-to-3-notes.md (notes against the five questions, with sections)
+- agents/researcher/findings/r016/score.md (8 paper items against the baseline)
+- entries/warm-start-repeated-drapes.md (rewritten)
+- sources/r016/li2025-dress-1-to-3.txt (git-ignored: the paper's text from arXiv HTML)
 
-**Closed:** —
+**Result:** 1 item by none narrowly (the pinned waist with friction off), 3 widely; the paper adds a remedy, not a reframe, and doesn't test the warm start.
+
+**Closed:** 2026-11-14
 
 ### R-017 · An independent re-sort of R-012's abstracts
 

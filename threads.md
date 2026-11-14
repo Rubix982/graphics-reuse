@@ -90,7 +90,7 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 **Parent:** T-005
 **Opened:** 2026-11-14
 **Question:** Wang 2018 and Dress-1-to-3 2025 both drop friction while fitting so the drape depends only on the cut. The test bed's width sensitivities don't keep their sign across runs. Do they, with cloth-body and self-collision friction at zero and the waistband pinned, measured over the same seeds? (A test-bed spike, the user's call; R-015.)
-**Answer:** —
+**Answer:** — R-016: Dress-1-to-3 drops friction during the fit and fixes the bottom garment's waist loop against slipping (§6.1), but never measures what friction-off buys.
 
 ### T-012 · Is Newton's VBD or Style3D solver on one CPU core faster than Blender's cloth for a 5,000-vertex piece?
 

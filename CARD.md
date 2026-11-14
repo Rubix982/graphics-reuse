@@ -17,18 +17,7 @@ A card closes with a number, or with a sentence that could have come out the oth
 
 ## Live card
 
-### R-016 · Does a full reading of Dress-1-to-3 add anything to the warm-start entry over an agent?
-
-_Opened 2026-11-14 at the user's request. R-017 (an independent re-sort of R-012's abstracts) runs alongside as a review ticket, not a card._
-
-1. **WHERE WE ARE.** `entries/warm-start-repeated-drapes.md` rests on two sources read at a distance (Catto's slides through a mirror, a continuation-methods book). R-011's agent baseline named 5 of its 6 conditions and added several. R-015 found that Dress-1-to-3 (SIGGRAPH 2025) warm-starts each iteration and states the reason.
-2. **WHAT WE ARE DOING.** Read Dress-1-to-3 in full, take notes against R-016's questions with section references, rewrite the warm-start entry from them, and score the paper's items against the baseline list fixed beforehand (`agents/researcher/findings/r016/baseline-items.md`).
-3. **WHY.** Whether a full reading adds to this entry beyond what an agent already says is unknown. R-013 found it did for garment transfer, as a reframe. This is the second paper read in full.
-4. **WHAT IS AFFECTED.** The warm-start entry (its sources, conditions and `agent_baseline`); T-005 and T-011; the test bed's planned warm start, through `private/`.
-5. **CONCLUSION IF WE DO IT.** Count the paper's items about the reuse (conditions, numbers, techniques) that the baseline named none of. If 3 or more: a full reading adds here too, and R-013's rule holds on a second paper. If 0 or 1: for this entry the agent already had what the paper says, and its value rests on measurements. If 2: inconclusive.
-6. **CONSEQUENCE OF NOT DOING IT.** The warm-start entry stays written from unread sources, and the test bed's warm start would run without the one published statement of its condition.
-
-**Result:** —
+None open (2026-11-14). R-017 (independent re-sort of R-012) is running as a review ticket. Candidates after it: R-014, an axis survey (R-005 to R-010).
 
 ---
 
@@ -39,6 +28,23 @@ None.
 ---
 
 ## Closed cards
+
+### R-016 · Does a full reading of Dress-1-to-3 add anything to the warm-start entry over an agent?
+
+_Opened and closed 2026-11-14 at the user's request. R-017 (an independent re-sort of R-012's abstracts) ran alongside as a review ticket, not a card._
+
+1. **WHERE WE ARE.** `entries/warm-start-repeated-drapes.md` rests on two sources read at a distance (Catto's slides through a mirror, a continuation-methods book). R-011's agent baseline named 5 of its 6 conditions and added several. R-015 found that Dress-1-to-3 (SIGGRAPH 2025) warm-starts each iteration and states the reason.
+2. **WHAT WE ARE DOING.** Read Dress-1-to-3 in full, take notes against R-016's questions with section references, rewrite the warm-start entry from them, and score the paper's items against the baseline list fixed beforehand (`agents/researcher/findings/r016/baseline-items.md`).
+3. **WHY.** Whether a full reading adds to this entry beyond what an agent already says is unknown. R-013 found it did for garment transfer, as a reframe. This is the second paper read in full.
+4. **WHAT IS AFFECTED.** The warm-start entry (its sources, conditions and `agent_baseline`); T-005 and T-011; the test bed's planned warm start, through `private/`.
+5. **CONCLUSION IF WE DO IT.** Count the paper's items about the reuse (conditions, numbers, techniques) that the baseline named none of. If 3 or more: a full reading adds here too, and R-013's rule holds on a second paper. If 0 or 1: for this entry the agent already had what the paper says, and its value rests on measurements. If 2: inconclusive.
+6. **CONSEQUENCE OF NOT DOING IT.** The warm-start entry stays written from unread sources, and the test bed's warm start would run without the one published statement of its condition.
+
+**Result (2026-11-14): 1 item by none under the narrow reading (the 0–1 branch), 3 under the wide one. For this entry the agent already had nearly everything the paper says about warm starting; the paper adds one remedy inside the same frame.**
+
+Of the paper's six items about the warm start, the baseline named three (start from the previous drape; the equilibrium doesn't depend on its start near one resting shape; one triangulation moved), partly named two (friction as the cause of path dependence, though not switching it off; remeshing), and named none for one: with friction off, the waist loop of the bottom garment is fixed so nothing slips (§6.1). Counting the two items about running each drape (one implicit step of 1 s; a safeguard against inverted triangles), three are by none. Notes: `agents/researcher/findings/r016/dress-1-to-3-notes.md`; scoring: `score.md` beside it. One baseline run only, so a "none" is weaker than in R-013.
+
+Read with R-013, reading in full added a reframe there and a remedy here, and both were things the test bed can act on (grading; friction off during the fit, T-011). The baseline also had six things the paper lacks: rest-shape plumbing, lengthening against shortening, sensitivities measured against a warm drape at the unchanged cut, parallel drapes, warm drapes for sensitivities with fresh ones for the residual, and cheap tests. The paper never compares warm drapes to fresh ones, so the entry stays untested. `entries/warm-start-repeated-drapes.md` was rewritten with every condition marked: (paper, section), or (reasoned, with R-011's baseline named where it came from).
 
 ### R-012 · Do the axes hold on techniques they weren't built from?
 

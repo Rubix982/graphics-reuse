@@ -103,3 +103,15 @@ _Date: 2026-11-14_
 - By mechanism (strict): reuse changes the answer in 12 of 22 mechanisms, only the cost in 7, depends in 3.
 
 Confidence: medium on the verdict that the axes hold. The bar was set in advance and both readings clear it, but the sorter is the model family that wrote the axes, there was no second sorter, and Semantic Scholar's coverage of TOG wasn't checked. High that the sample was drawn as pre-registered (`draw.py` reproduces it). Medium on the per-axis counts, which rest on judgement calls recorded in `sorted.md`.
+
+## [R-016] Finding: Dress-1-to-3 warm-starts every iteration and drops friction to justify it, but never tests the warm start
+
+_Date: 2026-11-14_
+
+Dress-1-to-3 (SIGGRAPH 2025), read in full, fits a sewing pattern and the cloth's stiffness to images by differentiable IPC simulation. Each iteration is one implicit step of 1 s from the previous iteration's drape, justified because a static equilibrium "does not locally depend on the initial state" (§6.1). Friction is left out "to make the simulation as path-independent as possible", and the bottom garment's waist loop is fixed so it can't slip (§6.1). When the mesh must change, the chain is broken and the garment re-fitted, because a settled drape re-triangulated can cross itself or the body (§6.5). Scored against R-011's warm-start baseline: of the paper's six items about the warm start, 3 named, 2 partly, 1 by none; with two items on running each drape, 3 by none. The warm-start entry was rewritten from the reading.
+
+- The one idea the agent lacked: switch friction off while fitting, and hold what would slip. The agent had named friction as the cause of path dependence.
+- The paper doesn't compare warm drapes with fresh ones, report time saved, or give an iteration count (about 10 min setup and up to 2 h of fitting on one RTX 3090).
+- The baseline had six things the paper lacks, among them sensitivities measured against a warm drape at the unchanged cut, and warm drapes for sensitivities with fresh ones for the residual.
+
+Confidence: high that the paper says what the notes say (section-referenced; the text is in `sources/r016/`); low on what the count means, with one baseline run and a branch that depends on which items count as "about the reuse".

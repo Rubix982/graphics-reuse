@@ -14,7 +14,7 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 
 | ID | Agent | Title | Status |
 |---|---|---|---|
-| R-016 | Researcher | Read Dress-1-to-3 in full; rewrite the warm-start entry | open |
+| R-017 | Researcher | Independent re-sort of R-012's abstracts (review) | in-progress |
 | R-014 | Researcher | Does the paper add anything when the agent is asked about grading directly | open |
 | R-005 to R-010 | Researcher | One survey per axis (unblocked by R-012) | open |
 
@@ -32,8 +32,9 @@ None.
 - R-011 · Agent baselines for the three seed entries (11 of 18 conditions named; circular; measurements are what the agent lacked)
 - R-013 · Brouet et al. 2012 read in full (11 of 16 paper items named by no agent run; the addition was a reframe toward grading)
 - R-012 · Held-out test of the axes (18 or 20 of 20 clean, keep; many instances 12, runs and shapes 0)
+- R-016 · Dress-1-to-3 read in full (1 item by none narrowly, 3 widely; a remedy, not a reframe; the warm start untested there too)
 - R-015 · Recent literature, four areas (yes branch: Newton runs without CUDA, untimed; friction-off fitting, inexact drapes and cached sensitivities rebuildable in Blender)
 
 ## Next Orchestrator Action
 
-No card is open. The user picks the next: R-016 (Dress-1-to-3 in full), R-014, an axis survey (R-005 to R-010), or an independent re-sort of R-012's abstracts.
+No card is open. R-017 (the re-sort) is running; when it returns, compare and close it. Then the user picks: R-014, or an axis survey (R-005 to R-010).
