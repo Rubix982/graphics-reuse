@@ -14,13 +14,15 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 
 | ID | Agent | Title | Status |
 |---|---|---|---|
-| R-012 | Researcher | Held-out test of the axes (CARD.md) | open |
+| R-013 | Researcher | Rewrite the garment-transfer entry from a full reading of Brouet et al. 2012 (CARD.md) | blocked: the PDF |
+| R-012 | Researcher | Held-out test of the axes | parked |
 
 ## Blocked
 
 | ID | Blocked By |
 |---|---|
-| R-005 to R-010 (one survey per axis) | R-012 |
+| R-005 to R-010 (one survey per axis) | R-012 (parked) |
+| R-013 | the PDF, saved by hand to sources/ |
 
 ## Completed This Session
 
@@ -33,4 +35,4 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 
 ## Next Orchestrator Action
 
-When R-012 closes: if at least 16 of 20 held-out reuse papers sort cleanly, unblock R-005 to R-010 in the order the researcher recommends. If 5 or more don't, open a ticket to revise the axes first.
+When the PDF is in `sources/`, unblock R-013. When R-013 closes, follow its card's branch (full reading as the rule, or the README says literature entries are mainly a map for their reader), then resume R-012.

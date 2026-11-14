@@ -15,9 +15,26 @@ A card closes with a number, or with a sentence that could have come out the oth
 
 ---
 
-## Live card · R-012 · Do the axes hold on techniques they weren't built from?
+## Live card · R-013 · Does an entry written from a full reading add anything over an agent?
 
 _Opened 2026-11-14._
+
+1. **WHERE WE ARE.** A fresh agent named 11 of the seed entries' 18 conditions (R-011); the entries were written from abstracts by the same model, and what only they carried was the test bed's measurements.
+2. **WHAT WE ARE DOING.** Read Brouet et al. 2012 in full, rewrite `entries/garment-transfer-surface-binding.md` from that reading with every condition marked and page-referenced, and compare it against three runs of R-011's garment-transfer baseline prompt, unchanged: the saved answer and two new runs.
+3. **WHY.** Whether an entry built from a full reading carries anything an agent doesn't is unknown, and the library's value as agent context depends on it.
+4. **WHAT IS AFFECTED.** The garment-transfer entry; METHOD.md step 2b; T-002; whether Phase 1's literature entries are worth writing as agent context or only as a map for their reader.
+5. **CONCLUSION IF WE DO IT.** Count the entry's conditions and numbers taken from the paper that none of the three baseline runs named. If 3 or more: full reading adds over an agent, and reading in full becomes the rule for every entry. If 0 or 1: even a fully read entry adds little as agent context, its value as agent context rests on measurements, and the README says the literature entries are mainly a map for their reader. If 2: inconclusive; repeat with a second paper.
+6. **CONSEQUENCE OF NOT DOING IT.** The library's claim to help an agent stays untested, and R-012 would test how to file entries whose value is unknown.
+
+**Result:** —
+
+---
+
+## Parked cards
+
+### R-012 · Do the axes hold on techniques they weren't built from?
+
+_Opened 2026-11-14. Parked the same day for R-013: whether an entry adds anything over an agent comes before how entries are filed. Resuming needs nothing; the card is ready to run as written._
 
 1. **WHERE WE ARE.** The six axes sorted 12 of 12 techniques cleanly (R-004), but all twelve came from the conversation that produced the axes, so the sort could hardly have failed.
 2. **WHAT WE ARE DOING.** Draw graphics papers about speedups by a fixed procedure, and sort each one: is its speedup reuse at all; if so, which axis per mechanism, and does the reuse change only the cost or the answer too. The procedure: search DBLP (or Semantic Scholar, if DBLP can't filter by venue) for papers in ACM Transactions on Graphics, 2000–2025, whose titles contain *fast*, *faster*, *efficient*, *accelerat-* or *real-time*; save the full hit list and the exact query; shuffle it with Python's `random.Random(1114).shuffle`; go down the shuffled list sorting each paper from its abstract, until 20 papers whose speedup is reuse have been sorted. Record every paper looked at, including the ones that aren't reuse.

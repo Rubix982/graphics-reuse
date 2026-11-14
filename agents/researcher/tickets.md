@@ -211,7 +211,7 @@ METHOD.md step 2b, skipped when the seed entries were written. For each of the t
 
 ### R-012 · Held-out test of the axes
 
-**Status:** open
+**Status:** parked
 **Type:** research
 **Priority:** high
 **Created:** 2026-11-14
@@ -221,6 +221,25 @@ METHOD.md step 2b, skipped when the seed entries were written. For each of the t
 The live card in `CARD.md`. Search DBLP (or Semantic Scholar, if DBLP can't filter by venue) for ACM Transactions on Graphics papers, 2000–2025, with *fast*, *faster*, *efficient*, *accelerat-* or *real-time* in the title. Save the exact query and the full hit list in `agents/researcher/findings/r012/`. Shuffle the list with `random.Random(1114).shuffle` and sort each paper from its abstract (is the speedup reuse; if so, axis per mechanism and `reuse_changes`) until 20 reuse papers are sorted, recording every paper looked at. The branches are written in the card: at least 16 of 20 clean keeps the axes and unblocks R-005 to R-010; 5 or more misfits means revising the axes first.
 
 **Blockers:** none
+
+**Parked:** 2026-11-14, for R-013. Whether an entry adds anything over an agent comes before how entries are filed. Resuming needs nothing: the card in CARD.md is ready to run as written.
+
+**Artifacts:** —
+
+**Closed:** —
+
+### R-013 · Rewrite the garment-transfer entry from a full reading of Brouet et al. 2012
+
+**Status:** blocked
+**Type:** research
+**Priority:** high
+**Created:** 2026-11-14
+**Updated:** 2026-11-14
+
+**Description:**
+The live card in `CARD.md`. Read Rémi Brouet, Alla Sheffer, Laurence Boissieux, Marie-Paule Cani, "Design Preserving Garment Transfer", ACM Transactions on Graphics 31(4), 2012 (DOI 10.1145/2185520.2185532), in full. Write notes against the six questions (the grading requirements and which are hard constraints; how points are matched between bodies; whether and how long they simulate after transfer; layers; loose, free-hanging cloth; results and limitations) with page or section references, in `agents/researcher/findings/r013/brouet2012-notes.md`. Rewrite `entries/garment-transfer-surface-binding.md` from the notes, every condition marked (paper, with page), (measured) or (reasoned). Run the R-011 garment-transfer prompt (`agents/researcher/findings/r011/prompt-garment-transfer.md`), unchanged, twice more as fresh agents with no tools, saving the answers verbatim. Score per the card's branches: count the entry's paper-sourced conditions and numbers that none of the three runs named.
+
+**Blockers:** the paper's PDF. HAL, the ACM Digital Library and the SIGGRAPH archive all refuse automated downloads (checked 2026-11-14). It has to be saved by hand as `sources/brouet2012.pdf` (git-ignored, as in `style`).
 
 **Artifacts:** —
 
