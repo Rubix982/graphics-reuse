@@ -172,7 +172,9 @@ Per the shared description. Start from: deformation transfer (Sumner and Popovi�
 
 ### R-010 · Survey: across many instances
 
-**Status:** open
+**Status:** split
+**Split into:** R-018, R-019
+**Reason:** 5–8 entries, each read in full with its own agent baseline (R-013's rule), don't fit one sitting; and R-012 and R-017 put two-thirds of reuse papers on this axis, so whether it holds one kind of reuse or two decides how its entries are filed (T-016).
 **Type:** research
 **Priority:** medium
 **Created:** 2026-11-14
@@ -344,3 +346,37 @@ R-012's sorter wrote the axes. A fresh agent, given only the first 60 abstracts 
 **Result:** The second sorter's first 20 had 19 clean, so R-012's keep verdict doesn't depend on the sorter. Same reuse verdict on 47 of 48 jointly judged papers (κ 0.96) under R-012's lenient reading, 45 of 48 (κ 0.87) under the strict one; same axes on 18 of 18. Many instances 13 of 20 for both.
 
 **Closed:** 2026-11-14
+
+### R-018 · Does "across many instances" hold two kinds of reuse?
+
+**Status:** in-progress
+**Type:** research
+**Priority:** high
+**Created:** 2026-11-14
+**Updated:** 2026-11-14
+
+**Description:**
+Child of R-010; the live card in CARD.md (T-016). The 15 papers that either R-012 or R-017 placed on "across many instances" (R-012 ranks 5, 6, 8, 18, 20, 33, 40, 41, 47, 48, 50, 53, 55, 56, 58) are classified by what makes their reused work go stale. The classes are fixed in the card: (A) computed for this problem, (B) fitted to examples, (C) neither, or "unclear". A fresh agent does it blind from the abstracts and the class definitions alone, writing `agents/researcher/findings/r018/blind-kinds.md`; the orchestrator's own classification, done in parallel, is the comparison, not the test. Branch as in the card.
+
+**Blockers:** none
+
+**Artifacts:** —
+
+**Closed:** —
+
+### R-019 · Write the entries for "across many instances"
+
+**Status:** open
+**Type:** research
+**Priority:** medium
+**Created:** 2026-11-14
+**Updated:** 2026-11-14
+
+**Description:**
+Child of R-010; R-010's shared description applies (5–8 entries from primary sources, each read in full per R-013, with METHOD.md step 2b and the Ericson / Real-Time Rendering note). Start from: precomputed radiance transfer (Sloan, Kautz and Snyder 2002); baked lighting; precomputed signed distance fields for static colliders; learned cloth simulators (HOOD, from R-015). File each by R-018's answer. Cut into one ticket per entry when started, since one entry with a full reading and a baseline is about one sitting.
+
+**Blockers:** R-018 (how the entries are filed)
+
+**Artifacts:** —
+
+**Closed:** —

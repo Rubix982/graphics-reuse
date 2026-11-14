@@ -17,7 +17,20 @@ A card closes with a number, or with a sentence that could have come out the oth
 
 ## Live card
 
-None open (2026-11-14). Candidates: R-014, or an axis survey (R-005 to R-010); R-010 (many instances) would also answer T-016.
+### R-018 · Does "across many instances" hold two kinds of reuse?
+
+_Opened 2026-11-14 at the user's request, as the first child of R-010 (split; R-019 writes the entries)._
+
+1. **WHERE WE ARE.** "Across many instances" took 12–13 of 20 reuse papers for two sorters (R-012, R-017): learned models, baked representations, precomputed tables and bases, reduced models.
+2. **WHAT WE ARE DOING.** Classify the 15 papers either sorter put on that axis by what makes their reused work go stale, from each abstract's own words, into: **(A) computed for this problem**: the reused work is computed from fixed parts of one problem instance (a scene's geometry, a mesh, an image, a set of constraints) and stays valid while those parts don't change, whatever else varies; **(B) fitted to examples**: the reused work is a model fitted to example inputs or states (training data, sampled poses or deformations) and stays valid as far as new inputs resemble the examples; **(C) neither** (say what); or **unclear**. A fresh agent classifies blind, from the abstracts and these definitions only.
+3. **WHY.** Whether the axis's members share validity conditions is unknown. If they split into two kinds with different conditions, entries filed together would carry conditions that don't transfer between them.
+4. **WHAT IS AFFECTED.** README's axis table and `entries/_template.md` (a `kind` field for this axis, or not); how R-019 files its entries; T-016.
+5. **CONCLUSION IF WE DO IT.** If at least 12 of the 15 fall clearly into A or B, and each of A and B has at least 3 members, the axis holds two kinds: keep six axes, and give entries on this axis a `kind` field (computed for this problem, or fitted to examples) with its own form of validity condition. Otherwise, keep the axis whole and record the papers that didn't sort.
+6. **CONSEQUENCE OF NOT DOING IT.** R-019 files 5–8 entries under a category holding two-thirds of everything, with no way to say which of its conditions carry from one entry to another.
+
+The classes and the bar were written by the orchestrator after reading these 15 abstracts in R-012, which is why the test is the blind agent's classification and not the orchestrator's.
+
+**Result:** —
 
 ---
 
