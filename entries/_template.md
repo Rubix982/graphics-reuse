@@ -1,6 +1,7 @@
 ---
 technique: <named plainly, e.g. "garment transfer by surface binding">
 axis: <across time | across space | across runs | across resolutions | across shapes | across many instances>
+kind: <only for across many instances: computed for this problem (stale when the fixed part it was computed from changes) | fitted to examples (stale as runtime inputs leave the examples); R-018>
 reuse_changes: <cost only | the answer | depends (say on what)>. Cost only: the reused result is exact and only speed is at stake, so failure shows as slowdown. The answer: the reuse approximates, so failure shows as a wrong answer, and section 4 carries the content.
 fields: [<where it is used: cloth simulation, rendering, collision detection, ...>]
 source_docs:

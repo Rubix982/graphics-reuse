@@ -349,7 +349,7 @@ R-012's sorter wrote the axes. A fresh agent, given only the first 60 abstracts 
 
 ### R-018 · Does "across many instances" hold two kinds of reuse?
 
-**Status:** in-progress
+**Status:** closed
 **Type:** research
 **Priority:** high
 **Created:** 2026-11-14
@@ -360,9 +360,14 @@ Child of R-010; the live card in CARD.md (T-016). The 15 papers that either R-01
 
 **Blockers:** none
 
-**Artifacts:** —
+**Artifacts:**
+- agents/researcher/findings/r018/orchestrator-kinds.md (committed before the blind result was seen)
+- agents/researcher/findings/r018/blind-kinds.md (the test)
+- agents/researcher/findings/r018/comparison.md
 
-**Closed:** —
+**Result:** 13 of 15 clearly A or B (A 7, B 6), against a bar of 12; two kinds. Agreement with the orchestrator 14 of 15. A `kind` field added to the template for this axis.
+
+**Closed:** 2026-11-14
 
 ### R-019 · Write the entries for "across many instances"
 
@@ -375,7 +380,7 @@ Child of R-010; the live card in CARD.md (T-016). The 15 papers that either R-01
 **Description:**
 Child of R-010; R-010's shared description applies (5–8 entries from primary sources, each read in full per R-013, with METHOD.md step 2b and the Ericson / Real-Time Rendering note). Start from: precomputed radiance transfer (Sloan, Kautz and Snyder 2002); baked lighting; precomputed signed distance fields for static colliders; learned cloth simulators (HOOD, from R-015). File each by R-018's answer. Cut into one ticket per entry when started, since one entry with a full reading and a baseline is about one sitting.
 
-**Blockers:** R-018 (how the entries are filed)
+**Blockers:** none (R-018 closed 2026-11-14: file each entry with `kind`, computed for this problem or fitted to examples)
 
 **Artifacts:** —
 

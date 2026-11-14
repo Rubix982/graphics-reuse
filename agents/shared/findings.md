@@ -127,3 +127,14 @@ A fresh agent given only R-012's first 60 abstracts and its sorting rules (no ve
 - The one other disagreement is a structure precomputed per asset that enables a faster method (rank 50): reuse for R-012, not for the second sorter.
 
 Confidence: high that R-012's verdict doesn't depend on which of these two sorters sorted; medium that it doesn't depend on the sorter in general, since both are the same model family working from abstracts.
+
+## [R-018] Finding: "across many instances" holds two kinds, told apart by what varies at runtime
+
+_Date: 2026-11-14_
+
+The 15 papers R-012 or R-017 put on "across many instances" were classified blind by a fresh agent, by what makes their reused work go stale. 13 fell clearly into one of two kinds (7 and 6), against a bar of 12. **Computed for this problem**: precomputed from a fixed part of one instance (a scene's geometry, a mesh, an image, a set of constraints), and valid while that part doesn't change, whatever varies at runtime (lights, views, edits). **Fitted to examples**: a model fitted to examples, valid as far as runtime inputs (poses, motions, expressions) resemble them. A per-scene model can be either, depending on whether the runtime input is a view or light (the first) or a pose or state (the second). Outside both were a table independent of the problem and one unclear paper. The orchestrator's classification, committed beforehand, agreed on 14 of 15. Record: `agents/researcher/findings/r018/`.
+
+- Consequence: the six axes stay, and entries on this axis get a `kind` field (`entries/_template.md`); R-019 writes them by kind.
+- The two kinds should carry different forms of validity condition: "until the fixed part changes" against "as far as the examples cover the input". This is the reason to split, and R-019's entries are where it gets tested.
+
+Confidence: medium. One blind classifier, the same model family, abstracts only, and a margin of one paper over the bar.

@@ -126,8 +126,8 @@ Open questions, as a tree. One thread per entry. Statuses: open, active, answere
 
 ### T-016 · Is "across many instances" too broad to file by?
 
-**Status:** open
+**Status:** answered
 **Parent:** T-001
 **Opened:** 2026-11-14
 **Question:** It took 12 of R-012's 20 papers: learned models, baked neural representations, precomputed tables and bases, reduced models, a precomputed Pareto front. They share "paid once, used many times" but have different validity conditions (a learned model fails off its training distribution, a precomputed transport operator when the scene moves). Would splitting it (precomputed from the problem's own data vs learned from other problems) give conditions that differ more between than within? R-010's survey is the natural place to find out.
-**Answer:** — Evidence: R-017's blind second sorter also put 13 of its 20 on it.
+**Answer:** R-018 (2026-11-14): two kinds, by what varies at runtime: computed for this problem (stale when the fixed part changes) and fitted to examples (stale as inputs leave the examples), 13 of 15 in a blind classification. Kept as one axis with a `kind` field. Whether their conditions really differ is for R-019's entries to show.

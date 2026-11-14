@@ -15,3 +15,5 @@
 - [R-012] Held-out test of the axes: 18 of 20 clean (strict) or 20 of 20 (lenient), keep; R-005 to R-010 unblocked; many instances 12, runs and shapes 0; T-015 and T-016 opened — agents/researcher/findings/r012/
 - [R-016] Dress-1-to-3 read in full: 1 of 6 warm-start items by none in the baseline (the pinned waist with friction off), 3 with the drape items; warm-start entry rewritten — agents/researcher/findings/r016/, entries/warm-start-repeated-drapes.md
 - [R-017] Blind re-sort of R-012's abstracts: 19 of 20 clean, reuse verdicts 47 or 45 of 48 (κ 0.96 or 0.87), axes 18 of 18; R-012's verdict doesn't depend on the sorter — agents/researcher/findings/r017/
+- [R-010] Split into R-018 and R-019: 5–8 full-read entries don't fit one sitting, and the axis's breadth (T-016) decides how they're filed
+- [R-018] Many instances holds two kinds by what varies at runtime (13 of 15 in a blind classification; orchestrator agreed 14 of 15); `kind` field added to the template — agents/researcher/findings/r018/

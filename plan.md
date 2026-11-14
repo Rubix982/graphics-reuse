@@ -15,7 +15,8 @@ Phase 1 — Literature. Reading and writing entries only; no tooling and no engi
 | ID | Agent | Title | Status |
 |---|---|---|---|
 | R-014 | Researcher | Does the paper add anything when the agent is asked about grading directly | open |
-| R-005 to R-010 | Researcher | One survey per axis (unblocked by R-012) | open |
+| R-019 | Researcher | Entries for across many instances, filed by kind | open |
+| R-005 to R-009 | Researcher | One survey per axis (unblocked by R-012) | open |
 
 ## Blocked
 
@@ -31,10 +32,11 @@ None.
 - R-011 · Agent baselines for the three seed entries (11 of 18 conditions named; circular; measurements are what the agent lacked)
 - R-013 · Brouet et al. 2012 read in full (11 of 16 paper items named by no agent run; the addition was a reframe toward grading)
 - R-012 · Held-out test of the axes (18 or 20 of 20 clean, keep; many instances 12, runs and shapes 0)
+- R-018 · Does many instances hold two kinds? (13 of 15 blind; yes: computed for this problem, fitted to examples; `kind` field) — R-010 split into R-018 and R-019
 - R-017 · Blind re-sort of R-012 (19 of 20 clean; κ 0.96 or 0.87; axes 18 of 18)
 - R-016 · Dress-1-to-3 read in full (1 item by none narrowly, 3 widely; a remedy, not a reframe; the warm start untested there too)
 - R-015 · Recent literature, four areas (yes branch: Newton runs without CUDA, untimed; friction-off fitting, inexact drapes and cached sensitivities rebuildable in Blender)
 
 ## Next Orchestrator Action
 
-No card is open. The user picks: R-014, or an axis survey (R-005 to R-010); R-010 would also answer T-016.
+No card is open. Next session, the user picks: R-019 (entries by kind, one entry per sitting), R-014, or another axis survey (R-005 to R-009).
